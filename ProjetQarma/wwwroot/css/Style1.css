@@ -1,56 +1,41 @@
-﻿/* ****************COULEURS************** */
-
-.couleur_bleueQarma {
-    color: #327672;
+                    /* ****************COULEURS************** */
+.couleur_bleueQarma{
+	color : #327672;
 }
 
-​
-
-.couleur_verte {
-    color: #9AE17B;
+.couleur_verte{
+	color : #9AE17B ;
 }
-
-.couleur_bleueSoliDev {
-    color: #3498DB;
+.couleur_bleueSoliDev{
+	color : #3498DB;
 }
-
-/* ********* Barre de navigation ********** */
-
+                    /* ********* Barre de navigation ********** */
 .navbar {
-    background: #a8d1c886;
+    background:#a8d1c886;
 }
-
 .nav-link,
 .navbar-brand {
     color: rgba(140, 215, 175, 0.964);
     cursor: pointer;
 }
-
 .nav-link {
     margin-right: 1em !important;
 }
-
-    .nav-link:hover {
-        color: #000;
-    }
-
+.nav-link:hover {
+    color: #000;
+}
 .navbar-collapse {
     justify-content: flex-end;
 }
-
-/* ******************  LOGO ***************** */
-
-/*  ***** Description****** */
-
-.caractereDescription {
+.containerHeader{ border: 1px solid;padding: 1px; width: 100%; border-color: transparent; background-color:transparent;}
+                     /* ******************  LOGO ***************** */
+            /*  ***** Description****** */
+.caractereDescription{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-/* ******** Identification********* */
-
+            /* ******** Identification********* */
 /* form remplissage */
-
-.form-control {
+.form-control{
     border-color: #9AE17B;
     border-width: 2px;
     font-size: 2rem;
@@ -58,54 +43,43 @@
     width: fit-content;
     font-style: italic;
     font-size: medium;
-    font: color: #327672;
     text-decoration-color: #327672;
 }
-
 /* Couleur Transparente */
-
-.couleur_bleueQarma_form {
-    color: #327672a5;
+.couleur_bleueQarma_form{
+	color : #327672a5;
 }
-
 /* bouton se connecter */
-
-.btn-primary {
+.btn-primary{
     background-color: #9AE17B;
     border-color: #9AE17B;
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 6px;
 }
+/* **** HEADER **** */
+.bordureBleue1{  border: 3px solid #3276726a; background-color: #3276726a; padding :10px;  }
+.bordureBleue2{  border: 3px solid #327672; background-color: #327672; padding: 10px; }
 
-​
 /* ****BODY **** */
+
+.containerBody{ border: 1px solid;padding: 20px; width: 100%; border-color: transparent;}
+.bordureBleue1{  border: 3px solid #3276726a; background-color: #3276726a; padding :10px;  }
+.bordureBleue2{  border: 3px solid #327672; background-color: #327672; padding: 10px; }
+.bordureAucune{  border: 3px ; background-color:transparent; padding: 10px; }
+
+
 body {
     padding: 0;
     margin: 0;
     background: #ebf6e9;
 }
-
-/* ******* La partie à gauche ******* */
-
+        /* ******* La partie à gauche ******* */
 .header {
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.containerGauche {
-    border: 4px solid;
-    padding: 250px;
-    width: 10%;
-    border-color: #327672;
-    margin-top: 10px;
-    margin-left: 5px;
-    border-radius: 4px;
-    
-}
-
-
-​
 
 .overlay {
     position: absolute;
@@ -115,7 +89,6 @@ body {
     top: 0;
     background: rgba(23, 112, 122, 0.329);
 }
-
 .description {
     left: 50%;
     position: absolute;
@@ -123,28 +96,28 @@ body {
     transform: translate(-50%, -55%);
     text-align: center;
 }
-
 .description h1 {
-        color: #6AB446;
-    }
-
-    .description p {
-        color: #fff;
-        font-size: 1.3rem;
-        line-height: 1.5;
-    }
-
-    .description button {
-        border: 1px solid #6AB446;
-        background: #6ab446;
-        border-radius: 0;
-        color: #fff;
-    }
-.description button:hover
-{
-            border: 1px solid #fff;
-            background: #fff;
-            color: #000;
+    color: #6AB446;
+}
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.description button {
+    border:1px solid #6AB446;
+    background:#6ab446;
+    border-radius: 0;
+    color:#fff;
+}
+.description button:hover {
+    border:1px solid #fff;
+    background:#fff;
+    color:#000;
 }
 
-​
+/* *****FOOTER****** */
+.containerFooter{ border: 1px solid;padding: 20px; width: 100%; border-color: transparent; background-color: #97afbf67;}
+
+
+
