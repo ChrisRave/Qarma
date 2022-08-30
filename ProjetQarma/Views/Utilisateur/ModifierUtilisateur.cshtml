@@ -1,0 +1,43 @@
+﻿@model ProjetQarma.Models.Utilisateur
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ModifierUtilisateur</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <fieldset>
+            <legend>Modifier un Utilisateur : </legend>
+            @Html.LabelFor(m => Model.InfosPersos.Nom)
+            @Html.TextBoxFor(m => Model.InfosPersos.Nom)
+            @Html.ValidationMessageFor(m => Model.InfosPersos.Nom)
+            <br />
+            @Html.LabelFor(m => Model.InfosPersos.Prenom)
+            @Html.TextBoxFor(m => Model.InfosPersos.Prenom)
+            @Html.ValidationMessageFor(m => Model.InfosPersos.Prenom)
+            <br />
+            @Html.LabelFor(m => Model.Adresse)
+            @Html.TextBoxFor(m => Model.Adresse)
+            @Html.ValidationMessageFor(m => Model.Adresse)
+            <br />
+            @Html.LabelFor(m => Model.Telephone)
+            @Html.TextBoxFor(m => Model.Telephone)
+            @Html.ValidationMessageFor(m => Model.Telephone)
+            <br />
+            @Html.LabelFor(m => Model.Mail)
+            @Html.TextBoxFor(m => Model.Mail)
+            @Html.ValidationMessageFor(m => Model.Mail)
+            <br />
+            <input type="submit" value="Modifier" />
+        </fieldset>
+    }
+    <script type="text/javascript" src="~/Scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate-vsdoc.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>
