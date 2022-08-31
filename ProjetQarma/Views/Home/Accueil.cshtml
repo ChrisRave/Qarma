@@ -1,16 +1,14 @@
-﻿@model ProjetQarma.ViewModels.AccueilViewModel
+﻿
 @{
     Layout = "Landing";
     ViewBag.Title = "Accueil";
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
+
     <title>Accueil</title>
-</head>
-<body>
-    <div>Je suis la vue Accueil</div>    <ul>
+    <p class="contenu">
+
+    <div>Je suis la vue Accueil</div>
+     <ul>
         <li>@Model.Utilisateur.InfosPersos.Nom</li>
         <li>@Model.Utilisateur.InfosPersos.Prenom</li>
         <li>@Model.Utilisateur.Adresse</li>
@@ -18,5 +16,5 @@
         <li>@Model.Utilisateur.Telephone</li>
         <li>@Model.Utilisateur.Qarma</li>
     </ul>
-</body>
-</html>
+
+     </p>
