@@ -84,7 +84,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureBleue2">
-                            Bouton1
+                            @Html.ActionLink("Demande", "Demande")
                         </div>
                     </div>
                     <div class="row">
@@ -109,7 +109,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureAucune">
-                            Espace vide
+                           Oups
+                          
                         </div>
                     </div>
                     <div class="row">
@@ -128,7 +129,9 @@
                 </div>
                 <!--Partie body-->
                 <div class="col-md-8  bordureBleue2">
-                    Actualité
+                    <div id="contenu">
+                        @RenderBody()
+                    </div>
                 </div>
             </div>
             <div class="row">
