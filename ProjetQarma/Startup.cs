@@ -41,7 +41,7 @@ namespace ProjetQarma
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Accueil}/{id?}");
+                    pattern: "{controller=Home}/{action=Landing}/{id?}");
             });
         }
     }
