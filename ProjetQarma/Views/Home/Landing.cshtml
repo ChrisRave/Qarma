@@ -7,14 +7,80 @@
     <title>Accueil</title>
     <p class="contenu">
 
-    <div>Je suis la vue Accueil</div>
-     <ul>
-        <li>@Model.Utilisateur.InfosPersos.Nom</li>
-        <li>@Model.Utilisateur.InfosPersos.Prenom</li>
-        <li>@Model.Utilisateur.Adresse</li>
-        <li>@Model.Utilisateur.Mail</li>
-        <li>@Model.Utilisateur.Telephone</li>
-        <li>@Model.Utilisateur.Qarma</li>
-    </ul>
+       
 
-     </p>
+        <div class="row">
+            <div class="col-md-5 offset-md-5 ">
+                Catalogue de services
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div class="col-md-4  bordureBleue1">
+                <img src="/photos/emoji1.png" width="40%" id="logo">
+                <div style="color : ghostwhite">
+                    <div>
+                        <div>
+                            Service proposé par :                        @Model.Utilisateur.InfosPersos.Nom
+                            @Model.Utilisateur.InfosPersos.Prenom
+                        </div>                    <div> Coordonnées : </div>
+                        <div>
+                            <div>@Model.Utilisateur.Adresse</div>
+                            <div>Mail : @Model.Utilisateur.Mail</div>
+                            <div>Téléphone : @Model.Utilisateur.Telephone</div>
+                            <div>Niveau Qarma : @Model.Utilisateur.Qarma</div>
+                        </div>
+                    </div>
+                    <div>Type de service : @Model.Service.TypeService</div>
+                    <div>Cout en bisous :  @Model.Service.Bisous.MontantBisous</div>
+                </div>
+            </div>
+            <div class="col-md-4  bordureBleue1">
+                <div id="contenu">
+                    <img src="/photos/emoji2.png" width="40%" id="logo">
+                    <div style="color : ghostwhite">
+                        <div>
+                            <div>
+                                Service proposé par :                            @Model.Utilisateur.InfosPersos.Nom
+                                @Model.Utilisateur.InfosPersos.Prenom
+                            </div>                        <div> Coordonnées : </div>
+                            <div>
+                                <div>@Model.Utilisateur.Adresse</div>
+                                <div>Mail : @Model.Utilisateur.Mail</div>
+                                <div>Téléphone : @Model.Utilisateur.Telephone</div>
+                                <div>Niveau Qarma : @Model.Utilisateur.Qarma</div>
+                            </div>
+                        </div>
+                        <div>Type de service : @Model.Service.TypeService</div>
+                        <div>Cout en bisous :  @Model.Service.Bisous.MontantBisous</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  bordureBleue1">
+                <div id="contenu">
+                    <img src="/photos/emoji3.png" width="40%" id="logo">
+                    <div style="color : ghostwhite">
+                        <div>
+                            <div>
+                                Service proposé par :                            @Model.Utilisateur.InfosPersos.Nom
+                                @Model.Utilisateur.InfosPersos.Prenom
+                            </div>                        <div> Coordonnées : </div>
+                            <div>
+                                <div>@Model.Utilisateur.Adresse</div>
+                                <div>Mail : @Model.Utilisateur.Mail</div>
+                                <div>Téléphone : @Model.Utilisateur.Telephone</div>
+                                <div>Niveau Qarma : @Model.Utilisateur.Qarma</div>
+                            </div>
+                        </div>
+                        <div>Type de service : @Model.Service.TypeService</div>
+                        <div>Cout en bisous :  @Model.Service.Bisous.MontantBisous</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </p>
