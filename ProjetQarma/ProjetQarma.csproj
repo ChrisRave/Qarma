@@ -15,6 +15,7 @@
     <None Remove="ViewModels\" />
     <None Remove="Views\Utilisateur\" />
     <None Remove="Views\Shared\" />
+    <None Remove="Views\Infos\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.15" />
@@ -25,16 +26,13 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.5" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\" />
     <Folder Include="wwwroot\" />
     <Folder Include="Views\Home\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Views\Utilisateur\" />
     <Folder Include="Views\Shared\" />
     <Folder Include="wwwroot\photos\" />
     <Folder Include="wwwroot\css\" />
+    <Folder Include="Views\Infos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />

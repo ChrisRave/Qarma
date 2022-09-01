@@ -13,7 +13,7 @@ namespace ProjetQarma.Controllers
     public class HomeController : Controller
     {
         // GET: /<controller>/
-        public IActionResult Accueil()
+        public IActionResult Landing()
         {
            // faire référence à viewModels(Home == > nom de la view)
             InfosPersos infosPersos = new InfosPersos { Nom = "Dupont", Prenom = "Jean" };
@@ -28,7 +28,7 @@ namespace ProjetQarma.Controllers
         {
             return View();
         }
-        public IActionResult Landing()
+        public IActionResult Accueil()
         {
             return View();
         }
@@ -36,5 +36,6 @@ namespace ProjetQarma.Controllers
         {
             return View();
         }
+        
     }
 }
