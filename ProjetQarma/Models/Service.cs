@@ -1,4 +1,7 @@
-﻿namespace ProjetQarma.Models
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace ProjetQarma.Models
 {
     public class Service
     {

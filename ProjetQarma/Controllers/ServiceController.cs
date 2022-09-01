@@ -6,7 +6,11 @@ namespace ProjetQarma.Controllers
 {
     public class ServiceController : Controller
     {
-        public IActionResult Service()
+        public IActionResult Landing()
+        {
+            return View();
+        }
+            public IActionResult Service()
         {
             InfosPersos infosPersos = new InfosPersos { Nom = "Dupont", Prenom = "Jean" };
             Utilisateur utilisateur = new Utilisateur { InfosPersos = infosPersos, Adresse = " 3 Rue des Peupliers, 75014 Paris", Mail = "Jean.dupont@gmail.com", Telephone = "01341564", Qarma = 2, TypeUtilisateur = TypeUtilisateur.Consommateur };
