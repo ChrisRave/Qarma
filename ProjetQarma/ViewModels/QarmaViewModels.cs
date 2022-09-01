@@ -5,6 +5,7 @@ namespace ProjetQarma.ViewModels
     {
         public QarmaViewModels()
         {
+
         }
     }
 }

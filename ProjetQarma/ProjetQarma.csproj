@@ -32,7 +32,6 @@
     <Folder Include="Views\Shared\" />
     <Folder Include="wwwroot\photos\" />
     <Folder Include="wwwroot\css\" />
-    <Folder Include="Views\Infos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
