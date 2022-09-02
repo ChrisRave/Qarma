@@ -1,202 +1,346 @@
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.exe
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.deps.json
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.runtimeconfig.json
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.runtimeconfig.dev.json
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.pdb
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.Views.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.Views.pdb
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.csproj.AssemblyReference.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.AssemblyInfoInputs.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.AssemblyInfo.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.csproj.CoreCompileInputs.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorAssemblyInfo.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorAssemblyInfo.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\staticwebassets\ProjetQarma.StaticWebAssets.Manifest.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\staticwebassets\ProjetQarma.StaticWebAssets.xml
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\scopedcss\bundle\ProjetQarma.styles.css
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.TagHelpers.input.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.TagHelpers.output.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorCoreGenerate.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Home\Demande.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Home\Landing.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Home\Proposition.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_layoutAccueil.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_layoutLanding.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Utilisateur\ModifierUtilisateur.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorTargetAssemblyInfo.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorTargetAssemblyInfo.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.Views.pdb
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.csproj.CopyComplete
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.dll
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.pdb
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.genruntimeconfig.cache
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Charte.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Contact.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Copro.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\FAQ.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Fonctionnement.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Qarma.cshtml.g.cs
-C:\Users\tasni\OneDrive\Documents\Isika\PROJET2\Plateforme\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Service\Service.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.csproj.AssemblyReference.cache
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.AssemblyInfoInputs.cache
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.AssemblyInfo.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.csproj.CoreCompileInputs.cache
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorAssemblyInfo.cache
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorAssemblyInfo.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.pdb
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.StaticWebAssets.xml
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.exe
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.deps.json
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.runtimeconfig.json
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.runtimeconfig.dev.json
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.pdb
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.Views.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.Views.pdb
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\staticwebassets\ProjetQarma.StaticWebAssets.Manifest.cache
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.TagHelpers.input.cache
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.TagHelpers.output.cache
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorCoreGenerate.cache
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Home\Demande.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Home\Landing.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Home\Proposition.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Charte.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Contact.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Copro.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\FAQ.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Fonctionnement.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Qarma.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Service\Creer.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Service\Service.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_layoutAccueil.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_layoutLanding.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Utilisateur\ModifierUtilisateur.cshtml.g.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorTargetAssemblyInfo.cache
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorTargetAssemblyInfo.cs
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.Views.pdb
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.csproj.CopyComplete
-C:\Users\ravel\OneDrive\Bureau\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.genruntimeconfig.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.StaticWebAssets.xml
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.exe
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.deps.json
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.runtimeconfig.json
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.runtimeconfig.dev.json
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.pdb
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.Views.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\ProjetQarma.Views.pdb
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.csproj.AssemblyReference.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.AssemblyInfoInputs.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.AssemblyInfo.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.csproj.CoreCompileInputs.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorAssemblyInfo.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorAssemblyInfo.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\staticwebassets\ProjetQarma.StaticWebAssets.Manifest.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.TagHelpers.input.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.TagHelpers.output.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorCoreGenerate.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Home\Demande.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Home\Landing.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Home\Proposition.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Charte.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Contact.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Copro.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\FAQ.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Fonctionnement.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Infos\Qarma.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Service\Creer.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Service\Service.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_layoutAccueil.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_layoutLanding.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Utilisateur\ModifierUtilisateur.cshtml.g.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorTargetAssemblyInfo.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.RazorTargetAssemblyInfo.cs
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.Views.pdb
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.csproj.CopyComplete
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.dll
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.pdb
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\ProjetQarma.genruntimeconfig.cache
-C:\Users\ravel\OneDrive\Documents\CDA 18\Projet Copropriété\Qarma\ProjetQarma\obj\Debug\netcoreapp3.1\Razor\Views\Service\Index.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.exe
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.deps.json
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.runtimeconfig.json
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.runtimeconfig.dev.json
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.pdb
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.Views.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.Views.pdb
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.AssemblyReference.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.AssemblyInfoInputs.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.AssemblyInfo.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.CoreCompileInputs.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorAssemblyInfo.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorAssemblyInfo.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/staticwebassets/ProjetQarma.StaticWebAssets.Manifest.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/staticwebassets/ProjetQarma.StaticWebAssets.xml
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/scopedcss/bundle/ProjetQarma.styles.css
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.TagHelpers.input.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.TagHelpers.output.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorCoreGenerate.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Demande.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Landing.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Proposition.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutAccueil.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutLanding.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Utilisateur/ModifierUtilisateur.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorTargetAssemblyInfo.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorTargetAssemblyInfo.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.Views.pdb
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.CopyComplete
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.dll
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.pdb
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.genruntimeconfig.cache
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Charte.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Contact.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Copro.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/FAQ.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Fonctionnement.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Qarma.cshtml.g.cs
+C:/Users/tasni/OneDrive/Documents/Isika/PROJET2/Plateforme/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Service.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.AssemblyReference.cache
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.AssemblyInfoInputs.cache
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.AssemblyInfo.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.CoreCompileInputs.cache
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorAssemblyInfo.cache
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorAssemblyInfo.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.pdb
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.StaticWebAssets.xml
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.exe
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.deps.json
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.runtimeconfig.json
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.runtimeconfig.dev.json
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.pdb
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.Views.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.Views.pdb
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/staticwebassets/ProjetQarma.StaticWebAssets.Manifest.cache
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.TagHelpers.input.cache
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.TagHelpers.output.cache
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorCoreGenerate.cache
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Demande.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Landing.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Proposition.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Charte.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Contact.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Copro.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/FAQ.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Fonctionnement.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Qarma.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Creer.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Service.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutAccueil.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutLanding.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Utilisateur/ModifierUtilisateur.cshtml.g.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorTargetAssemblyInfo.cache
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorTargetAssemblyInfo.cs
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.Views.pdb
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.CopyComplete
+C:/Users/ravel/OneDrive/Bureau/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.genruntimeconfig.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.StaticWebAssets.xml
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.exe
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.deps.json
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.runtimeconfig.json
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.runtimeconfig.dev.json
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.pdb
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.Views.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.Views.pdb
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.AssemblyReference.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.AssemblyInfoInputs.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.AssemblyInfo.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.CoreCompileInputs.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorAssemblyInfo.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorAssemblyInfo.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/staticwebassets/ProjetQarma.StaticWebAssets.Manifest.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.TagHelpers.input.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.TagHelpers.output.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorCoreGenerate.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Demande.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Landing.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Proposition.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Charte.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Contact.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Copro.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/FAQ.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Fonctionnement.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Qarma.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Creer.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Service.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutAccueil.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutLanding.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Utilisateur/ModifierUtilisateur.cshtml.g.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorTargetAssemblyInfo.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorTargetAssemblyInfo.cs
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.Views.pdb
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.CopyComplete
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.dll
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.pdb
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.genruntimeconfig.cache
+C:/Users/ravel/OneDrive/Documents/CDA 18/Projet Copropriété/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Index.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.StaticWebAssets.xml
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.exe
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.deps.json
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.runtimeconfig.json
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.runtimeconfig.dev.json
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.pdb
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.Views.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.Views.pdb
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.AssemblyReference.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.AssemblyInfoInputs.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.AssemblyInfo.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.CoreCompileInputs.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorAssemblyInfo.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorAssemblyInfo.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/staticwebassets/ProjetQarma.StaticWebAssets.Manifest.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.TagHelpers.input.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.TagHelpers.output.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorCoreGenerate.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Demande.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Landing.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Proposition.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Charte.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Contact.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Copro.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/FAQ.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Fonctionnement.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Qarma.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Creer.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Index.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Service.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutAccueil.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutLanding.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Utilisateur/ModifierUtilisateur.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorTargetAssemblyInfo.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorTargetAssemblyInfo.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.Views.pdb
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.CopyComplete
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.pdb
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.genruntimeconfig.cache
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Practices.ServiceLocation.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/bin/Debug/netcoreapp3.1/XAct.Core.PCL.dll
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Login/CreerCompte.cshtml.g.cs
+C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Login/Index.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.deps.json
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.runtimeconfig.json
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.runtimeconfig.dev.json
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.pdb
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.Views.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/ProjetQarma.Views.pdb
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Practices.ServiceLocation.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/bin/Debug/netcoreapp3.1/XAct.Core.PCL.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.AssemblyReference.cache
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.GeneratedMSBuildEditorConfig.editorconfig
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.AssemblyInfoInputs.cache
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.AssemblyInfo.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.CoreCompileInputs.cache
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.MvcApplicationPartsAssemblyInfo.cache
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorAssemblyInfo.cache
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorAssemblyInfo.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/staticwebassets/ProjetQarma.StaticWebAssets.Manifest.cache
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/staticwebassets/ProjetQarma.StaticWebAssets.xml
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/scopedcss/bundle/ProjetQarma.styles.css
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.TagHelpers.input.cache
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.TagHelpers.output.cache
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorCoreGenerate.cache
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Demande.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Landing.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Home/Proposition.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Charte.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Contact.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Copro.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/FAQ.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Fonctionnement.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Infos/Qarma.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Login/CreerCompte.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Login/Index.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Creer.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Index.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Service.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutAccueil.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutLanding.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Utilisateur/ModifierUtilisateur.cshtml.g.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorTargetAssemblyInfo.cache
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.RazorTargetAssemblyInfo.cs
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.Views.pdb
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.csproj.CopyComplete
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.dll
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.pdb
+/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/Debug/netcoreapp3.1/ProjetQarma.genruntimeconfig.cache

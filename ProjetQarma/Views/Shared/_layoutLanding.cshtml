@@ -27,27 +27,31 @@
                 </div>
                 <div class="col-md-1 bordureAucune">
                 </div>
-                <!-- Se connecter-->
                 <div class="col-md-3 caractereDescription bordureAucune">
-                    <div class="collapse navbar-collapse" id="main-navigation">
+                 <!-- Se connecter-->
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    @using (Html.BeginForm("Index", "Login"))
+                    {
+                            <div class="collapse navbar-collapse" id="main-navigation">
                         <nav class="nav flex-column navbar-nav">
                             <div class="form-floating mb-10 navbar-nav">
-                                <div><input type="email" class="form-control" id="floatingInput" placeholder="nom@exemple.com"></div>
-                                <div><input type="password" class="form-control" id="floatingPassword" placeholder="Mot de passe"></div>
+                                <div><input type="email" name="Utilisateur.Mail" class="form-control" id="floatingInput" placeholder="nom@exemple.com"></div>
+                                <div><input type="password" name="Utilisateur.Password" class="form-control" id="floatingPassword" placeholder="Mot de passe"></div>
                             </div>
                             <div class="d-grid gap-10 d-md-flex justify-content-md-end navbar-nav">
-                                <button class="btn btn-secondary  me-md-4" type="button" style=" width: 30%;">Connexion</button>
+                                <button class="btn btn-secondary  me-md-4" type="submit"  style=" width: 30%;">Connexion</button>
                             </div>
                             <div class="d-grid gap-10 d-md-flex justify-content-md-end navbar-nav">
-                                <button class="btn btn-light me-md-4" type="button" style=" width: 100%; color: #539532;"> <strong> Nouveau ici? Rejoignez-nous!</strong></button>
+                                <button class="btn btn-light me-md-4" type="button" style=" width: 100%; color: #539532;" > <strong> Nouveau ici? Rejoignez-nous!</strong></button>
                             </div>
                         </nav>
                     </div>
+
+                }}
                 </div>
-
-            </div>
-        </div>
-
+                </div>  
+                </div>
     </nav>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -84,7 +88,6 @@
                     <div class="row">
                         <div class="col-md-10 offset-md-1 ">
                             <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" onclick="location.href='@Url.Action("Copro", "Infos")';">La copro / Gestion</button>
-
                         </div>
                     </div>
                     <div class="row">
@@ -102,13 +105,11 @@
                             @Html.ActionLink("Demande", "Demande", "Home")
                             @Html.ActionLink("Offre", "Service", "Service")
                             @Html.ActionLink("Créer un service", "Creer", "Service")
-                            @Html.ActionLink("Proposition", "Proposition", "Home")
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureAucune">
-                            Espace vide
-
+                            <!--Espace vide-->
                         </div>
                     </div>
                     <div class="row">
@@ -117,14 +118,11 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="col-md-1 bordureAucune"> <!--Colonne 2 vide-->
                     <!--Espace vide-->
                 </div>
                 <!--Partie body-->
                 <div class="col-md-8  bordureAucune"><!--Le gros bloc de la page-->
-
                     <div id="contenu">
                         @RenderBody()
                     </div>

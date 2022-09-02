@@ -29,6 +29,7 @@ namespace ProjetQarma.Models
                     Mail = "Jean.dupont@gmail.com",
                     Telephone = "000000000",
                     Qarma = 2,
+                    Password = Dal.EncodeMD5("aaaaa"),
                     TypeUtilisateur = TypeUtilisateur.Consommateur
                 },
                 new Utilisateur
@@ -39,6 +40,7 @@ namespace ProjetQarma.Models
                     Mail = "albert37@gmail.com",
                     Telephone = "1464357890",
                     Qarma = 8,
+                    Password = Dal.EncodeMD5("bbbbb"),
                     TypeUtilisateur = TypeUtilisateur.Consommateur
                 }
             ) ;
