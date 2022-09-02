@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProjetQarma.Models;
 using ProjetQarma.ViewModels;
+using System.Collections.Generic;
 using static ProjetQarma.Models.Service;
 namespace ProjetQarma.Controllers
 {
@@ -15,6 +16,12 @@ namespace ProjetQarma.Controllers
         {
             _webEnv = environment;
             this.dal = new Dal();
+        }
+
+        public ActionResult Index()
+        {
+            List<Service> listeServices = dal.ObtientTousLesServices();
+            return View(listeServices);
         }
         public ActionResult Service()
         {
@@ -30,7 +37,9 @@ namespace ProjetQarma.Controllers
         public ActionResult Creer(Service service)
         {
             dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description);
-            return RedirectToAction("Creer");
+
+            return RedirectToAction("Index");
+
         }
 
 

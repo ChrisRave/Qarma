@@ -50,17 +50,36 @@
     border-color: #9AE17B;
     border-width: 2px;
     font-size: 2rem;
-    height: 10px;
+    height: 50px;
     width: fit-content;
+    width: 160px;
     font-style: italic;
-    font-size: medium;
+    font-size: small;
     text-decoration-color: #327672;
+    margin-right: 2px;
 }
 /* Couleur Transparente */
 .couleur_bleueQarma_form {
     color: #327672a5;
 }
 /* bouton se connecter */
+.btn-secondary {
+    background-color: #327672;
+    border-color: #327672;
+    font-size: 1rem;
+    font-size: small;
+    margin-top: 2px;
+    width: 100%;
+}
+
+.btn-light {
+    background-color: #97afbfc4;
+    border-color: #97afbfc4;
+    font-size: small;
+    margin-top: 2px;
+    text-decoration-color: #6AB446;
+}
+
 .btn-primary {
     background-color: #9AE17B;
     border-color: #9AE17B;
@@ -81,7 +100,6 @@
     padding: 10px;
 }
 /* ****BODY **** */
-
 .containerBody {
     border: 1px solid;
     padding: 20px;
@@ -148,7 +166,7 @@ body {
 
     .description button {
         border: 1px solid #6AB446;
-        background: #6ab446;
+        background: #6AB446;
         border-radius: 0;
         color: #fff;
     }
