@@ -1,0 +1,37 @@
+﻿@model List<ProjetQarma.Models.Service>
+    
+
+@{
+     Layout = "_layoutLanding";
+    ViewBag.Title = "ListeService";
+}
+
+<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Offres de services</h2>
+		<!-- Icon Divider-->
+		<div class="divider-custom">
+			<div class="divider-custom-line"></div>
+			<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+			<div class="divider-custom-line"></div>
+		</div>
+		<div class="row justify-content-start">
+			@foreach (var service in Model)
+			{
+				
+				<div class="card col-6 m-5" style="width: 18rem;">
+					<div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title"> Identifiant du service : @service.Id</h5>
+                            
+                            <h6 class="card-subtitle mb-2 text-muted">Coût du service : @service.MontantBisous</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">@service.TypeService</h6>
+                            <p class="card-text">@service.Description</p>
+
+                        </div>
+
+					</div>
+				</div>
+
+			
+			}
+			@Html.ActionLink("Créer un nouveau service", "Creer" , "Service")
+		</div>
