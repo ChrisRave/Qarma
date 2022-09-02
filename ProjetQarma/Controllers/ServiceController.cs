@@ -37,8 +37,12 @@ namespace ProjetQarma.Controllers
         public ActionResult Creer(Service service)
         {
             dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description);
+
             return RedirectToAction("Index");
+
         }
+
+
 
 
 
