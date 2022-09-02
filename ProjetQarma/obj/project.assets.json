@@ -941,19 +941,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tasni\\.nuget\\packages\\": {}
+    "C:\\Users\\ravel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\ProjetQarma\\ProjetQarma.csproj",
+      "projectUniqueName": "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\ProjetQarma\\ProjetQarma.csproj",
       "projectName": "ProjetQarma",
-      "projectPath": "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\ProjetQarma\\ProjetQarma.csproj",
-      "packagesPath": "C:\\Users\\tasni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\ProjetQarma\\obj\\",
+      "projectPath": "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\ProjetQarma\\ProjetQarma.csproj",
+      "packagesPath": "C:\\Users\\ravel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\ProjetQarma\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tasni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ravel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1012,7 +1012,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
