@@ -20,6 +20,8 @@ namespace ProjetQarma.Models
         {
             _bddContext.Dispose();
         }
+        //Méthodes pour les utilisateurs
+
         public List<Utilisateur> ObtientTousLesUtilisateurs()
         { //mettre include pour charger clés étrangéres
             return _bddContext.Utilisateur.Include(u=>u.InfosPersos).ToList();
@@ -56,6 +58,63 @@ namespace ProjetQarma.Models
         public int CreerUtilisateur(InfosPersos infosPersos, string adresse, string mail, string telephone, int qarma, TypeUtilisateur typeUtilisateur)
         {
             throw new NotImplementedException();
+        }
+
+        //Méthodes pour les services
+        public List<Service> ObtientTousLesServices()
+        {
+            List<Service> listeServices = this._bddContext.Services.ToList();
+            return listeServices;
+        }
+
+        public void CreerService(int id, TypeService typeservice, int montantBisous, string description)
+        {
+
+            Service serviceToAdd = new Service
+            {
+                Id = id,
+                TypeService = typeservice,
+                MontantBisous = montantBisous,
+                Description = description
+            };
+            if (id != 0)
+            {
+                serviceToAdd.Id = id;
+            }
+
+            this._bddContext.Services.Add(serviceToAdd);
+            this._bddContext.SaveChanges();
+        }
+
+
+        public void SupprimerService(int id)
+        {
+            Service serviceToDelete = this._bddContext.Services.Find(id);
+            this._bddContext.Services.Remove(serviceToDelete);
+            this._bddContext.SaveChanges();
+        }
+
+        public void SupprimerService(string nom)
+        {
+            Service serviceToDelete = this._bddContext.Services.Where(t => t.Description == nom).FirstOrDefault();
+            if (serviceToDelete != null)
+            {
+                this._bddContext.Services.Remove(serviceToDelete);
+                this._bddContext.SaveChanges();
+            }
+        }
+
+        public void ModifierService(int id, TypeService typeservice, int montantBisous, string description)
+        {
+            Service serviceToUpdate = this._bddContext.Services.Find(id);
+            if (serviceToUpdate != null)
+            {
+                serviceToUpdate.TypeService = typeservice;
+                serviceToUpdate.MontantBisous = montantBisous;
+                serviceToUpdate.Description = description;
+
+                this._bddContext.SaveChanges();
+            }
         }
 
         public List<Qarma> ObtientTousLesQarma()
