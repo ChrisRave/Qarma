@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using ProjetQarma.Models;
 using ProjetQarma.ViewModels;
 using static ProjetQarma.Models.Service;
@@ -6,23 +7,36 @@ namespace ProjetQarma.Controllers
 {
     public class ServiceController : Controller
     {
-        public IActionResult Landing()
+
+        private IDal dal;
+
+        private IWebHostEnvironment _webEnv;
+        public ServiceController(IWebHostEnvironment environment)
+        {
+            _webEnv = environment;
+            this.dal = new Dal();
+        }
+        public ActionResult Service()
         {
             return View();
         }
-            public IActionResult Service()
+
+        public ActionResult Creer()
         {
-            InfosPersos infosPersos = new InfosPersos { Nom = "Dupont", Prenom = "Jean" };
-            Utilisateur utilisateur = new Utilisateur { InfosPersos = infosPersos, Adresse = " 3 Rue des Peupliers, 75014 Paris", Mail = "Jean.dupont@gmail.com", Telephone = "01341564", Qarma = 2, TypeUtilisateur = TypeUtilisateur.Consommateur };
-            Bisous bisous = new Bisous() { Id = 1, MontantBisous = 10 };
-            Service service = new Service { Id = 1, TypeService = TypeService.Equipement, Bisous = bisous };
-            ServiceViewModels svm = new ServiceViewModels
-            {
-                Utilisateur = utilisateur,
-                Service = service,
-            };
-            return View(svm);
+            return View();
         }
+
+        [HttpPost]
+        public ActionResult Creer(Service service)
+        {
+            dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description);
+            return RedirectToAction("Landing");
+        }
+
+
+
+
+
     }
 }
 
