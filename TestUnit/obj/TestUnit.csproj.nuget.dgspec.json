@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\TestUnit\\TestUnit.csproj": {}
+    "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\TestUnit\\TestUnit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\ProjetQarma\\ProjetQarma.csproj": {
+    "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\ProjetQarma\\ProjetQarma.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\ProjetQarma\\ProjetQarma.csproj",
+        "projectUniqueName": "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\ProjetQarma\\ProjetQarma.csproj",
         "projectName": "ProjetQarma",
-        "projectPath": "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\ProjetQarma\\ProjetQarma.csproj",
-        "packagesPath": "C:\\Users\\tasni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\ProjetQarma\\obj\\",
+        "projectPath": "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\ProjetQarma\\ProjetQarma.csproj",
+        "packagesPath": "C:\\Users\\ravel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\ProjetQarma\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tasni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ravel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,21 +73,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\TestUnit\\TestUnit.csproj": {
+    "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\TestUnit\\TestUnit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\TestUnit\\TestUnit.csproj",
+        "projectUniqueName": "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\TestUnit\\TestUnit.csproj",
         "projectName": "TestUnit",
-        "projectPath": "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\TestUnit\\TestUnit.csproj",
-        "packagesPath": "C:\\Users\\tasni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\TestUnit\\obj\\",
+        "projectPath": "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\TestUnit\\TestUnit.csproj",
+        "packagesPath": "C:\\Users\\ravel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\TestUnit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tasni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ravel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,8 +101,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\ProjetQarma\\ProjetQarma.csproj": {
-                "projectPath": "C:\\Users\\tasni\\OneDrive\\Documents\\Isika\\PROJET2\\Plateforme\\Qarma\\ProjetQarma\\ProjetQarma.csproj"
+              "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\ProjetQarma\\ProjetQarma.csproj": {
+                "projectPath": "C:\\Users\\ravel\\OneDrive\\Documents\\CDA 18\\Projet Copropriété\\Qarma\\ProjetQarma\\ProjetQarma.csproj"
               }
             }
           }
@@ -149,7 +149,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
