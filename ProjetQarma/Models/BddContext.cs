@@ -7,12 +7,12 @@ namespace ProjetQarma.Models
     {
         public DbSet<Utilisateur> Utilisateur { get; set; }
         public DbSet<Qarma> Qarmas { get; set; }
-        public DbSet<Bisous> Bisous { get; set; }
         public DbSet<InfosPersos> InfosPersos { get; set; }
+        public DbSet<Service> Services { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;user id=root;password=rrrrr;database=utilisateurQarma");
+            optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
         }
 
         public void InitializeDb()
@@ -56,7 +56,17 @@ namespace ProjetQarma.Models
                     Prenom = "Crotal"
                 }
             );
-           this.SaveChanges();
+            this.Services.AddRange(
+                new Service
+                {
+                    Id = 1,
+                    TypeService = TypeService.Parking,
+                    Description = "Je recherche à louer une place de parking pour une durée d'une semaine",
+                    ImagePath = "~/photos/SolidevLogo.png",
+
+                }
+            );
+            this.SaveChanges();
         }
     }
 
