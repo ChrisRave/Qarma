@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/operateur/Downloads/Qarma 2/ProjetQarma/ProjetQarma.csproj": {}
+    "/Users/operateur/git/Qarma/ProjetQarma/ProjetQarma.csproj": {}
   },
   "projects": {
-    "/Users/operateur/Downloads/Qarma 2/ProjetQarma/ProjetQarma.csproj": {
+    "/Users/operateur/git/Qarma/ProjetQarma/ProjetQarma.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/operateur/Downloads/Qarma 2/ProjetQarma/ProjetQarma.csproj",
+        "projectUniqueName": "/Users/operateur/git/Qarma/ProjetQarma/ProjetQarma.csproj",
         "projectName": "ProjetQarma",
-        "projectPath": "/Users/operateur/Downloads/Qarma 2/ProjetQarma/ProjetQarma.csproj",
+        "projectPath": "/Users/operateur/git/Qarma/ProjetQarma/ProjetQarma.csproj",
         "packagesPath": "/Users/operateur/.nuget/packages/",
-        "outputPath": "/Users/operateur/Downloads/Qarma 2/ProjetQarma/obj/",
+        "outputPath": "/Users/operateur/git/Qarma/ProjetQarma/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/operateur/.config/NuGet/NuGet.Config"

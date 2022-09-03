@@ -1,18 +1,14 @@
 ﻿<Properties StartupConfiguration="{6C283C41-962B-4424-A0BD-1B416C0EBCFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetQarma/Views/Home/Proposition.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetQarma/Views/Service/Creer.cshtml">
     <Files>
       <File FileName="ProjetQarma/Controllers/HomeController.cs" Line="1" Column="1" IsPinned="True" />
-      <File FileName="ProjetQarma/Views/Home/Landing.cshtml" />
-      <File FileName="ProjetQarma/Views/Shared/_layoutLanding.cshtml" />
-      <File FileName="ProjetQarma/Views/Shared/_layoutAccueil.cshtml" />
-      <File FileName="ProjetQarma/Views/Home/Proposition.cshtml" Line="1" Column="1" />
-      <File FileName="ProjetQarma/Controllers/ServiceController.cs" />
-      <File FileName="ProjetQarma/Models/BddContext.cs" />
-      <File FileName="ProjetQarma/Views/Shared/_layoutProposition.cshtml" />
-      <File FileName="ProjetQarma/Views/Home/Demande.cshtml" />
-      <File FileName="ProjetQarma/Views/Service/Index.cshtml" />
-      <File FileName="ProjetQarma/Models/Qarma.cs" />
-      <File FileName="ProjetQarma/Views/Service/Service.cshtml" />
+      <File FileName="ProjetQarma/Views/Shared/_layoutLanding.cshtml" Line="108" Column="81" IsPinned="True" />
+      <File FileName="ProjetQarma/Controllers/ServiceController.cs" Line="57" Column="49" IsPinned="True" />
+      <File FileName="ProjetQarma/Views/Service/Index.cshtml" Line="17" Column="6" />
+      <File FileName="ProjetQarma/Views/Service/Proposer.cshtml" Line="8" Column="1" />
+      <File FileName="ProjetQarma/Views/Service/Service.cshtml" Line="8" Column="44" />
+      <File FileName="ProjetQarma/Views/Home/Proposition.cshtml" Line="3" Column="29" />
+      <File FileName="ProjetQarma/Views/Service/Creer.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,12 +17,12 @@
             <Node name="ProjetQarma" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Proposition.cshtml" selected="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Service" expanded="True">
+                  <Node name="Creer.cshtml" selected="True" />
                 </Node>
-                <Node name="Infos" expanded="True" />
-                <Node name="Service" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
             </Node>

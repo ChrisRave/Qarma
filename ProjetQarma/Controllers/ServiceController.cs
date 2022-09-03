@@ -23,6 +23,7 @@ namespace ProjetQarma.Controllers
             List<Service> listeServices = dal.ObtientTousLesServices();
             return View(listeServices);
         }
+      
         public ActionResult Service()
         {
             return View();
@@ -32,6 +33,7 @@ namespace ProjetQarma.Controllers
         {
             return View();
         }
+      
 
         [HttpPost]
         public ActionResult Creer(Service service)
@@ -39,7 +41,22 @@ namespace ProjetQarma.Controllers
             dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description);
             return RedirectToAction("Index");
         }
+        public ActionResult Proposition()
+        {
+            List<Proposition> listePropositions = dal.ObtientTousLesPropositions();
+            return View(listePropositions);
+        }
+        public ActionResult Proposer()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Proposer(Proposition proposition)
+        {
+            dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.Description);
+            return RedirectToAction("Proposition");
 
+        }
 
 
 

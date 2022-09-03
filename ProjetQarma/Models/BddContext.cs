@@ -9,6 +9,7 @@ namespace ProjetQarma.Models
         public DbSet<Qarma> Qarmas { get; set; }
         public DbSet<InfosPersos> InfosPersos { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<Proposition> Propositions { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -64,6 +65,16 @@ namespace ProjetQarma.Models
                     Id = 1,
                     TypeService = TypeService.Parking,
                     Description = "Je recherche à louer une place de parking pour une durée d'une semaine",
+                    ImagePath = "~/photos/SolidevLogo.png",
+
+                }
+            );
+            this.Propositions.AddRange(
+                new Proposition
+                {
+                    Id = 1,
+                    TypeService = TypeService.Prestation,
+                    Description = "Bonjour, je propose des massages...",
                     ImagePath = "~/photos/SolidevLogo.png",
 
                 }
