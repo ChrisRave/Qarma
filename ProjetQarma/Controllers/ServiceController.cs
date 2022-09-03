@@ -57,7 +57,10 @@ namespace ProjetQarma.Controllers
             return RedirectToAction("Proposition");
 
         }
-
+        public IActionResult PropositionDetail()
+        {
+            return View();
+        }
 
 
 

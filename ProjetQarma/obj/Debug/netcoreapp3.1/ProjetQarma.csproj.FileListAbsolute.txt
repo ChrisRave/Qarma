@@ -418,3 +418,5 @@ C:/Users/maxim/Desktop/TP CDA18/Projet 2/repository Qarma 3/Qarma/ProjetQarma/ob
 /Users/operateur/git/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutProposition.cshtml.g.cs
 /Users/operateur/git/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Proposer.cshtml.g.cs
 /Users/operateur/git/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/Proposition.cshtml.g.cs
+/Users/operateur/git/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Service/PropositionDetail.cshtml.g.cs
+/Users/operateur/git/Qarma/ProjetQarma/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_layoutDetail.cshtml.g.cs
