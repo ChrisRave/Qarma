@@ -1,0 +1,53 @@
+﻿@model ProjetQarma.Models.Utilisateur
+
+
+<p>
+    Veuillez Remplir les champs pour créer voter compte :
+</p>
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Mail)
+        @Html.TextBoxFor(m => m.Mail)
+        @Html.ValidationMessageFor(m => m.Mail)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password)
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+     <div>
+        @Html.LabelFor(m => m.InfosPersos.Nom)
+        @Html.TextBoxFor(m => m.InfosPersos.Nom)
+        @Html.ValidationMessageFor(m => m.InfosPersos.Nom)
+    </div>
+     <div>
+        @Html.LabelFor(m => m.InfosPersos.Prenom)
+        @Html.TextBoxFor(m => m.InfosPersos.Prenom)
+        @Html.ValidationMessageFor(m => m.InfosPersos.Prenom)
+    </div>
+     <div>
+        @Html.LabelFor(m => m.Adresse)
+        @Html.TextBoxFor(m => m.Adresse)
+        @Html.ValidationMessageFor(m => m.Adresse)
+    </div>
+     <div>
+        @Html.LabelFor(m => m.Telephone)
+        @Html.TextBoxFor(m => m.Telephone)
+        @Html.ValidationMessageFor(m => m.Telephone)
+    </div>
+     <div>
+        @Html.LabelFor(m => m.Qarma)
+        @Html.TextBoxFor(m => m.Qarma)
+        @Html.ValidationMessageFor(m => m.Qarma)
+    </div>
+     <div>
+        @Html.LabelFor(m => m.TypeUtilisateur)
+        @Html.TextBoxFor(m => m.TypeUtilisateur)
+        @Html.ValidationMessageFor(m => m.TypeUtilisateur)
+    </div>
+    
+    <input type="submit" value="Créer" />
+}
+
+

@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{6C283C41-962B-4424-A0BD-1B416C0EBCFE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetQarma/Views/Home/Proposition.cshtml">
+    <Files>
+      <File FileName="ProjetQarma/Controllers/HomeController.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="ProjetQarma/Views/Home/Landing.cshtml" />
+      <File FileName="ProjetQarma/Views/Shared/_layoutLanding.cshtml" />
+      <File FileName="ProjetQarma/Views/Shared/_layoutAccueil.cshtml" />
+      <File FileName="ProjetQarma/Views/Home/Proposition.cshtml" Line="1" Column="1" />
+      <File FileName="ProjetQarma/Controllers/ServiceController.cs" />
+      <File FileName="ProjetQarma/Models/BddContext.cs" />
+      <File FileName="ProjetQarma/Views/Shared/_layoutProposition.cshtml" />
+      <File FileName="ProjetQarma/Views/Home/Demande.cshtml" />
+      <File FileName="ProjetQarma/Views/Service/Index.cshtml" />
+      <File FileName="ProjetQarma/Models/Qarma.cs" />
+      <File FileName="ProjetQarma/Views/Service/Service.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProjetQarma" expanded="True">
+            <Node name="ProjetQarma" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Proposition.cshtml" selected="True" />
+                </Node>
+                <Node name="Infos" expanded="True" />
+                <Node name="Service" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ProjetQarma PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

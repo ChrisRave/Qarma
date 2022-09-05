@@ -16,7 +16,7 @@ namespace ProjetQarma.Models
         public string Telephone { get; set; }
         public int Qarma { get; set; }
         public TypeUtilisateur TypeUtilisateur { get; set; }
-
+        public string Password { get; set; }
     }
     public enum TypeUtilisateur
     {

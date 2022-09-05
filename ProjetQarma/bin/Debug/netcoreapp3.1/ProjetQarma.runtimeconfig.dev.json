@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\ravel\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ravel\\.nuget\\packages"
+      "/Users/operateur/.dotnet/store/|arch|/|tfm|",
+      "/Users/operateur/.nuget/packages"
     ]
   }
 }
