@@ -39,5 +39,9 @@ namespace ProjetQarma.Controllers
         {
             return View();
         }
+        public IActionResult AccueilLanding()
+        {
+            return View();
+        }
     }
 }
