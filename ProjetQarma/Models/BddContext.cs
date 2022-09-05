@@ -43,7 +43,20 @@ namespace ProjetQarma.Models
                     Qarma = 8,
                     Password = Dal.EncodeMD5("bbbbb"),
                     TypeUtilisateur = TypeUtilisateur.Consommateur
-                }
+                },
+                 new Utilisateur
+                 {
+                     InfosPersosId = 3,
+                     Id = 3,
+                     Adresse = " 10 Rue des Peupliers, 75014 Paris",
+                     Mail = "ben34@gmail.com",
+                     Telephone = "0654983476",
+                     Qarma = 8,
+                     Password = Dal.EncodeMD5("ccccc"),
+                     TypeUtilisateur = TypeUtilisateur.Consommateur,
+                     CentreInteret = "J'aime le jazz et les ballades en foret.",
+                     Propose = "Bricolage - Petits travaux"
+                 }
             ) ;
             this.InfosPersos.AddRange(
                 new InfosPersos
@@ -55,8 +68,14 @@ namespace ProjetQarma.Models
                 new InfosPersos
                 {
                     Id = 2,
-                    Nom = "Alexis",
-                    Prenom = "Crotal"
+                    Nom = "Nachor",
+                    Prenom = "guilhemjoual"
+                },
+                new InfosPersos
+                {
+                    Id = 3,
+                    Nom = "Dubost",
+                    Prenom = "Benoit"
                 }
             );
             this.Services.AddRange(
@@ -73,6 +92,7 @@ namespace ProjetQarma.Models
                 new Proposition
                 {
                     Id = 1,
+                    InfosPersosId = 2, 
                     TypeService = TypeService.Prestation,
                     Description = "Bonjour, je propose des massages...",
                     ImagePath = "~/photos/SolidevLogo.png",

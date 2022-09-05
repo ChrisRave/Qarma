@@ -80,12 +80,13 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureBleue2">
-                            Descriptif du foyer
+                            Solde bisous
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureBleue2">
-                            Mes Qarmas <br>
+                           Qarma = @Model.Utilisateur.Qarma 
+                            <br>
                             Badges<br>
                             Nombres de badges<br>
                         </div>
@@ -122,9 +123,9 @@
                     Partie droite
                     <div class="row">
                         <div class="col-md-12 offset-md-0 bordureBleue1">
-                            Centres d'interets
-                            A définir dans la classe utilisateur
-                            Model.Utilisateur.CentreInteret
+                            <h2> Centres d'interets </h2>
+                            
+                            @Model.Utilisateur.CentreInteret
                             <br>
                             <br>
                         </div>
@@ -136,9 +137,9 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 offset-md-0 bordureBleue1">
-                            Répond à vos demandes de
-                            A définir dans la classe utilisateur
-                            Model.Utilisateur.DemandePredilection
+                            <h2> Répond à vos demandes de : </h2>
+                           
+                            @Model.Utilisateur.Propose
                             <br>
                             <br>
                             <br>

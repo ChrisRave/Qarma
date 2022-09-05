@@ -28,7 +28,7 @@ namespace ProjetQarma.Models
         { //mettre include pour charger clés étrangéres
             return _bddContext.Utilisateur.Include(u=>u.InfosPersos).ToList();
         }
-        public int CreerUtilisateur(InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, string password, TypeUtilisateur typeUtilisateur)
+        public int CreerUtilisateur(InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, string password, TypeUtilisateur typeUtilisateur, string centreInteret, string propose)
         {
             string motDePasse = EncodeMD5(password);
            
@@ -40,13 +40,15 @@ namespace ProjetQarma.Models
                 Telephone = telephone,
                 Qarma = qarma,
                 Password = motDePasse,
-                TypeUtilisateur = typeUtilisateur
+                TypeUtilisateur = typeUtilisateur,
+                CentreInteret = centreInteret,
+                Propose = propose,
             };
             _bddContext.Utilisateur.Add(utilisateur);
             _bddContext.SaveChanges();
             return utilisateur.Id;
         }
-        public void ModifierUtilisateur(int id, InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, TypeUtilisateur typeUtilisateur)
+        public void ModifierUtilisateur(int id, InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, TypeUtilisateur typeUtilisateur, string centreInteret, string propose)
         {
             Utilisateur utilisateur = _bddContext.Utilisateur.Find(id); if (utilisateur != null)
             {
@@ -55,7 +57,10 @@ namespace ProjetQarma.Models
                 utilisateur.Mail = mail;
                 utilisateur.Telephone = telephone;
                 utilisateur.Qarma = qarma;
-                utilisateur.TypeUtilisateur = typeUtilisateur; _bddContext.SaveChanges();
+                utilisateur.TypeUtilisateur = typeUtilisateur;
+                utilisateur.CentreInteret = centreInteret;
+                utilisateur.Propose = propose;
+                _bddContext.SaveChanges();
             };
         }
 
@@ -191,6 +196,7 @@ namespace ProjetQarma.Models
 
             this._bddContext.Propositions.Add(propositionToAdd);
             this._bddContext.SaveChanges();
+
         }
 
         public void ModifierProposition(int id, TypeService typeservice, int montantBisous, string description)
@@ -210,6 +216,7 @@ namespace ProjetQarma.Models
         {
             throw new NotImplementedException();
         }
+
     }
 
 
