@@ -24,6 +24,9 @@ namespace ProjetQarma.Models
 
         void ModifierService(int id, TypeService typeservice, int montantbisous, String description);
 
+        void ModifierProposition(int id, TypeService typeservice, int montantBisous, string description);
+
+        void ModifierProposition(Proposition service);
         List<Qarma> ObtientTousLesQarma();
         int CreerQarma(int nombreService, string badge);
         void ModifierQarma(int id, int nombreService, string badge);
