@@ -9,6 +9,7 @@ namespace ProjetQarma.Models
         public DbSet<Qarma> Qarmas { get; set; }
         public DbSet<InfosPersos> InfosPersos { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<Proposition> Propositions { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -29,6 +30,7 @@ namespace ProjetQarma.Models
                     Mail = "Jean.dupont@gmail.com",
                     Telephone = "000000000",
                     Qarma = 2,
+                    Password = Dal.EncodeMD5("aaaaa"),
                     TypeUtilisateur = TypeUtilisateur.Consommateur
                 },
                 new Utilisateur
@@ -39,6 +41,7 @@ namespace ProjetQarma.Models
                     Mail = "albert37@gmail.com",
                     Telephone = "1464357890",
                     Qarma = 8,
+                    Password = Dal.EncodeMD5("bbbbb"),
                     TypeUtilisateur = TypeUtilisateur.Consommateur
                 }
             ) ;
@@ -62,6 +65,16 @@ namespace ProjetQarma.Models
                     Id = 1,
                     TypeService = TypeService.Parking,
                     Description = "Je recherche à louer une place de parking pour une durée d'une semaine",
+                    ImagePath = "~/photos/SolidevLogo.png",
+
+                }
+            );
+            this.Propositions.AddRange(
+                new Proposition
+                {
+                    Id = 1,
+                    TypeService = TypeService.Prestation,
+                    Description = "Bonjour, je propose des massages...",
                     ImagePath = "~/photos/SolidevLogo.png",
 
                 }

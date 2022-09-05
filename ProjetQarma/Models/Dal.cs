@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using Microsoft.EntityFrameworkCore;
+using XSystem.Security.Cryptography;
 
 namespace ProjetQarma.Models
 {
@@ -26,9 +28,10 @@ namespace ProjetQarma.Models
         { //mettre include pour charger clés étrangéres
             return _bddContext.Utilisateur.Include(u=>u.InfosPersos).ToList();
         }
-        public int CreerUtilisateur(String nom, String prenom, String adresse, String mail, String telephone, int qarma, TypeUtilisateur typeUtilisateur)
+        public int CreerUtilisateur(InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, string password, TypeUtilisateur typeUtilisateur)
         {
-            InfosPersos infosPersos = new InfosPersos() { Nom = nom, Prenom = prenom };
+            string motDePasse = EncodeMD5(password);
+           
             Utilisateur utilisateur = new Utilisateur()
             {
                 InfosPersos = infosPersos,
@@ -36,6 +39,7 @@ namespace ProjetQarma.Models
                 Mail = mail,
                 Telephone = telephone,
                 Qarma = qarma,
+                Password = motDePasse,
                 TypeUtilisateur = typeUtilisateur
             };
             _bddContext.Utilisateur.Add(utilisateur);
@@ -55,9 +59,38 @@ namespace ProjetQarma.Models
             };
         }
 
-        public int CreerUtilisateur(InfosPersos infosPersos, string adresse, string mail, string telephone, int qarma, TypeUtilisateur typeUtilisateur)
+        /* public int CreerUtilisateur(InfosPersos infosPersos, string adresse, string mail, string telephone, int qarma, TypeUtilisateur typeUtilisateur)
+         {
+             throw new NotImplementedException();
+         } */
+        // Méthodes login // 
+
+        public Utilisateur Authentifier(string mail, string password)
         {
-            throw new NotImplementedException();
+            string motDePasse = EncodeMD5(password);
+            Utilisateur utilisateur = this._bddContext.Utilisateur.FirstOrDefault(u => u.Mail == mail && u.Password == motDePasse);
+            return utilisateur;
+        }
+
+        public Utilisateur ObtenirUtilisateur(int id)
+        {
+            return this._bddContext.Utilisateur.Find(id);
+        }
+
+        public Utilisateur ObtenirUtilisateur(string idStr)
+        {
+            int id;
+            if (int.TryParse(idStr, out id))
+            {
+                return this.ObtenirUtilisateur(id);
+            }
+            return null;
+        }
+
+        public static string EncodeMD5(string motDePasse)
+        {
+            string motDePasseSel = "ChoixResto" + motDePasse + "ASP.NET MVC";
+            return BitConverter.ToString(new MD5CryptoServiceProvider().ComputeHash(ASCIIEncoding.Default.GetBytes(motDePasseSel)));
         }
 
         //Méthodes pour les services
@@ -130,6 +163,32 @@ namespace ProjetQarma.Models
         public void ModifierQarma(int id, int nombreService, string badge)
         {
             throw new NotImplementedException();
+        }
+
+        //Méthodes pour les propositions
+        public List<Proposition> ObtientTousLesPropositions()
+        {
+            List<Proposition> listePropositions = this._bddContext.Propositions.ToList();
+            return listePropositions;
+        }
+
+        public void ProposerService(int id, TypeService typeservice, int montantBisous, string description)
+        {
+
+            Proposition propositionToAdd = new Proposition
+            {
+                Id = id,
+                TypeService = typeservice,
+                MontantBisous = montantBisous,
+                Description = description
+            };
+            if (id != 0)
+            {
+                propositionToAdd.Id = id;
+            }
+
+            this._bddContext.Propositions.Add(propositionToAdd);
+            this._bddContext.SaveChanges();
         }
     }
 }
