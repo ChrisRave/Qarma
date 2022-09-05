@@ -74,7 +74,9 @@ namespace ProjetQarma.Models
 
         public Utilisateur ObtenirUtilisateur(int id)
         {
-            return this._bddContext.Utilisateur.Include(u => u.InfosPersos).FirstOrDefault(u => u.Id == id);
+
+            return this._bddContext.Utilisateur.Include(u=>u.InfosPersos).FirstOrDefault(u=>u.Id==id);
+
         }
 
         public Utilisateur ObtenirUtilisateur(string idStr)
