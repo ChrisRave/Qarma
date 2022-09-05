@@ -39,7 +39,9 @@ namespace projetQarma.Controllers
                         utilisateur.Mail,
                         utilisateur.Telephone,
                         utilisateur.Qarma,
-                        utilisateur.TypeUtilisateur);
+                        utilisateur.TypeUtilisateur,
+                        utilisateur.CentreInteret,
+                        utilisateur.Propose);
                     return RedirectToAction("ModifierUtilisateur", new { @id = utilisateur.Id });
                 }
             }

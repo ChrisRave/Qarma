@@ -17,6 +17,8 @@ namespace ProjetQarma.Models
         public int Qarma { get; set; }
         public TypeUtilisateur TypeUtilisateur { get; set; }
         public string Password { get; set; }
+        public string CentreInteret { get; set; }
+        public string Propose { get; set; }
     }
     public enum TypeUtilisateur
     {

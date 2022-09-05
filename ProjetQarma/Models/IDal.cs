@@ -8,8 +8,8 @@ namespace ProjetQarma.Models
 
         List<Utilisateur> ObtientTousLesUtilisateurs();
 
-        int CreerUtilisateur(InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, string password, TypeUtilisateur typeUtilisateur);        //*****Classe Qarma*****
-        void ModifierUtilisateur(int id, InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, TypeUtilisateur typeUtilisateur);
+        int CreerUtilisateur(InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, string password, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose);        
+        void ModifierUtilisateur(int id, InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose);
 
         //***** Login *****//
         Utilisateur Authentifier(string mail, string password);
@@ -24,6 +24,7 @@ namespace ProjetQarma.Models
 
         void ModifierService(int id, TypeService typeservice, int montantbisous, String description);
 
+        //*****Classe Qarma*****
         List<Qarma> ObtientTousLesQarma();
         int CreerQarma(int nombreService, string badge);
         void ModifierQarma(int id, int nombreService, string badge);

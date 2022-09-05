@@ -13,6 +13,7 @@ namespace ProjetQarma.Models
         public string ImagePath { get; set; }
         [NotMapped]
         public IFormFile Image { get; set; }
+        public int? InfosPersosId { get; set; }
     }
 
     

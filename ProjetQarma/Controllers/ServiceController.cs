@@ -87,7 +87,7 @@ namespace ProjetQarma.Controllers
         }
         public IActionResult PropositionDetail()
         {
-            List<Service> listeServices = dal.ObtientTousLesServices();
+           
             return View();
 
 

@@ -23,7 +23,7 @@ namespace ChoixSejour.Controllers
             UtilisateurViewModel viewModel = new UtilisateurViewModel { Authentifie = HttpContext.User.Identity.IsAuthenticated };
             if (viewModel.Authentifie)
             {
-                viewModel.Utilisateur = dal.ObtenirProposition(HttpContext.User.Identity.Name);
+                viewModel.Utilisateur = dal.ObtenirUtilisateur(HttpContext.User.Identity.Name);
                 return View(viewModel);
             }
             return View(viewModel);
@@ -68,7 +68,7 @@ namespace ChoixSejour.Controllers
         {
             if (ModelState.IsValid)
             {
-                int id = dal.CreerUtilisateur(utilisateur.InfosPersos, utilisateur.Adresse, utilisateur.Mail, utilisateur.Telephone, utilisateur.Qarma, utilisateur.Password, utilisateur.TypeUtilisateur);
+                int id = dal.CreerUtilisateur(utilisateur.InfosPersos, utilisateur.Adresse, utilisateur.Mail, utilisateur.Telephone, utilisateur.Qarma, utilisateur.Password, utilisateur.TypeUtilisateur, utilisateur.CentreInteret, utilisateur.Propose);
 
                 var userClaims = new List<Claim>()
                 {
