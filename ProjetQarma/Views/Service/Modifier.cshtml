@@ -1,0 +1,41 @@
+﻿
+@model ProjetQarma.Models.Service
+
+
+@{
+    Layout = "_layoutAccueil";
+    ViewBag.Title = "Modifier";
+}
+
+ <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Modifier un service</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                @using (Html.BeginForm("Modifier", "Service", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <div class="form-floating mb-3">
+                        @Html.TextBoxFor(model => model.TypeService, new { @class = "form-control", placeholder = "Type de service" })
+                        @Html.LabelFor(model => model.TypeService)
+                        @Html.ValidationMessageFor(model => model.TypeService)
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        @Html.TextBoxFor(model => model.MontantBisous, new { @class = "form-control", placeholder = "Coût du service" })
+                        @Html.LabelFor(model => model.MontantBisous)
+                        @Html.ValidationMessageFor(model => model.MontantBisous)
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        @Html.TextBoxFor(model => model.Description, new { @class = "form-control", placeholder = "Description" })
+                        @Html.LabelFor(model => model.Description)
+                        @Html.ValidationMessageFor(model => model.Description)
+                    </div>
+                        
+                    <button class="btn btn-primary btn-xl" type="submit">Modifier</button>
+                }
+            </div>
+        </div>

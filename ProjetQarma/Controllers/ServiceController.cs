@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProjetQarma.Models;
 using ProjetQarma.ViewModels;
 using System.Collections.Generic;
+using System.Linq;
 using static ProjetQarma.Models.Service;
 namespace ProjetQarma.Controllers
 {
@@ -29,11 +30,12 @@ namespace ProjetQarma.Controllers
             return View();
         }
 
+
+        //Méthodes Création de services 
         public ActionResult Creer()
         {
             return View();
         }
-      
 
         [HttpPost]
         public ActionResult Creer(Service service)
@@ -41,6 +43,32 @@ namespace ProjetQarma.Controllers
             dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description);
             return RedirectToAction("Index");
         }
+
+        public ActionResult Modifier(int? id)
+        {
+
+            if (id.HasValue)
+            {
+                Service service = dal.ObtientTousLesServices().FirstOrDefault(r => r.Id == id.Value);
+                if (service == null)
+                    return View("Error");
+
+                return View(service);
+            }
+            else
+                return NotFound();
+
+        }
+
+        [HttpPost]
+        public ActionResult Modifier(Service service)
+        {
+            dal.ModifierService(service.Id, service.TypeService, service.MontantBisous, service.Description);
+            return RedirectToAction("Index");
+        }
+
+
+        //Méthodes Proposition de services 
         public ActionResult Proposition()
         {
             List<Proposition> listePropositions = dal.ObtientTousLesPropositions();
