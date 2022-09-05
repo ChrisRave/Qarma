@@ -1,4 +1,5 @@
-﻿
+﻿@model ProjetQarma.ViewModels.AccueilViewModel
+
 @{
     Layout = "_layoutLanding";
     ViewBag.Title = "Landing";
@@ -19,6 +20,7 @@
         </div>
         
         <div class="row" align="center">
+
             <div class="col-md-4  bordureAucune">
                 <div class="row">
                     <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
@@ -39,10 +41,12 @@
                             </div>
                             <div>Type de service : @Model.Service.TypeService</div>
                             <div>Cout en bisous :  @Model.Service.MontantBisous</div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4  bordureAucune">
                 <div class="row">
                     <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
@@ -64,6 +68,7 @@
                                 </div>
                                 <div>Type de service : @Model.Service.TypeService</div>
                                 <div>Cout en bisous :  @Model.Service.MontantBisous</div>
+
                             </div>
                         </div>
                     </div>

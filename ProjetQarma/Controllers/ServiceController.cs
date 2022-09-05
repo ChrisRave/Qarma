@@ -85,6 +85,29 @@ namespace ProjetQarma.Controllers
             return RedirectToAction("Proposition");
 
         }
+
+        public ActionResult ModifierProposition(int? id)
+        {
+
+            if (id.HasValue)
+            {
+                Proposition service = dal.ObtientTousLesPropositions().FirstOrDefault(r => r.Id == id.Value);
+                if (service == null)
+                    return View("Error");
+
+                return View(service);
+            }
+            else
+                return NotFound();
+
+        }
+
+        [HttpPost]
+        public ActionResult ModifierProposition(Proposition service)
+        {
+            dal.ModifierProposition(service.Id, service.TypeService, service.MontantBisous, service.Description);
+            return RedirectToAction("Proposition");
+        }
         public IActionResult PropositionDetail()
         {
             return View();
