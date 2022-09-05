@@ -1,0 +1,68 @@
+﻿@{ Layout = "_layoutLanding";
+    ViewBag.Title = "AccueilLanding"; }
+<p class="contenu ">
+    
+    <div class="row">
+        <div class="col-md-10 offset-md-1 bordureAucune">
+        </div>
+    </div>
+    <div class="row" align="center">
+        <div class="col-md-9 bordureAucune">
+            <div class="row">
+                <div class="col-md-11 offset-md-1 bordureAucune">
+                    <h2 class="titre" style="color: #1f5c587c; "> Inscription</h2>
+                    <div class="row bordureBleue1" style="border-radius: 8px;">
+                        formulaire d'inscription
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-3 bordureAucune">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 bordureAucune">
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        @using (Html.BeginForm("Index", "Login"))
+                        {
+                            <h2 class="titre" style="color: #1f5c587c; "> Se connecter</h2>
+                            <div class="row bordureBleue1" style="border-radius: 8px;">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1 bordureAucune">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1 bordureAucune">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-11 offset-md-1 bordureAucune">
+                                        <div><input type="email" name="Utilisateur.Mail" class="form-control" id="floatingInput" placeholder="nom@exemple.com" style=" width: 100%; margin-bottom: 5px;"></div>
+                                        <div><input type="password" name="Utilisateur.Password" class="form-control" id="floatingPassword" placeholder="Mot de passe" style=" width: 100%;"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1 bordureAucune">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-11 offset-md-1 bordureAucune">
+                                        <button class="btn btn-secondary  me-md-4" type="submit" style=" width: 100%;">Connexion</button>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-1 bordureAucune">
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</p>

@@ -51,7 +51,7 @@ namespace ChoixSejour.Controllers
                     if (!string.IsNullOrWhiteSpace(returnUrl) && Url.IsLocalUrl(returnUrl))
                         return Redirect(returnUrl);
 
-                    return Redirect("/");
+                    return Redirect("/Home/Demande");
                 }
                 ModelState.AddModelError("Utilisateur.Mail", "Mail et/ou mot de passe incorrect(s)");
             }

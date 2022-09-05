@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<ProjetQarma.Models.Proposition>
+
+@{
     Layout = "_layoutLanding";
     ViewBag.Title = "Proposition";
 }
@@ -17,6 +19,8 @@
         @foreach (var proposition in Model)
         {
 
+            string modifierLien = "/Service/ModifierProposition/" +proposition.Id;
+
             <div class="card col-6 m-5" style="width: 18rem;" >
                
                
@@ -28,12 +32,15 @@
                         <h6 class="card-subtitle mb-2 text-muted">Coût du service : @proposition.MontantBisous</h6>
                         <h6 class="card-subtitle mb-2 text-muted">@proposition.TypeService</h6>
                         <p class="card-text">@proposition.Description</p>
-                        <a href="~/Service/PropositionDetail" class="btn btn-primary stretched-link">Accepter</a>
+                        <a href=@modifierLien class="card-link">Modifier</a>
 
                     </div>
-
+                   
                 </div>
-            </div>}
+            </div>
+            }
+
+
         @Html.ActionLink("Proposer un nouveau service", "Proposer", "Service")
     </div>
 

@@ -11,7 +11,9 @@ using ProjetQarma.ViewModels;
 namespace ProjetQarma.Controllers
 {
     public class HomeController : Controller
+
     {
+
         private Dal dal;
         public HomeController()
         {
@@ -33,6 +35,7 @@ namespace ProjetQarma.Controllers
             }; 
             return View(avm); //retourner la view crée (HomeViewModel)
         }
+
         public IActionResult Demande()
         {
             UtilisateurViewModel viewModel = new UtilisateurViewModel { Authentifie = HttpContext.User.Identity.IsAuthenticated };
@@ -42,6 +45,7 @@ namespace ProjetQarma.Controllers
                 return View(viewModel);
             }
             return View(viewModel);
+
         }
         public IActionResult Accueil()
         {

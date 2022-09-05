@@ -79,7 +79,9 @@ namespace ProjetQarma.Models
 
         public Utilisateur ObtenirUtilisateur(int id)
         {
+
             return this._bddContext.Utilisateur.Include(u=>u.InfosPersos).FirstOrDefault(u=>u.Id==id);
+
         }
 
         public Utilisateur ObtenirUtilisateur(string idStr)
@@ -194,11 +196,28 @@ namespace ProjetQarma.Models
 
             this._bddContext.Propositions.Add(propositionToAdd);
             this._bddContext.SaveChanges();
+
         }
 
-        public Utilisateur ObtenirProposition(string idStr)
+        public void ModifierProposition(int id, TypeService typeservice, int montantBisous, string description)
+        {
+            Proposition serviceToUpdate = this._bddContext.Propositions.Find(id);
+            if (serviceToUpdate != null)
+            {
+                serviceToUpdate.TypeService = typeservice;
+                serviceToUpdate.MontantBisous = montantBisous;
+                serviceToUpdate.Description = description;
+
+                this._bddContext.SaveChanges();
+            }
+        }
+
+        public void ModifierProposition(Proposition service)
         {
             throw new NotImplementedException();
         }
+
     }
+
+
 }
