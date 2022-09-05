@@ -12,6 +12,11 @@ namespace ProjetQarma.Controllers
 {
     public class HomeController : Controller
     {
+        private Dal dal;
+        public HomeController()
+        {
+            dal = new Dal();
+        }
         // GET: /<controller>/
         public IActionResult Landing()
         {
@@ -26,11 +31,17 @@ namespace ProjetQarma.Controllers
                 Utilisateur = utilisateur,
                 Service = service,
             }; 
-            return View(avm); //retourner la view créer (HomeViewModel)
+            return View(avm); //retourner la view crée (HomeViewModel)
         }
         public IActionResult Demande()
         {
-            return View();
+            UtilisateurViewModel viewModel = new UtilisateurViewModel { Authentifie = HttpContext.User.Identity.IsAuthenticated };
+            if (viewModel.Authentifie)
+            {
+                viewModel.Utilisateur = dal.ObtenirUtilisateur(HttpContext.User.Identity.Name);
+                return View(viewModel);
+            }
+            return View(viewModel);
         }
         public IActionResult Accueil()
         {

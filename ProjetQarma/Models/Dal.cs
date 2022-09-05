@@ -190,5 +190,10 @@ namespace ProjetQarma.Models
             this._bddContext.Propositions.Add(propositionToAdd);
             this._bddContext.SaveChanges();
         }
+
+        public Utilisateur ObtenirProposition(string idStr)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

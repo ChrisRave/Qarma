@@ -14,7 +14,7 @@ namespace ProjetQarma.Models
         //***** Login *****//
         Utilisateur Authentifier(string mail, string password);
         Utilisateur ObtenirUtilisateur(int id);
-        Utilisateur ObtenirUtilisateur(string idStr);
+        Utilisateur ObtenirProposition(string idStr);
         //***** Fin login *****//
         List<Service> ObtientTousLesServices();
 
@@ -33,6 +33,8 @@ namespace ProjetQarma.Models
         List<Proposition> ObtientTousLesPropositions();
 
         void ProposerService(int id, TypeService typeservice, int montantBisous, string description);
+
+       
 
         //***** FIN Proposition *****//
     }

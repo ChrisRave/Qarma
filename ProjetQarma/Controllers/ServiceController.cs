@@ -24,7 +24,7 @@ namespace ProjetQarma.Controllers
             List<Service> listeServices = dal.ObtientTousLesServices();
             return View(listeServices);
         }
-      
+
         public ActionResult Service()
         {
             return View();
@@ -87,13 +87,15 @@ namespace ProjetQarma.Controllers
         }
         public IActionResult PropositionDetail()
         {
+            List<Service> listeServices = dal.ObtientTousLesServices();
             return View();
+
+
         }
-
-
-
     }
+
 }
+
 
 
 

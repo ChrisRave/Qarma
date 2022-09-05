@@ -23,7 +23,7 @@ namespace ChoixSejour.Controllers
             UtilisateurViewModel viewModel = new UtilisateurViewModel { Authentifie = HttpContext.User.Identity.IsAuthenticated };
             if (viewModel.Authentifie)
             {
-                viewModel.Utilisateur = dal.ObtenirUtilisateur(HttpContext.User.Identity.Name);
+                viewModel.Utilisateur = dal.ObtenirProposition(HttpContext.User.Identity.Name);
                 return View(viewModel);
             }
             return View(viewModel);
