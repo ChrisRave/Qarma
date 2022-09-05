@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model ProjetQarma.ViewModels.UtilisateurViewModel
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <title>Landing Page QARMA</title>
@@ -32,7 +33,7 @@
                 <div class="col-md-3 caractereDescription bordureAucune">
                     <div class="collapse navbar-collapse" id="main-navigation">
                         <nav class="nav flex-column navbar-nav">
-                            Bonjour Max! & icons compte, notif et messages
+                            Bonjour @Model.Utilisateur.InfosPersos.Prenom @Model.Utilisateur.InfosPersos.Nom & icons compte, notif et messages
                         </nav>
                     </div>
                 </div>
