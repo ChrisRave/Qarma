@@ -1,32 +1,17 @@
 ﻿@model ProjetQarma.ViewModels.UtilisateurViewModel
+@{ Layout = "_layoutReseauSocial";
+    ViewBag.Title = "Index"; }
 
-@if (Model.Authentifie)
-{
-    <h3>
-        Vous êtes déjà authentifié avec le login :
-        @Model.Utilisateur.Mail
-    </h3>
-    @Html.ActionLink("Voulez-vous vous déconnecter ?", "Deconnexion")
-}
-else
-{
-    <p>
-        Veuillez vous authentifier :
-    </p>
-    using (Html.BeginForm())
-    {
-        <div>
-            @Html.LabelFor(m => m.Utilisateur.Mail)
-            @Html.TextBoxFor(m => m.Utilisateur.Mail)
-            @Html.ValidationMessageFor(m => m.Utilisateur.Mail)
-        </div>
-        <div>
-            @Html.LabelFor(m => m.Utilisateur.Password)
-            @Html.PasswordFor(m => m.Utilisateur.Password)
-            @Html.ValidationMessageFor(m => m.Utilisateur.Password)
-        </div>
-        <input type="submit" value="Se connecter" />
-        <br />
-        @Html.ActionLink("Créer un compte", "CreerCompte")
-    }
-}
+
+<div class="offres">
+   
+    <h1> Mes demandes</h1>
+    <br>
+    <br>
+    <br>
+    <h1> Mes offres</h1>
+    <br>
+    <br>
+    <br>
+
+</div>
