@@ -164,5 +164,31 @@ namespace ProjetQarma.Models
         {
             throw new NotImplementedException();
         }
+
+        //Méthodes pour les propositions
+        public List<Proposition> ObtientTousLesPropositions()
+        {
+            List<Proposition> listePropositions = this._bddContext.Propositions.ToList();
+            return listePropositions;
+        }
+
+        public void ProposerService(int id, TypeService typeservice, int montantBisous, string description)
+        {
+
+            Proposition propositionToAdd = new Proposition
+            {
+                Id = id,
+                TypeService = typeservice,
+                MontantBisous = montantBisous,
+                Description = description
+            };
+            if (id != 0)
+            {
+                propositionToAdd.Id = id;
+            }
+
+            this._bddContext.Propositions.Add(propositionToAdd);
+            this._bddContext.SaveChanges();
+        }
     }
 }
