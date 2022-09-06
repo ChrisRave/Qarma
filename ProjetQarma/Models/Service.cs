@@ -18,5 +18,7 @@ namespace ProjetQarma.Models
     {
         Equipement, Hebergement, Parking, Evenement, Prestation
     }
+
+
 }
 
