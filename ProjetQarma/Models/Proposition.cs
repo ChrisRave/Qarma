@@ -14,6 +14,7 @@ namespace ProjetQarma.Models
         [NotMapped]
         public IFormFile Image { get; set; }
         public int? InfosPersosId { get; set; }
+        public  DateTime DateTime { get; set; }
     }
 
     

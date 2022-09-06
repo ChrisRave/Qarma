@@ -96,8 +96,9 @@ namespace ProjetQarma.Models
                     TypeService = TypeService.Prestation,
                     Description = "Bonjour, je propose des massages...",
                     ImagePath = "~/photos/SolidevLogo.png",
+                    DateTime = DateTime.Now,
 
-                }
+        }
             );
             this.SaveChanges();
         }
