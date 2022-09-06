@@ -13,9 +13,16 @@ namespace ProjetQarma.Models
         public string ImagePath { get; set; }
         [NotMapped]
         public IFormFile Image { get; set; }
-        public int? InfosPersosId { get; set; }
+        public int InfosPersosId { get; set; }
         public  DateTime DateTime { get; set; }
+        public string Titre { get; set; }
+        public Equipement Equipement { get; set; }
+
+    }
+    public enum  Equipement
+    {
+        Bricolage, Jardinage
     }
 
-    
+
 }

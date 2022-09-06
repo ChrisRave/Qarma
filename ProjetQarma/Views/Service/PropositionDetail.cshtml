@@ -4,7 +4,7 @@
 @{ Layout = "_layoutDetail";
     ViewBag.Title = "PropositionDetail"; }
 
-<h3 class="titre">Proposition Detail</h3>
+<h3 class="titre">@Model.Proposition.Titre</h3>
 
 <div class="row">
     <div class="col-md-10 offset-md-1 bordureAucune">
@@ -24,8 +24,14 @@
 
         Catégorie :  @Model.Proposition.TypeService
 
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+            </div>
+        </div>
+
+
         Détail : @Model.Proposition.Description
 
-</div>
+    </div>
     </div>
 

@@ -92,7 +92,7 @@ namespace ProjetQarma.Models
                 new Proposition
                 {
                     Id = 1,
-                    InfosPersosId = 2, 
+                    InfosPersosId = 3, 
                     TypeService = TypeService.Prestation,
                     Description = "Bonjour, je propose des massages...",
                     ImagePath = "~/photos/SolidevLogo.png",

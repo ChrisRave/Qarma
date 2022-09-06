@@ -2,8 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using ProjetQarma.Models;
 using ProjetQarma.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using static ProjetQarma.Models.Service;
 namespace ProjetQarma.Controllers
 {
@@ -71,7 +73,8 @@ namespace ProjetQarma.Controllers
         //Méthodes Proposition de services 
         public ActionResult Proposition()
         {
-            List<Proposition> listePropositions = dal.ObtientTousLesPropositions();
+            Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.Name).Value));
+            List<Proposition> listePropositions = dal.ObtientTousLesPropositions().Where(p=>p.InfosPersosId == utilisateur.InfosPersosId).ToList();
             return View(listePropositions);
         }
         public ActionResult Proposer()
@@ -81,7 +84,9 @@ namespace ProjetQarma.Controllers
         [HttpPost]
         public ActionResult Proposer(Proposition proposition)
         {
-            dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.Description);
+            Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.Name).Value)) ;
+            dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.Description, proposition.Titre, utilisateur.InfosPersosId.Value);
+
             return RedirectToAction("Proposition");
 
         }
@@ -110,8 +115,9 @@ namespace ProjetQarma.Controllers
         }
         public IActionResult PropositionDetail(int id)
         {
+            Utilisateur utilisateur = dal.ObtientTousLesUtilisateurs().FirstOrDefault(r => r.Id == id);
             Proposition service = dal.ObtientTousLesPropositions().FirstOrDefault(r => r.Id == id);
-            PropositionViewModel pvm = new PropositionViewModel { Proposition = service };
+            PropositionViewModel pvm = new PropositionViewModel { Proposition = service, Utilisateur = utilisateur };
             return View(pvm);
 
 

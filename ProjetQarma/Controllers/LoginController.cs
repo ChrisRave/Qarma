@@ -24,6 +24,7 @@ namespace ChoixSejour.Controllers
             if (viewModel.Authentifie)
             {
                 viewModel.Utilisateur = dal.ObtenirUtilisateur(HttpContext.User.Identity.Name);
+                
                 return View(viewModel);
             }
             return View(viewModel);
