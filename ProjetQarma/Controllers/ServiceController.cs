@@ -108,10 +108,11 @@ namespace ProjetQarma.Controllers
             dal.ModifierProposition(service.Id, service.TypeService, service.MontantBisous, service.Description);
             return RedirectToAction("Proposition");
         }
-        public IActionResult PropositionDetail()
+        public IActionResult PropositionDetail(int id)
         {
-           
-            return View();
+            Proposition service = dal.ObtientTousLesPropositions().FirstOrDefault(r => r.Id == id);
+            PropositionViewModel pvm = new PropositionViewModel { Proposition = service };
+            return View(pvm);
 
 
         }
