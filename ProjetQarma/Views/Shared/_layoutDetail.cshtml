@@ -29,13 +29,77 @@
                 </div>
                 <div class="col-md-1 bordureAucune">
                 </div>
-                <!-- Se connecter-->
+                
                 <div class="col-md-3 caractereDescription bordureAucune">
-                    <div class="collapse navbar-collapse" id="main-navigation">
-                        <nav class="nav flex-column navbar-nav">
-                            Bonjour Max! & icons compte, notif et messages
-                        </nav>
-                    </div>
+                    <!-- Se connecter-->
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        @using (Html.BeginForm("Index", "Login"))
+                        {
+                            <div class="row">
+                                <div class="col-md-8 offset-md-4 bordureAucune">
+                                    <div class="collapse navbar-collapse" id="main-navigation">
+                                        <nav class="nav flex-column navbar-nav">
+                                            <div class="form-floating mb-10 navbar-nav">
+                                                <div><input type="email" name="Utilisateur.Mail" class="form-control" id="floatingInput" placeholder="nom@exemple.com"></div>
+                                                <div><input type="password" name="Utilisateur.Password" class="form-control" id="floatingPassword" placeholder="Mot de passe"></div>
+                                            </div>
+                                            <div class="d-grid gap-12 d-md-flex justify-content-md-end navbar-nav" align="center">
+                                                <button class="btn btn-secondary  me-md-8" type="submit" style=" width: 100%;">Déjà membre? Se connecter</button>
+                                            </div>
+                                            <div class="d-grid gap-12 d-md-flex justify-content-md-end navbar-nav" align="center">
+                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532;"> <strong> Nouveau ici? Rejoignez-nous!</strong></button>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="row">
+                            <div class="col-md-10 offset-md-0 bordureAucune">
+                                <div class="collapse navbar-collapse" id="main-navigation" align="center">
+                                    <nav class="nav flex-column navbar-nav">
+                                        <div class="row">
+                                            <div class="col-md-12 bordureAucune couleur_verte" style="font-size:20px ;">
+                                                <strong>
+                                                    Bonjour ! <strong class="couleur_bleueQarma"> @User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</strong>
+                                                </strong>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 bordureAucune">
+                                                <a href="#">
+                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                                        <span class="navbar-toggler-icon"></span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 bordureAucune">
+                                                <a href="#">
+                                                    <img src="/photos/iconmessage.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                                        <span class="navbar-toggler-icon"></span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 bordureAucune">
+                                                <a href="#">
+                                                    <img src="/photos/iconnotif.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                                        <span class="navbar-toggler-icon"></span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
@@ -164,12 +228,32 @@
         <div class="containerFooter pt-20">
             <div class="row">
                 <div class="col-md-3">
-                    icons LinkedIn Facebook Instagram et Twitter
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+                            <!--Ligne 2 vide-->
+                            <!--Espace vide-->
+                        </div>
+                    </div>
+                    <!-- Les logos linkedIn Intsagram FB Twitter-->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="~/photos/facebook.png" width="40%" id="logo">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="~/photos/linkedin.png" width="40%" id="logo">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="~/photos/twitter.png" width="40%" id="logo">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="~/photos/instagram.png" width="40%" id="logo">
+                        </div>
+                    </div>
                 </div>
                 <!-- Copyright -->
                 <!-- -->
                 <div class="col-md-6 bordureAucune">
-                    <div class="text-center couleur_bleueSoliDev p-40">
+                    <div class="text-center couleur_bleueSoliDev p-40" style="font-family: 'Chalkduster, fantasy' ">
                         <strong> SoliDev © 2022  </strong><br>
                         <strong> Adresse email de contact </strong>
                     </div>
