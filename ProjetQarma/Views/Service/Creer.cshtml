@@ -6,6 +6,7 @@
     ViewBag.Title = "Créer";
 }
 
+
 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Services</h2>
 <!-- Icon Divider-->
 <div class="divider-custom">
@@ -39,6 +40,8 @@
                 @Html.LabelFor(model => model.Description)
                 @Html.ValidationMessageFor(model => model.Description)
             </div>
+
+
 
             @Html.HiddenFor(model=> model.ImagePath)
                     <div class="d-flex flex-row my-3">
