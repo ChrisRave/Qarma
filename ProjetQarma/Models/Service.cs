@@ -8,6 +8,8 @@ namespace ProjetQarma.Models
     public class Service
     {
         public int Id { get; set; }
+
+        [Display(Name = "Type de service")]
         public TypeService TypeService { get; set; }
 
         [Display(Name = "Coût du service")]

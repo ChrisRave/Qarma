@@ -21,7 +21,7 @@ namespace ProjetQarma.Models
         //***** Service*****//
         List<Service> ObtientTousLesServices();
 
-        void CreerService(int id, TypeService typeservice, int montantBisous, string description, string Imagepath, string titre, int infosPersosId);
+        void CreerService(int id, TypeService typeservice, int montantBisous, string description, string titre, int infosPersosId, string imagepath);
 
         void SupprimerService(string nom);
 

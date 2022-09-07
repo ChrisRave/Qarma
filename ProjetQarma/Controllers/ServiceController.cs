@@ -75,7 +75,7 @@ namespace ProjetQarma.Controllers
                         service.Image.CopyTo(fileStream);
                     }
 
-                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description, service.Titre,  "/images/" + service.Image.FileName, service.InfosPersosId);
+                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description, service.Titre, service.InfosPersosId, "/images/" + service.Image.FileName);
 
                 }
             }
@@ -83,7 +83,7 @@ namespace ProjetQarma.Controllers
 
             else
             {
-                dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description,service.Titre, service.ImagePath, service.InfosPersosId);
+                dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description,service.Titre, service.InfosPersosId, service.ImagePath);
 
             }
 
