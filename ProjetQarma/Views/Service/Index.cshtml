@@ -15,7 +15,7 @@
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
-                @using (Html.BeginForm("Creer", "Service", FormMethod.Get )) //Index est la méthode, Service est le controleur, searchstring est le paramètre
+                @using (Html.BeginForm("Index", "Service", FormMethod.Get )) //Index est la méthode, Service est le controleur, searchstring est le paramètre
                             {
                                 <div class="form-floating mb-3">
                                     @Html.TextBox( "searchString")
@@ -44,8 +44,8 @@
                                 <h6 class="card-subtitle mb-2 text-muted">Coût du service : @service.MontantBisous</h6>
                                 <h6 class="card-subtitle mb-2 text-muted">@service.TypeService</h6>
                                 <p class="card-text">@service.Description</p>
-                                <a href=@modifierLien class="class= btn btn-primary stretched link">Modifier</a>
-                                <a href=@supprimerLien class="class= btn btn-primary stretched link" onclick="return confirm('Confirmer la suppression')">Supprimer</a> 
+                                <a href=@modifierLien class=" btn btn-primary stretched link">Modifier</a>
+                                <a href=@supprimerLien class="btn btn-primary stretched link" onclick="return confirm('Confirmer la suppression')">Supprimer</a> 
 
                             </div>
                    
@@ -53,7 +53,11 @@
                     </div>
                     }
 
-
-                @Html.ActionLink("Créer un nouveau service", "Créer", "Service")
+                <a href="/Service/Creer">
+					<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="black" class="align-middle bi bi-plus" viewBox="0 0 16 16">
+						<path class="plus" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+					</svg>
+				</a>
+                @*@Html.ActionLink("Créer un nouveau service", "Créer", "Service")*@
             </div>
 
