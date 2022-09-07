@@ -10,6 +10,7 @@ namespace ProjetQarma.Models
         public int Id { get; set; }
         public TypeService TypeService { get; set; }
 
+        [Display(Name = "Coût du service")]
         [RegularExpression("[0-9]+", ErrorMessage = " Veuillez saisir un nombre")]
         public int MontantBisous { get; set; }
         public string Description { get; set; }
