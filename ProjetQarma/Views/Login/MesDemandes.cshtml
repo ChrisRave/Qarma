@@ -4,8 +4,7 @@
     Layout = "_layoutLanding";
     ViewBag.Title = "Mesdemandes";
 }
-<h3 class="titre">Page proposition</h3>
-<p class="contenu">Tableau de bord</p>
+
 
 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Proposition de services</h2>
 <!-- Icon Divider-->
@@ -42,7 +41,31 @@
             </div>
         }
 
+    </div>
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Demande de services</h2>
+    <div class="row justify-content-start">
 
-        
+        @foreach (var service in Model)
+        {
+            string modifierLien = "/Service/Modifier/" + service.Id;
+            string supprimerLien = "/Service/Supprimer/" + service.Id;
+            <div class="card col-6 m-5" style="width: 18rem;">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <p class="card-text">@service.Titre</p>
+                        <div class="my-3">
+                            <img src="@service.ImagePath" width="225" height="200" />
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">Coût du service : @service.MontantBisous</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">@service.TypeService</h6>
+                        <p class="card-text">@service.Description</p>
+
+                    </div>
+                    @Html.ActionLink("Répondre à la demande", "Creer", "Service")
+                    <a href=@modifierLien class="card-link">Modifier</a>
+                    <a href=@supprimerLien class="card-link">Supprimer</a>
+                </div>
+            </div>
+        }
     </div>
 

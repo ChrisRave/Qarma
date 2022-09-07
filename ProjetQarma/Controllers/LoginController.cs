@@ -100,7 +100,8 @@ namespace ChoixSejour.Controllers
         {
             Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.Name).Value));
             List<Proposition> listePropositions = dal.ObtientTousLesPropositions().Where(p => p.InfosPersosId == utilisateur.InfosPersosId).ToList();
-            return View(listePropositions);
+            List<Service> listeservices = dal.ObtientTousLesServices().Where(p => p.InfosPersosId == utilisateur.InfosPersosId).ToList();
+            return View(listePropositions );
         }
     }
 }

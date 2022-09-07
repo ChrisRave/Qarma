@@ -253,9 +253,13 @@ namespace ProjetQarma.Controllers
 
             return RedirectToAction("Proposition");
         }
-        public IActionResult PropositionDetail()
+        public IActionResult PropositionDetail(int id)
+
         {
-            return View();
+            Utilisateur utilisateur = dal.ObtientTousLesUtilisateurs().FirstOrDefault(r => r.Id == id);
+            Proposition service = dal.ObtientTousLesPropositions().FirstOrDefault(r => r.Id == id);
+            PropositionViewModel pvm = new PropositionViewModel { Proposition = service, Utilisateur = utilisateur };
+            return View(pvm);
         }
 
         public ActionResult SupprimerProposition(int id)

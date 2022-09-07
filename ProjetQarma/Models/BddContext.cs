@@ -81,6 +81,8 @@ namespace ProjetQarma.Models
             this.Services.AddRange(
                 new Service
                 {
+                    InfosPersosId = 1,
+                    Id = 1,
                     Titre = "Parking",
                     TypeService = TypeService.Parking,
                     Description = "Je recherche à louer une place de parking pour une durée d'une semaine",
@@ -92,6 +94,8 @@ namespace ProjetQarma.Models
             this.Services.AddRange(
                 new Service
                 {
+                    InfosPersosId = 1,
+                    Id = 2,
                     Titre ="Promener mon chien",
                     TypeService = TypeService.Prestation,
                     Description = "Je recherche quelqu'un pour promener mon chien tous les dimanches matins",
@@ -103,6 +107,8 @@ namespace ProjetQarma.Models
             this.Services.AddRange(
                 new Service
                 {
+                    InfosPersosId = 2,
+                    Id = 3,
                     Titre = "Raclette !!!",
                     TypeService = TypeService.Evenement,
                     Description = "Quelqu'un pour organiser une soirée raclette ce vendredi entre voisins ?!!",
@@ -113,6 +119,8 @@ namespace ProjetQarma.Models
             this.Services.AddRange(
                new Service
                {
+                   InfosPersosId = 2,
+                   Id = 4,
                    Titre = "Place canapé",
                    TypeService = TypeService.Hebergement,
                    Description = "Yo ! Je peux emprunter un canapé pour 1 semaine? On manque de place avec les 7 nains à la maison^^",
@@ -123,6 +131,8 @@ namespace ProjetQarma.Models
             this.Services.AddRange(
                new Service
                {
+                   InfosPersosId = 3,
+                   Id = 5,
                    Titre = "Besoin de toit ...",
                    TypeService = TypeService.Hebergement,
                    Description = "Salut les loulous !! Est-ce que quelqu'un a une pièce en plus à  squatter pendant les vacances d'été?",
@@ -134,6 +144,8 @@ namespace ProjetQarma.Models
             this.Services.AddRange(
                new Service
                {
+                   InfosPersosId = 3,
+                   Id = 6,
                    Titre = "Hé José!!",
                    TypeService = TypeService.Equipement,
                    Description = "José tu as  un tout nouveau karcher,  tu me le prêtes pour nettoyer ma titine? ",
@@ -144,6 +156,8 @@ namespace ProjetQarma.Models
             this.Services.AddRange(
                new Service
                {
+                   InfosPersosId = 3,
+                   Id = 7,
                    Titre = "Outil",
                    TypeService = TypeService.Equipement,
                    Description = "Je prête ma tronçonneuse si vous avez besoin de couper quoi ce soit !",
@@ -154,6 +168,8 @@ namespace ProjetQarma.Models
             this.Propositions.AddRange(
                 new Proposition
                 {
+                    InfosPersosId = 3,
+                    Id = 1,
                     Titre = "Massage",
                     TypeService = TypeService.Prestation,
                     Description = "Bonjour, je propose des massages...",
@@ -164,6 +180,9 @@ namespace ProjetQarma.Models
             this.Propositions.AddRange(
                 new Proposition
                 {
+                    InfosPersosId = 1,
+                    Id = 2,
+
                     Titre = "Barbecue",
                     TypeService = TypeService.Evenement,
                     Description = "Bonjour, j'ai un nouveau barbecue et on doit fêter ça !!",
@@ -174,6 +193,8 @@ namespace ProjetQarma.Models
             this.Propositions.AddRange(
                 new Proposition
                 {
+                    InfosPersosId = 1,
+                    Id = 3,
                     Titre = "Marteau neuf",
                     TypeService = TypeService.Prestation,
                     Description = "Je peux prêter mon nouveau marteau !! Veuillez juste ne pas taper trop fort avec ! ",
@@ -184,6 +205,8 @@ namespace ProjetQarma.Models
             this.Propositions.AddRange(
                 new Proposition
                 {
+                    InfosPersosId = 3,
+                    Id = 4,
                     Titre = "Parking libre",
                     TypeService = TypeService.Parking,
                     Description = "Je laisse ma place dans le local à vélo pendant 2 mois cet été. Avis aux interéssés !",
