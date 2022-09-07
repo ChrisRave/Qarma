@@ -14,6 +14,7 @@ namespace ProjetQarma.Models
         public string Mail { get; set; }
         [MaxLength(14)]
         public string Telephone { get; set; }
+        public int SoldeBisous { get; set; }    
         public int Qarma { get; set; }
         public TypeUtilisateur TypeUtilisateur { get; set; }
         public string Password { get; set; }

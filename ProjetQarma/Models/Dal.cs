@@ -28,7 +28,7 @@ namespace ProjetQarma.Models
         { //mettre include pour charger clés étrangéres
             return _bddContext.Utilisateur.Include(u => u.InfosPersos).ToList();
         }
-        public int CreerUtilisateur(InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, string password, TypeUtilisateur typeUtilisateur, string centreInteret, string propose)
+        public int CreerUtilisateur(InfosPersos infosPersos, String adresse, String mail, String telephone, int soldeBisous, int qarma, string password, TypeUtilisateur typeUtilisateur, string centreInteret, string propose)
         {
             string motDePasse = EncodeMD5(password);
 
@@ -38,6 +38,7 @@ namespace ProjetQarma.Models
                 Adresse = adresse,
                 Mail = mail,
                 Telephone = telephone,
+                SoldeBisous = soldeBisous,
                 Qarma = qarma,
                 Password = motDePasse,
                 TypeUtilisateur = typeUtilisateur,
@@ -48,7 +49,7 @@ namespace ProjetQarma.Models
             _bddContext.SaveChanges();
             return utilisateur.Id;
         }
-        public void ModifierUtilisateur(int id, InfosPersos infosPersos, String adresse, String mail, String telephone, int qarma, TypeUtilisateur typeUtilisateur, string centreInteret, string propose)
+        public void ModifierUtilisateur(int id, InfosPersos infosPersos, String adresse, String mail, String telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string centreInteret, string propose)
         {
             Utilisateur utilisateur = _bddContext.Utilisateur.Find(id); if (utilisateur != null)
             {
@@ -56,6 +57,7 @@ namespace ProjetQarma.Models
                 utilisateur.Adresse = adresse;
                 utilisateur.Mail = mail;
                 utilisateur.Telephone = telephone;
+                utilisateur.SoldeBisous = soldeBisous;
                 utilisateur.Qarma = qarma;
                 utilisateur.TypeUtilisateur = typeUtilisateur;
                 utilisateur.CentreInteret = centreInteret;
@@ -73,7 +75,7 @@ namespace ProjetQarma.Models
         public Utilisateur Authentifier(string mail, string password)
         {
             string motDePasse = EncodeMD5(password);
-            Utilisateur utilisateur = this._bddContext.Utilisateur.Include(u=> u.InfosPersos).FirstOrDefault(u => u.Mail == mail && u.Password == motDePasse);
+            Utilisateur utilisateur = this._bddContext.Utilisateur.Include(u => u.InfosPersos).FirstOrDefault(u => u.Mail == mail && u.Password == motDePasse);
             return utilisateur;
         }
 
@@ -105,7 +107,7 @@ namespace ProjetQarma.Models
             return listeServices;
         }
 
-        public void CreerService(int id, TypeService typeservice, int montantBisous, string description,  string Imagepath, string titre, int infosPersosId)
+        public void CreerService(int id, TypeService typeservice, int montantBisous, int montantQarma, string description, string Imagepath, string titre, int infosPersosId)
         {
 
             Service serviceToAdd = new Service
@@ -113,6 +115,7 @@ namespace ProjetQarma.Models
                 Id = id,
                 TypeService = typeservice,
                 MontantBisous = montantBisous,
+                MontantQarma = montantQarma,
                 Description = description,
                 ImagePath = Imagepath,
                 Titre = titre,
@@ -145,13 +148,14 @@ namespace ProjetQarma.Models
             }
         }
 
-        public void ModifierService(int id, TypeService typeservice, int montantBisous, string description, string titre, string imagePath)
+        public void ModifierService(int id, TypeService typeservice, int montantBisous, int montantQarma, string description, string titre, string imagePath)
         {
             Service serviceToUpdate = this._bddContext.Services.Find(id);
             if (serviceToUpdate != null)
             {
                 serviceToUpdate.TypeService = typeservice;
                 serviceToUpdate.MontantBisous = montantBisous;
+                serviceToUpdate.MontantQarma = montantQarma;
                 serviceToUpdate.Description = description;
                 serviceToUpdate.Titre = titre;
                 serviceToUpdate.ImagePath = imagePath;
@@ -160,7 +164,7 @@ namespace ProjetQarma.Models
             }
         }
 
-      
+
 
         //Méthodes pour les propositions
         public List<Proposition> ObtientTousLesPropositions()
@@ -169,7 +173,7 @@ namespace ProjetQarma.Models
             return listePropositions;
         }
 
-        public void ProposerService(int id, TypeService typeservice, int montantBisous, string description, string titre, int infosPersosId, string imagePath)
+        public void ProposerService(int id, TypeService typeservice, int montantBisous, int montantQarma, string description, string titre, int infosPersosId, string imagePath)
         {
 
             Proposition propositionToAdd = new Proposition
@@ -177,6 +181,7 @@ namespace ProjetQarma.Models
                 Id = id,
                 TypeService = typeservice,
                 MontantBisous = montantBisous,
+                MontantQarma = montantQarma,
                 Description = description,
                 Titre = titre,
                 InfosPersosId = infosPersosId,
@@ -197,13 +202,14 @@ namespace ProjetQarma.Models
         }
 
 
-        public void ModifierProposition(int id, TypeService typeservice, int montantBisous, string description, string imagePath)
+        public void ModifierProposition(int id, TypeService typeservice, int montantBisous, int montantQarma, string description, string imagePath)
         {
             Proposition serviceToUpdate = this._bddContext.Propositions.Find(id);
             if (serviceToUpdate != null)
             {
                 serviceToUpdate.TypeService = typeservice;
                 serviceToUpdate.MontantBisous = montantBisous;
+                serviceToUpdate.MontantQarma = montantQarma;
                 serviceToUpdate.Description = description;
                 serviceToUpdate.ImagePath = imagePath;
 
@@ -248,6 +254,26 @@ namespace ProjetQarma.Models
         public void ModifierQarma(int id, int nombreService, string badge)
         {
             throw new NotImplementedException();
+        }
+        //Méthodes pour les échanges de bisous et modification de Qarma 
+
+        public void TransfererBisous(int utilisateurADebiterID, int utilisateurACrediterID, int serviceID)
+        {
+            Utilisateur utilisateurADebiter = _bddContext.Utilisateur.Find(utilisateurADebiterID);
+            Utilisateur utilisateurACrediter = _bddContext.Utilisateur.Find(utilisateurACrediterID);
+            Service service = _bddContext.Services.Find(serviceID);
+
+            utilisateurADebiter.SoldeBisous = utilisateurADebiter.SoldeBisous - service.MontantBisous;
+            utilisateurACrediter.SoldeBisous = utilisateurACrediter.SoldeBisous + service.MontantBisous;
+
+        }
+
+        public void AjouterQarma(int utilisateurACrediterID, int serviceID)
+        {
+            Utilisateur utilisateurACrediter = _bddContext.Utilisateur.Find(utilisateurACrediterID);
+            Service service = _bddContext.Services.Find(serviceID);
+
+            utilisateurACrediter.Qarma = utilisateurACrediter.Qarma + service.MontantQarma;
         }
     }
 }

@@ -75,7 +75,7 @@ namespace ProjetQarma.Controllers
                         service.Image.CopyTo(fileStream);
                     }
 
-                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description, service.Titre,  "/images/" + service.Image.FileName, service.InfosPersosId);
+                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.Titre, "/images/" + service.Image.FileName, service.InfosPersosId);
 
                 }
             }
@@ -83,7 +83,7 @@ namespace ProjetQarma.Controllers
 
             else
             {
-                dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.Description,service.Titre, service.ImagePath, service.InfosPersosId);
+                dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.Titre, service.ImagePath, service.InfosPersosId);
 
             }
 
@@ -124,13 +124,13 @@ namespace ProjetQarma.Controllers
                         service.Image.CopyTo(fileStream);
                     }
 
-                    dal.ModifierService(service.Id, service.TypeService, service.MontantBisous, service.Description, service.Titre, "/images/" + service.Image.FileName);
+                    dal.ModifierService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.Titre, "/images/" + service.Image.FileName);
 
                 }
             }
             else
             {
-                dal.ModifierService(service.Id, service.TypeService, service.MontantBisous, service.Description,service.Titre, service.ImagePath);
+                dal.ModifierService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.Titre, service.ImagePath);
             }
             return RedirectToAction("Index");
         }
@@ -192,7 +192,7 @@ namespace ProjetQarma.Controllers
                         proposition.Image.CopyTo(fileStream);
                     }
 
-                    dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.Description,proposition.Titre, proposition.InfosPersosId, "/images/" + proposition.Image.FileName);
+                    dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.MontantQarma, proposition.Description, proposition.Titre, proposition.InfosPersosId, "/images/" + proposition.Image.FileName);
 
                 }
             }
@@ -200,7 +200,7 @@ namespace ProjetQarma.Controllers
 
             else
             {
-                dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.Description,proposition.Titre, proposition.InfosPersosId, proposition.ImagePath);
+                dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.MontantQarma, proposition.Description, proposition.Titre, proposition.InfosPersosId, proposition.ImagePath);
 
             }
 
@@ -242,13 +242,13 @@ namespace ProjetQarma.Controllers
                         service.Image.CopyTo(fileStream);
                     }
 
-                    dal.ModifierProposition(service.Id, service.TypeService, service.MontantBisous, service.Description, "/images/" + service.Image.FileName);
+                    dal.ModifierProposition(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, "/images/" + service.Image.FileName);
 
                 }
             }
             else
             {
-                dal.ModifierProposition(service.Id, service.TypeService, service.MontantBisous, service.Description, service.ImagePath);
+                dal.ModifierProposition(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.ImagePath); ;
             }
 
             return RedirectToAction("Proposition");

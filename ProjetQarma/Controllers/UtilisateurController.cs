@@ -38,6 +38,7 @@ namespace projetQarma.Controllers
                         utilisateur.Adresse,
                         utilisateur.Mail,
                         utilisateur.Telephone,
+                        utilisateur.SoldeBisous,
                         utilisateur.Qarma,
                         utilisateur.TypeUtilisateur,
                         utilisateur.CentreInteret,

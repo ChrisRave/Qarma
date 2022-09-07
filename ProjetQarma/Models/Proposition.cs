@@ -13,6 +13,7 @@ namespace ProjetQarma.Models
         [Display(Name = "Coût du service")]
         [RegularExpression("[0-9]+", ErrorMessage = " Veuillez saisir un nombre")]
         public int MontantBisous { get; set; }
+        public int MontantQarma { get; set; }   
         public string Description { get; set; }
         public string ImagePath { get; set; }
         [NotMapped]
