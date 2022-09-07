@@ -27,7 +27,6 @@
     <PackageReference Include="XAct.Core.PCL" Version="0.0.5014" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Utilisateur\" />
     <Folder Include="Views\Shared\" />

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Http;
 
@@ -8,6 +9,8 @@ namespace ProjetQarma.Models
     {
         public int Id { get; set; }
         public TypeService TypeService { get; set; }
+
+        [RegularExpression("[0-9]+", ErrorMessage = " Veuillez saisir un nombre")]
         public int MontantBisous { get; set; }
         public string Description { get; set; }
         public string ImagePath { get; set; }
@@ -19,10 +22,7 @@ namespace ProjetQarma.Models
         public Equipement Equipement { get; set; }
 
     }
-    public enum  Equipement
-    {
-        Bricolage, Jardinage
-    }
+   
 
 
 }
