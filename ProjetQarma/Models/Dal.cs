@@ -177,7 +177,7 @@ namespace ProjetQarma.Models
             return listePropositions;
         }
 
-        public void ProposerService(int id, TypeService typeservice, int montantBisous, string description)
+        public void ProposerService(int id, TypeService typeservice, int montantBisous, string description, string titre, int infosPersosId)
         {
 
             Proposition propositionToAdd = new Proposition
@@ -185,7 +185,9 @@ namespace ProjetQarma.Models
                 Id = id,
                 TypeService = typeservice,
                 MontantBisous = montantBisous,
-                Description = description
+                Description = description,
+                Titre = titre,
+                InfosPersosId = infosPersosId
             };
             if (id != 0)
             {
@@ -207,6 +209,11 @@ namespace ProjetQarma.Models
         }
 
         public void ModifierProposition(Proposition service)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ProposerService(int id, TypeService typeservice, int montantBisous, string description, string titre, InfosPersos infosPersosId)
         {
             throw new NotImplementedException();
         }

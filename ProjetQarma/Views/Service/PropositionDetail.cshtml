@@ -4,12 +4,34 @@
 @{ Layout = "_layoutDetail";
     ViewBag.Title = "PropositionDetail"; }
 
-<h3 class="titre">Proposition Detail</h3>
+<h3 class="titre">@Model.Proposition.Titre</h3>
 
-<p>
-    J'affiche le detail du service...
-    Montant:
-    Model.Proposition.MontantBisous
+<div class="row">
+    <div class="col-md-10 offset-md-1 bordureAucune">
+    </div>
+</div>
+   
+<div class="row">
+    <div class="col-md-10 offset-md-1 bordureBleue1">
+        Budget : @Model.Proposition.MontantBisous
 
-    Dés qu'on arrive à afficher les fonctions voulues dans les pages qu'on veut
-</p>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+            </div>
+        </div>
+
+
+
+        Catégorie :  @Model.Proposition.TypeService
+
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+            </div>
+        </div>
+
+
+        Détail : @Model.Proposition.Description
+
+    </div>
+    </div>
+

@@ -1,4 +1,4 @@
-﻿@model ProjetQarma.ViewModels.PropositionViewModel
+﻿
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -122,9 +122,6 @@
                         @RenderBody()
                     </div>
                 </div>
-                <div class="col-md-3  bordureBleue2">
-                    Les denieres Offres
-                </div>
 
 
 
@@ -132,17 +129,33 @@
                     Colonne Vide
                 </div>
                 <div class="col-md-2  bordureBleue2">
-                    Service proposé par:
+                    Posté par:
 
-                    Model.Proposition.InfosPersosId
+                    @Model.Utilisateur.InfosPersos.Prenom
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+                        </div>
+                    </div>
+
+
+
+                    <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button">Contacter</button>
+                </div>
+                
+                       
+
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 bordureAucune">
+                        Espace vide
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-10 offset-md-1 bordureAucune">
-                    Espace vide
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- **********FOOTER*************-->

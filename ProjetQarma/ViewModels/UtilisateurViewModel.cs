@@ -10,5 +10,8 @@ namespace ProjetQarma.ViewModels
     {
         public Utilisateur Utilisateur { get; set; }
         public bool Authentifie { get; set; }
+        public Proposition Proposition { get; set; }
+        public Service Service { get; set; }
+
     }
 }

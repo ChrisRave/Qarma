@@ -38,7 +38,7 @@ namespace ProjetQarma.Models
         //***** Proposition *****//
         List<Proposition> ObtientTousLesPropositions();
 
-        void ProposerService(int id, TypeService typeservice, int montantBisous, string description);
+        void ProposerService(int id, TypeService typeservice, int montantBisous, string description, string titre,int InfosPersosId );
 
        
 
