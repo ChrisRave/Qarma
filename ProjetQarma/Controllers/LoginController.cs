@@ -95,5 +95,12 @@ namespace ChoixSejour.Controllers
             HttpContext.SignOutAsync();
             return Redirect("/");
         }
+
+        public IActionResult MesDemandes()
+        {
+            Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.Name).Value));
+            List<Proposition> listePropositions = dal.ObtientTousLesPropositions().Where(p => p.InfosPersosId == utilisateur.InfosPersosId).ToList();
+            return View(listePropositions);
+        }
     }
 }
