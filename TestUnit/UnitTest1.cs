@@ -6,7 +6,7 @@ using ProjetQarma.Models;
 
 namespace TestUnit
 {
-    public class UnitTest1
+    /*public class UnitTest1
     {
         [Fact]
         public void Creation_Utilisateur_Verification()
@@ -35,5 +35,5 @@ namespace TestUnit
                 Assert.Equal("32 Rue des Oliviers, 31000 Toulouse", utilisateurs[0].Adresse);
             }
         }
-    }
+    }*/
 }

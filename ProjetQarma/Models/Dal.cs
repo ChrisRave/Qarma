@@ -105,7 +105,7 @@ namespace ProjetQarma.Models
             return listeServices;
         }
 
-        public void CreerService(int id, TypeService typeservice, int montantBisous, string description)
+        public void CreerService(int id, TypeService typeservice, int montantBisous, string description,  string Imagepath, string titre, int infosPersosId)
         {
 
             Service serviceToAdd = new Service
@@ -113,7 +113,10 @@ namespace ProjetQarma.Models
                 Id = id,
                 TypeService = typeservice,
                 MontantBisous = montantBisous,
-                Description = description
+                Description = description,
+                ImagePath = Imagepath,
+                Titre = titre,
+                InfosPersosId = infosPersosId,
             };
             if (id != 0)
             {
@@ -142,7 +145,7 @@ namespace ProjetQarma.Models
             }
         }
 
-        public void ModifierService(int id, TypeService typeservice, int montantBisous, string description)
+        public void ModifierService(int id, TypeService typeservice, int montantBisous, string description, string titre, string imagePath)
         {
             Service serviceToUpdate = this._bddContext.Services.Find(id);
             if (serviceToUpdate != null)
@@ -150,25 +153,14 @@ namespace ProjetQarma.Models
                 serviceToUpdate.TypeService = typeservice;
                 serviceToUpdate.MontantBisous = montantBisous;
                 serviceToUpdate.Description = description;
+                serviceToUpdate.Titre = titre;
+                serviceToUpdate.ImagePath = imagePath;
 
                 this._bddContext.SaveChanges();
             }
         }
 
-        public List<Qarma> ObtientTousLesQarma()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int CreerQarma(int nombreService, string badge)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void ModifierQarma(int id, int nombreService, string badge)
-        {
-            throw new NotImplementedException();
-        }
+      
 
         //Méthodes pour les propositions
         public List<Proposition> ObtientTousLesPropositions()
@@ -177,7 +169,7 @@ namespace ProjetQarma.Models
             return listePropositions;
         }
 
-        public void ProposerService(int id, TypeService typeservice, int montantBisous, string description, string titre, int infosPersosId)
+        public void ProposerService(int id, TypeService typeservice, int montantBisous, string description, string titre, int infosPersosId, string imagePath)
         {
 
             Proposition propositionToAdd = new Proposition
@@ -187,7 +179,8 @@ namespace ProjetQarma.Models
                 MontantBisous = montantBisous,
                 Description = description,
                 Titre = titre,
-                InfosPersosId = infosPersosId
+                InfosPersosId = infosPersosId,
+                ImagePath = imagePath
             };
             if (id != 0)
             {
@@ -203,9 +196,19 @@ namespace ProjetQarma.Models
             throw new NotImplementedException();
         }
 
-        public void ModifierProposition(int id, TypeService typeservice, int montantBisous, string description)
+
+        public void ModifierProposition(int id, TypeService typeservice, int montantBisous, string description, string imagePath)
         {
-            throw new NotImplementedException();
+            Proposition serviceToUpdate = this._bddContext.Propositions.Find(id);
+            if (serviceToUpdate != null)
+            {
+                serviceToUpdate.TypeService = typeservice;
+                serviceToUpdate.MontantBisous = montantBisous;
+                serviceToUpdate.Description = description;
+                serviceToUpdate.ImagePath = imagePath;
+
+                this._bddContext.SaveChanges();
+            }
         }
 
         public void ModifierProposition(Proposition service)
@@ -213,7 +216,36 @@ namespace ProjetQarma.Models
             throw new NotImplementedException();
         }
 
-        public void ProposerService(int id, TypeService typeservice, int montantBisous, string description, string titre, InfosPersos infosPersosId)
+        public void SupprimerProposition(int id)
+        {
+            Proposition serviceToDelete = this._bddContext.Propositions.Find(id);
+            this._bddContext.Propositions.Remove(serviceToDelete);
+            this._bddContext.SaveChanges();
+        }
+
+        public void SupprimerProposition(string nom)
+        {
+            Proposition serviceToDelete = this._bddContext.Propositions.Where(t => t.Description == nom).FirstOrDefault();
+            if (serviceToDelete != null)
+            {
+                this._bddContext.Propositions.Remove(serviceToDelete);
+                this._bddContext.SaveChanges();
+            }
+        }
+
+
+        //Fonctionnalités à développer
+        public List<Qarma> ObtientTousLesQarma()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int CreerQarma(int nombreService, string badge)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ModifierQarma(int id, int nombreService, string badge)
         {
             throw new NotImplementedException();
         }
