@@ -40,7 +40,9 @@ namespace ChoixSejour.Controllers
                 {
                     var userClaims = new List<Claim>()
                     {
-                        new Claim(ClaimTypes.Name, utilisateur.Id.ToString())
+                        new Claim(ClaimTypes.Name, utilisateur.Id.ToString()),
+                         new Claim("Prenom" ,utilisateur.InfosPersos.Prenom.ToString()),
+                      new Claim("Nom", utilisateur.InfosPersos.Nom.ToString()),
                     };
 
                     var ClaimIdentity = new ClaimsIdentity(userClaims, "User Identity");
@@ -74,6 +76,8 @@ namespace ChoixSejour.Controllers
                 var userClaims = new List<Claim>()
                 {
                     new Claim(ClaimTypes.Name, id.ToString()),
+                     new Claim("Prenom", utilisateur.InfosPersos.Prenom.ToString()),
+                      new Claim("Nom", utilisateur.InfosPersos.Nom.ToString()),
                 };
 
                 var ClaimIdentity = new ClaimsIdentity(userClaims, "User Identity");

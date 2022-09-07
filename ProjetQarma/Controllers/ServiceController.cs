@@ -114,6 +114,7 @@ namespace ProjetQarma.Controllers
             return RedirectToAction("Proposition");
         }
         public IActionResult PropositionDetail(int id)
+
         {
             Utilisateur utilisateur = dal.ObtientTousLesUtilisateurs().FirstOrDefault(r => r.Id == id);
             Proposition service = dal.ObtientTousLesPropositions().FirstOrDefault(r => r.Id == id);
