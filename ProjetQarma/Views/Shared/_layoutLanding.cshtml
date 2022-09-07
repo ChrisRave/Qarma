@@ -18,10 +18,12 @@
                 <div class="col-md-2 bordureAucune">
                     <div class="row">
                         <div class="col-md-8 offset-md-4 bordureAucune">
-                            <img src="/photos/QarmaLogo.png" width="100%" id="logo">
-                            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                            <a href="#">
+                                <img src="/photos/QarmaLogo.png" width="100%" id="logo"  onclick="location.href='@Url.Action("Landing", "Home")';">
+                                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                </div>
@@ -35,13 +37,14 @@
                     </div>
                 </div>
                 <div class="col-md-3 caractereDescription bordureAucune">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-4 bordureAucune">
-                            <!-- Se connecter-->
-                            @if (!User.Identity.IsAuthenticated)
-                            {
-                                @using (Html.BeginForm("Index", "Login"))
-                                {
+
+                    <!-- Se connecter-->
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        @using (Html.BeginForm("Index", "Login"))
+                        {
+                            <div class="row">
+                                <div class="col-md-8 offset-md-4 bordureAucune">
                                     <div class="collapse navbar-collapse" id="main-navigation">
                                         <nav class="nav flex-column navbar-nav">
                                             <div class="form-floating mb-10 navbar-nav">
@@ -56,16 +59,54 @@
                                             </div>
                                         </nav>
                                     </div>
-
-                                }
-                            }
-                            else
-                            { 
-                               }
-
-
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="row">
+                            <div class="col-md-10 offset-md-0 bordureAucune">
+                                <div class="collapse navbar-collapse" id="main-navigation" align="center">
+                                    <nav class="nav flex-column navbar-nav">
+                                        <div class="row">
+                                            <div class="col-md-12 bordureAucune couleur_verte" style="font-size:20px ;">
+                                                <strong>
+                                                    Bonjour ! <strong class="couleur_bleueQarma"> @User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</strong>
+                                                </strong>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 bordureAucune">
+                                                <a href="#">
+                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                                        <span class="navbar-toggler-icon"></span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 bordureAucune">
+                                                <a href="#">
+                                                    <img src="/photos/iconmessage.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                                        <span class="navbar-toggler-icon"></span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 bordureAucune">
+                                                <a href="#">
+                                                    <img src="/photos/iconnotif.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                                        <span class="navbar-toggler-icon"></span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    }                                
                 </div>
             </div>
         </div>
@@ -113,7 +154,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" onclick="location.href='@Url.Action("Copro", "Infos")';">La copro / Gestion</button>
+                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" onclick="location.href='@Url.Action("Copro", "Infos")';">La copropriété</button>
                         </div>
                     </div>
                     <div class="row">

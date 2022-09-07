@@ -2,17 +2,52 @@
     ViewBag.Title = "AccueilLanding"; }
 <p class="contenu ">
     
-    <div class="row">
-        <div class="col-md-10 offset-md-1 bordureAucune">
-        </div>
-    </div>
     <div class="row" align="center">
-        <div class="col-md-9 bordureAucune">
+        <div class="col-md-8 bordureAucune">
             <div class="row">
-                <div class="col-md-11 offset-md-1 bordureAucune">
+                <div class="col-md-10 offset-md-1 bordureAucune">
                     <h2 class="titre" style="color: #1f5c587c; "> Inscription</h2>
+                    <div class="row">
+                        <div class="col-md-6 bordureAucune">
+                        </div>
+                    </div>
+
                     <div class="row bordureBleue1" style="border-radius: 8px;">
-                        formulaire d'inscription
+                        @using (Html.BeginForm("CreerCompte", "Login"))
+                        {
+                            <div class="row">
+                                <div class="col-md-6 bordureAucune">
+                                    <input type="email" name="Utilisateur.Mail" class="form-control" id="floatingInput" placeholder="Votre adresse e-mail 'nom@exemple.com' " style=" width: 100%;">
+                                </div>
+
+                                <div class="col-md-6 bordureAucune">
+                                    <input type="password" name="Utilisateur.Password" class="form-control" id="floatingPassword" placeholder="Créer votre mot de passe" style=" width: 100%;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 bordureAucune">
+                                    <input type="text" name="Utilisateur.InfosPersos.Nom" class="form-control" id="floatingInput" placeholder="Votre nom" style=" width: 100%;">
+                                </div>
+
+                                <div class="col-md-6 bordureAucune">
+                                    <input type="text" name="Utilisateur.InfosPersos.Prenom" class="form-control" id="floatingInput" placeholder="Votre prenom" style=" width: 100%;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 bordureAucune">
+                                    <input type="text" name="Utilisateur.Adresse" class="form-control" id="floatingInput" placeholder="Votre adresse" style=" width: 100%;">
+                                </div>
+
+                                <div class="col-md-6 bordureAucune">
+                                    <input type="text" name="Utilisateur.Telephone" class="form-control" id="floatingInput" placeholder="Votre numéro de Telephone" style=" width: 100%;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1 bordureAucune">
+                                    <button class="btn btn-secondary  me-md-4" type="submit" style=" width: 100%;">Bienvenue dans la copropriété « Les Jardins de la mer » <br /> <strong> Validez votre inscription</strong> </button>
+                                </div>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
@@ -21,47 +56,59 @@
 
 
         <div class="col-md-3 bordureAucune">
+
             <div class="row">
-                <div class="col-md-10 offset-md-1 bordureAucune">
+                <div class="col-md-12 offset-md-0 bordureAucune">
+
                     @if (!User.Identity.IsAuthenticated)
                     {
                         @using (Html.BeginForm("Index", "Login"))
                         {
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1 bordureAucune">
+                                </div>
+                            </div> <div class="row">
+                                <div class="col-md-10 offset-md-1 bordureAucune">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 offset-md-0 bordureAucune">
+                                </div>
+                            </div>
+
                             <h2 class="titre" style="color: #1f5c587c; "> Se connecter</h2>
                             <div class="row bordureBleue1" style="border-radius: 8px;">
+
                                 <div class="row">
-                                    <div class="col-md-10 offset-md-1 bordureAucune">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-10 offset-md-1 bordureAucune">
+                                    <div class="col-md-12 offset-md-0 bordureAucune">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-11 offset-md-1 bordureAucune">
                                         <div><input type="email" name="Utilisateur.Mail" class="form-control" id="floatingInput" placeholder="nom@exemple.com" style=" width: 100%; margin-bottom: 5px;"></div>
-                                        <div><input type="password" name="Utilisateur.Password" class="form-control" id="floatingPassword" placeholder="Mot de passe" style=" width: 100%;"></div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-10 offset-md-1 bordureAucune">
+                                    <div class="col-md-11 offset-md-1 bordureAucune">
+                                        <div><input type="password" name="Utilisateur.Password" class="form-control" id="floatingPassword" placeholder="Mot de passe" style=" width: 100%;"></div>
                                     </div>
                                 </div>
+
                                 <div class="row">
                                     <div class="col-md-11 offset-md-1 bordureAucune">
                                         <button class="btn btn-secondary  me-md-4" type="submit" style=" width: 100%;">Connexion</button>
 
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-10 offset-md-1 bordureAucune">
-                                    </div>
-                                </div>
+
                             </div>
                         }
                     }
+
                 </div>
             </div>
+        </div>
+        <div class="col-md-3 bordureAucune">
         </div>
     </div>
 

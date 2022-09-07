@@ -73,7 +73,7 @@ namespace ProjetQarma.Models
         public Utilisateur Authentifier(string mail, string password)
         {
             string motDePasse = EncodeMD5(password);
-            Utilisateur utilisateur = this._bddContext.Utilisateur.FirstOrDefault(u => u.Mail == mail && u.Password == motDePasse);
+            Utilisateur utilisateur = this._bddContext.Utilisateur.Include(u=> u.InfosPersos).FirstOrDefault(u => u.Mail == mail && u.Password == motDePasse);
             return utilisateur;
         }
 
