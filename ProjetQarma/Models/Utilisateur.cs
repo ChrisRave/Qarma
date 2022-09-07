@@ -22,6 +22,6 @@ namespace ProjetQarma.Models
     }
     public enum TypeUtilisateur
     {
-        Fournisseur, Consommateur, Locataire //....
+        Fournisseur, Consommateur, 
     }
 }

@@ -13,7 +13,7 @@ namespace ProjetQarma.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
+            optionsBuilder.UseMySql("server=localhost;user id=root;password=rrrrr;database=utilisateurQarma");
         }
 
         public void InitializeDb()
@@ -81,24 +81,115 @@ namespace ProjetQarma.Models
             this.Services.AddRange(
                 new Service
                 {
-                    Id = 1,
+                    Titre = "Parking",
                     TypeService = TypeService.Parking,
                     Description = "Je recherche à louer une place de parking pour une durée d'une semaine",
-                    ImagePath = "~/photos/SolidevLogo.png",
+                    ImagePath = "/images/Parking.jpg",
+
+                }
+            );
+
+            this.Services.AddRange(
+                new Service
+                {
+                    Titre ="Promener mon chien",
+                    TypeService = TypeService.Prestation,
+                    Description = "Je recherche quelqu'un pour promener mon chien tous les dimanches matins",
+                    ImagePath = "/images/Prestation.jpg",
+
+                }
+            );
+
+            this.Services.AddRange(
+                new Service
+                {
+                    Titre = "Raclette !!!",
+                    TypeService = TypeService.Evenement,
+                    Description = "Quelqu'un pour organiser une soirée raclette ce vendredi entre voisins ?!!",
+                    ImagePath = "/images/Evenement.jpg",
+
+                }
+            );
+            this.Services.AddRange(
+               new Service
+               {
+                   Titre = "Place canapé",
+                   TypeService = TypeService.Hebergement,
+                   Description = "Yo ! Je peux emprunter un canapé pour 1 semaine? On manque de place avec les 7 nains à la maison^^",
+                   ImagePath = "/images/Hebergement.jpg",
+
+               }
+           );
+            this.Services.AddRange(
+               new Service
+               {
+                   Titre = "Besoin de toit ...",
+                   TypeService = TypeService.Hebergement,
+                   Description = "Salut les loulous !! Est-ce que quelqu'un a une pièce en plus à  squatter pendant les vacances d'été?",
+                   ImagePath = "/images/Hebergement.jpg",
+
+               }
+           );
+
+            this.Services.AddRange(
+               new Service
+               {
+                   Titre = "Hé José!!",
+                   TypeService = TypeService.Equipement,
+                   Description = "José tu as  un tout nouveau karcher,  tu me le prêtes pour nettoyer ma titine? ",
+                   ImagePath = "/images/Equipement.jpg",
+
+               }
+           );
+            this.Services.AddRange(
+               new Service
+               {
+                   Titre = "Outil",
+                   TypeService = TypeService.Equipement,
+                   Description = "Je prête ma tronçonneuse si vous avez besoin de couper quoi ce soit !",
+                   ImagePath = "/images/Equipement.jpg",
+
+               }
+           );
+            this.Propositions.AddRange(
+                new Proposition
+                {
+                    Titre = "Massage",
+                    TypeService = TypeService.Prestation,
+                    Description = "Bonjour, je propose des massages...",
+                    ImagePath = "/images/Prestation.jpg",
 
                 }
             );
             this.Propositions.AddRange(
                 new Proposition
                 {
-                    Id = 1,
-                    InfosPersosId = 3, 
-                    TypeService = TypeService.Prestation,
-                    Description = "Bonjour, je propose des massages...",
-                    ImagePath = "~/photos/SolidevLogo.png",
-                    DateTime = DateTime.Now,
+                    Titre = "Barbecue",
+                    TypeService = TypeService.Evenement,
+                    Description = "Bonjour, j'ai un nouveau barbecue et on doit fêter ça !!",
+                    ImagePath = "/images/Evenement.jpg",
 
-        }
+                }
+            );
+            this.Propositions.AddRange(
+                new Proposition
+                {
+                    Titre = "Marteau neuf",
+                    TypeService = TypeService.Prestation,
+                    Description = "Je peux prêter mon nouveau marteau !! Veuillez juste ne pas taper trop fort avec ! ",
+                    ImagePath = "/images/Equipement.jpg",
+
+                }
+            );
+            this.Propositions.AddRange(
+                new Proposition
+                {
+                    Titre = "Parking libre",
+                    TypeService = TypeService.Parking,
+                    Description = "Je laisse ma place dans le local à vélo pendant 2 mois cet été. Avis aux interéssés !",
+                    ImagePath = "/images/Parking.jpg",
+
+                }
             );
             this.SaveChanges();
         }

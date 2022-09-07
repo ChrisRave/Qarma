@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <title>Landing Page QARMA</title>
@@ -72,7 +73,9 @@
                                         <div class="row">
                                             <div class="col-md-12 bordureAucune couleur_verte" style="font-size:20px ;">
                                                 <strong>
+
                                                     Bonjour ! <strong class="couleur_bleueQarma"> @User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</strong>
+
                                                 </strong>
                                             </div>
                                         </div>
@@ -141,7 +144,8 @@
         <div class="containerBody">
             <div class="row">
                 <div class="col-md-10 offset-md-1 bordureAucune">
-                    Espace vide
+                    <div class="col-md-10 offset-md-1 bordureAucune">
+       
                 </div>
             </div>
             <!--La prtie du WEB fonctionalité-->
@@ -151,7 +155,13 @@
                     Partie Gauche
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureAucune">
-                            Espace vide
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+
+                            @Html.ActionLink("Créer un service", "Index", "Service")
+                        </div>
+                         <div class="col-md-10 offset-md-1 bordureAucune">
+                            @Html.ActionLink("Proposer un service", "Proposition", "Service")
+                        </div>
                         </div>
                     </div>
                     <div class="row">
@@ -183,7 +193,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Demande", "Demande")'>Se déconnecter</button>
+                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Deconnexion","Login")'>Se déconnecter</button>
 
                         </div>
                     </div>
