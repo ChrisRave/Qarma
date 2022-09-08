@@ -84,9 +84,8 @@ namespace ProjetQarma.Models
                 new Service
                 {
  
-
-
                     InfosPersosId = 1,
+
                     Id = 1,
                     Titre = "Parking",
                     TypeService = TypeService.Parking,
@@ -187,9 +186,9 @@ namespace ProjetQarma.Models
             this.Propositions.AddRange(
                 new Proposition
                 {
+
                     InfosPersosId = 1,
                     Id = 2,
-
                     Titre = "Barbecue",
                     TypeService = TypeService.Evenement,
                     Description = "Bonjour, j'ai un nouveau barbecue et on doit fêter ça !!",
