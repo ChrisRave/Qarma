@@ -1,7 +1,7 @@
 ﻿@model List<ProjetQarma.Models.Proposition>
 
 @{
-    Layout = "_layoutLanding";
+    Layout = "_layoutAccueil";
     ViewBag.Title = "Proposition";
 }
 
@@ -15,7 +15,7 @@
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
-                @using (Html.BeginForm("Proposition", "Service", FormMethod.Get )) //Index est la méthode, Service est le controleur, searchstring est le paramètre
+                @using (Html.BeginForm("Index", "Service", FormMethod.Get )) //Index est la méthode, Service est le controleur, searchstring est le paramètre
                             {
                                 <div class="form-floating mb-3">
                                     @Html.TextBox( "searchString")
@@ -27,25 +27,42 @@
         <p class="proposition">
             <div class="row justify-content-start">
                 @foreach (var proposition in Model)
-                {                 
+
+                {               
+                    
+                    string modifierLien = "/Service/ModifierProposition/" + proposition.Id;
+                    string supprimerLien = "/Service/SupprimerProposition/" + proposition.Id;
                     <div class="card col-6 m-5" style="width: 18rem;" >
                
                        
                         <div class="card-body d-flex flex-column justify-content-between">
-                            <a href=@("/service/PropositionDetail/"+proposition.Id) class="btn btn-primary stretched-link"> @proposition.Titre</a>
+                            <h5 href=@("/service/PropositionDetail/"+proposition.Id) class="btn"> @proposition.Titre</h5>
+
                             <div>
+                        
                                  <div class="my-3">
                                         <img src="@proposition.ImagePath" width="225" height="200" />
                                     </div>
                                 <h6 class="card-subtitle mb-2 text-muted">Coût du service : @proposition.MontantBisous</h6>
                                 <h6 class="card-subtitle mb-2 text-muted">@proposition.TypeService</h6>
-                                <p class="card-text">@proposition.Description</p>                          
+                                <p class="card-text">@proposition.Description</p> 
+                                
+                                <a href=@modifierLien class=" btn btn-primary stretched link">Modifier</a>
+                                <a href=@supprimerLien class="btn btn-primary stretched link" onclick="return confirm('Confirmer la suppression')">Supprimer</a>
+
                             </div>
                    
                         </div>
                     </div>
                     }
+                <a href="/Service/Proposer">
+					<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="black" class="align-middle bi bi-plus" viewBox="0 0 16 16">
+						<path class="plus" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+					</svg>
+				</a>
 
-                @Html.ActionLink("Proposer un nouveau service", "Proposer", "Service")
+
+                @*@Html.ActionLink("Proposer un nouveau service", "Proposer", "Service")*@
+
             </div>
 

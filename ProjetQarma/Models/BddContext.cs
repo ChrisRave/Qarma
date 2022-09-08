@@ -13,7 +13,7 @@ namespace ProjetQarma.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;user id=root;password=rrrrr;database=utilisateurQarma");
+            optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
         }
 
         public void InitializeDb()
@@ -88,9 +88,8 @@ namespace ProjetQarma.Models
                 new Service
                 {
  
-
-
                     InfosPersosId = 1,
+
                     Id = 1,
                     Titre = "Parking",
                     TypeService = TypeService.Parking,
@@ -191,9 +190,9 @@ namespace ProjetQarma.Models
             this.Propositions.AddRange(
                 new Proposition
                 {
+
                     InfosPersosId = 1,
                     Id = 2,
-
                     Titre = "Barbecue",
                     TypeService = TypeService.Evenement,
                     Description = "Bonjour, j'ai un nouveau barbecue et on doit fêter ça !!",

@@ -36,7 +36,7 @@ namespace TestUnit
             }
         }*/
 
-        [Fact]
+        /*[Fact]
         public void Transferer_Bisous_Verification()
         {
             using (Dal dal = new Dal())
@@ -73,7 +73,7 @@ namespace TestUnit
                 Assert.Equal(22, utilisateurs[0].Qarma);
 
             }
-        }
+        }*/
     }
 }
 
