@@ -1,71 +1,230 @@
 @model List<ProjetQarma.Models.Proposition>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title> Mes demandes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/css/style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md">
+        <div class="containerHeader">
+            <div class="row">
+                <!-- La partie Gauche LOGO-->
 
-@{
-    Layout = "_layoutAccueil";
-    ViewBag.Title = "Mesdemandes";
-}
-
-
-<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Proposition de services</h2>
-<!-- Icon Divider-->
-<div class="divider-custom">
-    <div class="divider-custom-line"></div>
-    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-    <div class="divider-custom-line"></div>
-</div>
-<p class="proposition">
-    <div class="row justify-content-start">
-        @foreach (var proposition in Model)
-        {
-
-            string modifierLien = "/Service/ModifierProposition/" + proposition.Id;
-
-            <div class="card col-6 m-5" style="width: 18rem;">
-
-
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <a href=@("/service/PropositionDetail/"+proposition.Id) class="btn btn-primary stretched-link"> @proposition.Titre</a>
-                    <div>
-                        <h5 class="card-title">  @proposition.Titre</h5>
-                        <h5 class="card-title"> Identifiant du service : @proposition.Id</h5>
-
-                        <h6 class="card-subtitle mb-2 text-muted">proposé par : @proposition.InfosPersosId</h6>
-                        <h6 class="card-subtitle mb-2 text-muted">Coût du service : @proposition.MontantBisous</h6>
-                        <h6 class="card-subtitle mb-2 text-muted">@proposition.TypeService</h6>
-                        <p class="card-text">@proposition.Description</p>
-                        <a href=modifierLien class="card-link">Modifier</a>
-
-                    </div>
-
-                </div>
-            </div>
-        }
-
-    </div>
-    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Demande de services</h2>
-    <div class="row justify-content-start">
-
-        @foreach (var service in Model)
-        {
-            string modifierLien = "/Service/Modifier/" + service.Id;
-            string supprimerLien = "/Service/Supprimer/" + service.Id;
-            <div class="card col-6 m-5" style="width: 18rem;">
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <div>
-                        <p class="card-text">@service.Titre</p>
-                        <div class="my-3">
-                            <img src="@service.ImagePath" width="225" height="200" />
+                <div class="col-md-2 bordureAucune">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-4 bordureAucune">
+                            <a href="#">
+                                <img src="/photos/QarmaLogo.png" width="100%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </a>
                         </div>
-                        <h6 class="card-subtitle mb-2 text-muted">Coût du service : @service.MontantBisous</h6>
-                        <h6 class="card-subtitle mb-2 text-muted">@service.TypeService</h6>
-                        <p class="card-text">@service.Description</p>
-
                     </div>
-                    @Html.ActionLink("Répondre à la demande", "Creer", "Service")
-                    <a href=@modifierLien class="card-link">Modifier</a>
-                    <a href=@supprimerLien class="card-link">Supprimer</a>
+                </div>
+                <!-- Description plateforme Qarma-->
+                <div class="col-md-7 caractereDescription text-center bordureAucune">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+                            <h2 class="couleur_verte"> <strong> Qarma</strong></h2><br>
+                            <h4 class="couleur_bleueQarma"> <strong>La plateforme d'échange de biens et de services entre voisins</strong> </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 caractereDescription bordureAucune">
+
+
+
+                    <div class="row">
+                        <div class="col-md-10 offset-md-0 bordureAucune">
+                            <div class="collapse navbar-collapse" id="main-navigation" align="center">
+                                <nav class="nav flex-column navbar-nav">
+                                    <div class="row">
+                                        <div class="col-md-12 bordureAucune couleur_verte" style="font-size:20px ;">
+                                            <strong>
+                                                Bonjour ! <strong class="couleur_bleueQarma"> @User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</strong>
+                                            </strong>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 bordureAucune">
+                                            <a href="#">
+                                                <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Index", "Login")';">
+                                                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                                    <span class="navbar-toggler-icon"></span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 bordureAucune">
+                                            <a href="#">
+                                                <img src="/photos/iconmessage.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                                    <span class="navbar-toggler-icon"></span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 bordureAucune">
+                                            <a href="#">
+                                                <img src="/photos/iconnotif.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                                    <span class="navbar-toggler-icon"></span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        }
-    </div>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="~/css/style1.css">
+    <header class="page-header header container-fluid">
+        <script src="main.js"></script>
+    </header>
+    <div>
+        <div class="containerBody">
 
+            <!--La prtie du WEB fonctionalité-->
+            <div class="row">
+
+
+                <!--Partie body-->
+                <div class="col-md-9  bordureAucune">
+                    <!--Le gros bloc de la page-->
+                    <div id="contenu">
+                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Mes offres</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <p class="proposition">
+                            <div class="row justify-content-start">
+                                @foreach (var proposition in Model)
+                                {
+
+                                    string modifierLien = "/Service/ModifierProposition/" + proposition.Id;
+                                    string supprimerLien = "/Service/SupprimerProposition/" + proposition.Id;
+
+                                    <div class="card col-6 m-5" style="width: 18rem;">
+
+
+                                        <div class="card-body d-flex flex-column justify-content-between">
+                                            <div>
+                                                <h3 class="card-title">  @proposition.Titre</h3>
+                                                <div class="my-3">
+                                                    <img src="@proposition.ImagePath" width="225" height="200" />
+                                                </div>
+                                                <h6 class="card-subtitle mb-2 text-muted">Coût du service : @proposition.MontantBisous</h6>
+                                                <p class="card-text">@proposition.Description</p>
+
+
+                                            </div>
+
+                                        </div>
+                                        <a href=modifierLien class="card-link">Modifier</a>
+                                        <a href=@supprimerLien class="card-link" onclick="return confirm('Confirmer la suppression')">Supprimer</a>
+                                    </div>
+
+                                }
+
+                            </div>
+                            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Mes demandes</h2>
+                            <div class="row justify-content-start">
+
+                                @foreach (var service in Model)
+                                {
+                                    string modifierLien = "/Service/Modifier/" + service.Id;
+                                    string supprimerLien = "/Service/Supprimer/" + service.Id;
+                                    <div class="card col-6 m-5" style="width: 18rem;">
+                                        <div class="card-body d-flex flex-column justify-content-between">
+                                            <div>
+                                                <h3 class="card-title">  @service.Titre</h3>
+                                                <div class="my-3">
+                                                    <img src="@service.ImagePath" width="225" height="200" />
+                                                </div>
+                                                <h6 class="card-subtitle mb-2 text-muted">Coût du service : @service.MontantBisous</h6>
+                                                <p class="card-text">@service.Description</p>
+                                            </div>
+                                        </div>
+                                        <a href=@modifierLien class="card-link">Modifier</a>
+                                        <a href=@supprimerLien class="card-link">Supprimer</a>
+                                    </div>
+
+                                }
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1 bordureAucune">
+                    <!--Ligne 2 vide-->
+                    <!--Espace vide-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER de la page-->
+    <footer class="text-center ">
+        <!-- Grid container -->
+        <div class="containerFooter pt-20">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+                            <!--Ligne 2 vide-->
+                            <!--Espace vide-->
+                        </div>
+                    </div>
+                    <!-- Les logos linkedIn Intsagram FB Twitter-->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="~/photos/facebook.png" width="40%" id="logo">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="~/photos/linkedin.png" width="40%" id="logo">
+                        </div>
+                        <div class="col-md-3">
+                            <br /><br /> <img src="~/photos/twitter.png" width="40%" id="logo">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="~/photos/instagram.png" width="40%" id="logo">
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright -->
+                <!-- -->
+                <div class="col-md-6 bordureAucune">
+                    <div class="text-center couleur_bleueSoliDev p-40">
+                        <strong> SoliDev © 2022  </strong><br>
+                        <strong> solidev@contact.com </strong>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <img src="~/photos/SolidevLogo.png" width="20%" id="logo">
+                </div>
+                <!-- Logo SoliDev-->
+                <!-- Copyright -->
+                <!-- -->
+            </div>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+</html> 
