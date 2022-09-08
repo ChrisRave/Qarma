@@ -8,8 +8,8 @@ namespace ProjetQarma.Models
 
         List<Utilisateur> ObtientTousLesUtilisateurs();
 
-        int CreerUtilisateur(InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, string password, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose);        
-        void ModifierUtilisateur(int id, InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose);
+        int CreerUtilisateur(InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, string password, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose, string Imagepath);        
+        void ModifierUtilisateur(int id, InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose, string Imagepath);
 
         //***** Login *****//
         Utilisateur Authentifier(string mail, string password);

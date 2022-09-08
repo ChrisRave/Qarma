@@ -57,7 +57,8 @@ namespace ProjetQarma.Models
                      Password = Dal.EncodeMD5("ccccc"),
                      TypeUtilisateur = TypeUtilisateur.Consommateur,
                      CentreInteret = "J'aime le jazz et les ballades en foret.",
-                     Propose = "Bricolage - Petits travaux"
+                     Propose = "Bricolage - Petits travaux",
+                     ImagePath = "/photos/profil/photoBenoit.jpg",
                  }
             );
             this.InfosPersos.AddRange(
