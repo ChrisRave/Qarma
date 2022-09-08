@@ -100,6 +100,13 @@
     background-color: #327672;
     padding: 10px;
 }
+.bordureBleue3 {
+    border: 3px solid #3276725f;
+    background-color: #a8d1c886;
+    padding: 10px;
+    color: ghostwhite;
+    text-align:center;
+}
 /* ****BODY **** */
 .containerBody {
     border: 1px solid;
@@ -186,3 +193,6 @@ body {
     background-color: #97afbf67;
 }
 
+.plus {
+    color: rgba(140, 215, 175, 0.964);
+}
