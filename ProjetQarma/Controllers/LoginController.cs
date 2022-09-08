@@ -103,5 +103,7 @@ namespace ChoixSejour.Controllers
             List<Service> listeservices = dal.ObtientTousLesServices().Where(p => p.InfosPersosId == utilisateur.InfosPersosId).ToList();
             return View(listePropositions );
         }
+
+       
     }
 }
