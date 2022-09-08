@@ -25,6 +25,7 @@ namespace ProjetQarma.Models
         public string ImagePath { get; set; }
         [NotMapped]
         public IFormFile Image { get; set; }
+        public string Appartement { get; set; }
     }
     public enum TypeUtilisateur
     {

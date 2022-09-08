@@ -3,8 +3,11 @@
 
 @{ Layout = "_layoutDetail";
     ViewBag.Title = "PropositionDetail"; }
-
-<h3 class="titre">@Model.Proposition.Titre</h3>
+<div class="row" align="center">
+    <div class="col-md-10 offset-md-1 bordureAucune">
+        <h3 class="titre">@Model.Proposition.Titre</h3>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-md-10 offset-md-1 bordureAucune">
@@ -13,28 +16,33 @@
         </div>
     </div>
 </div>
-   
-<div class="row">
-    <div class="col-md-10 offset-md-1 bordureBleue1">
-        Budget : @Model.Proposition.MontantBisous
-
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                Budget : @Model.Proposition.MontantBisous
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                Catégorie :  @Model.Proposition.TypeService
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                Détail : @Model.Proposition.Description
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                proposé par :@Model.Proposition.InfosPersosId
+            </div>
+        </div>
+       
         <div class="row">
             <div class="col-md-10 offset-md-1 bordureAucune">
             </div>
         </div>
 
 
+      
 
-        Catégorie :  @Model.Proposition.TypeService
-
-        <div class="row">
-            <div class="col-md-10 offset-md-1 bordureAucune">
-            </div>
-        </div>
-
-
-        Détail : @Model.Proposition.Description
-
-    </div>
-    </div>
 
