@@ -29,6 +29,7 @@
                 @foreach (var service in Model)
                 {
 
+
                     string modifierLien = "/Service/Modifier/" + service.Id;
                     string supprimerLien = "/Service/Supprimer/" + service.Id;
 
@@ -47,11 +48,14 @@
                                 <a href=@modifierLien class=" btn btn-primary stretched link">Modifier</a>
                                 <a href=@supprimerLien class="btn btn-primary stretched link" onclick="return confirm('Confirmer la suppression')">Supprimer</a> 
 
+
                             </div>
                    
                         </div>
+
                     </div>
                     }
+
 
                 <a href="/Service/Creer">
 					<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="black" class="align-middle bi bi-plus" viewBox="0 0 16 16">

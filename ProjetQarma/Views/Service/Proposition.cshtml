@@ -27,13 +27,13 @@
         <p class="proposition">
             <div class="row justify-content-start">
                 @foreach (var proposition in Model)
-                {
 
-                    string modifierLien = "/Service/ModifierProposition/" +proposition.Id;
-                    string supprimerLien = "/Service/SupprimerProposition/" + proposition.Id;
-
+                {                 
                     <div class="card col-6 m-5" style="width: 18rem;" >
-                    <div class="card-body d-flex flex-column justify-content-between">
+               
+                       
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <a href=@("/service/PropositionDetail/"+proposition.Id) class="btn btn-primary stretched-link"> @proposition.Titre</a>
 
                             <div>
                         
@@ -43,9 +43,8 @@
                                     </div>
                                 <h6 class="card-subtitle mb-2 text-muted">Coût du service : @proposition.MontantBisous</h6>
                                 <h6 class="card-subtitle mb-2 text-muted">@proposition.TypeService</h6>
-                                <p class="card-text">@proposition.Description</p>
-                                <a href=@modifierLien class="btn btn-primary stretched link">Modifier</a>
-                                <a href=@supprimerLien class="btn btn-primary stretched link" onclick="return confirm('Confirmer la suppression')">Supprimer</a> 
+
+                                <p class="card-text">@proposition.Description</p>                          
 
                             </div>
                    
@@ -58,6 +57,8 @@
 					</svg>
 				</a>
 
+
                 @*@Html.ActionLink("Proposer un nouveau service", "Proposer", "Service")*@
+
             </div>
 

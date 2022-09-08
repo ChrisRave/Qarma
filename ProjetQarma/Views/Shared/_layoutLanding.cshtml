@@ -14,19 +14,19 @@
         <div class="containerHeader">
             <div class="row">
                 <!-- La partie Gauche LOGO-->
-                
+
                 <div class="col-md-2 bordureAucune">
                     <div class="row">
                         <div class="col-md-8 offset-md-4 bordureAucune">
                             <a href="#">
-                                <img src="/photos/QarmaLogo.png" width="100%" id="logo"  onclick="location.href='@Url.Action("Landing", "Home")';">
+                                <img src="/photos/QarmaLogo.png" width="100%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
                                 <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                             </a>
                         </div>
                     </div>
-               </div>
+                </div>
                 <!-- Description plateforme Qarma-->
                 <div class="col-md-7 caractereDescription text-center bordureAucune">
                     <div class="row">
@@ -79,7 +79,7 @@
                                         <div class="row">
                                             <div class="col-md-4 bordureAucune">
                                                 <a href="#">
-                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Index", "Login")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                                                         <span class="navbar-toggler-icon"></span>
                                                     </button>
@@ -106,7 +106,7 @@
                                 </div>
                             </div>
                         </div>
-                    }                                
+                    }
                 </div>
             </div>
         </div>
@@ -118,13 +118,17 @@
         <script src="main.js"></script>
     </header>
     <div>
-        <div class="containerBody">
- 
+       <div class="containerBody">
+
             <!--La prtie du WEB fonctionalité-->
             <div class="row">
                 <!-- La partie Gauche-->
                 <div class="col-md-3 bordureAucune">
                     <!--Ligne2 et les colonnes pour les boutons vide -->
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureAucune">
                         </div>
@@ -168,12 +172,27 @@
                         </div>
                     </div>
                     <div class="row">
-                       
+
 
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureAucune">
-                            <!--Espace vide-->
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+
                         </div>
                     </div>
                     <div class="row">
@@ -184,14 +203,16 @@
                 </div>
 
                 <!--Partie body-->
-                <div class="col-md-9  bordureAucune"><!--Le gros bloc de la page-->
+                <div class="col-md-9  bordureAucune">
+                    <!--Le gros bloc de la page-->
                     <div id="contenu">
                         @RenderBody()
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-10 offset-md-1 bordureAucune"><!--Ligne 2 vide-->
+                <div class="col-md-10 offset-md-1 bordureAucune">
+                    <!--Ligne 2 vide-->
                     <!--Espace vide-->
                 </div>
             </div>
@@ -218,7 +239,7 @@
                             <img src="~/photos/linkedin.png" width="40%" id="logo">
                         </div>
                         <div class="col-md-3">
-                            <img src="~/photos/twitter.png" width="40%" id="logo">
+                            <br/><br /> <img src="~/photos/twitter.png" width="40%" id="logo">
                         </div>
                         <div class="col-md-3">
                             <img src="~/photos/instagram.png" width="40%" id="logo">
@@ -228,7 +249,7 @@
                 <!-- Copyright -->
                 <!-- -->
                 <div class="col-md-6 bordureAucune">
-                    <div class="text-center couleur_bleueSoliDev p-40" style="font-family: 'Chalkduster, fantasy' ">
+                    <div class="text-center couleur_bleueSoliDev p-40">
                         <strong> SoliDev © 2022  </strong><br>
                         <strong> solidev@contact.com </strong>
                     </div>
@@ -247,4 +268,4 @@
         @RenderBody()
     </div>
 </body>
-</html>
+</html> 

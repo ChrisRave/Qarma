@@ -13,7 +13,7 @@ namespace ProjetQarma.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
+            optionsBuilder.UseMySql("server=localhost;user id=root;password=rrrrr;database=utilisateurQarma");
         }
 
         public void InitializeDb()
@@ -21,10 +21,10 @@ namespace ProjetQarma.Models
             this.Database.EnsureDeleted();
             this.Database.EnsureCreated();
             this.Utilisateur.AddRange(
-            
+
                 new Utilisateur
                 {
-                    InfosPersosId= 1,
+                    InfosPersosId = 1,
                     Id = 1,
                     Adresse = " 3 Rue des Peupliers, 75014 Paris",
                     Mail = "Jean.dupont@gmail.com",
@@ -40,6 +40,7 @@ namespace ProjetQarma.Models
                     Adresse = " 8 Rue des Peupliers, 75014 Paris",
                     Mail = "albert37@gmail.com",
                     Telephone = "1464357890",
+                    SoldeBisous = 200,
                     Qarma = 8,
                     Password = Dal.EncodeMD5("bbbbb"),
                     TypeUtilisateur = TypeUtilisateur.Consommateur
@@ -51,13 +52,14 @@ namespace ProjetQarma.Models
                      Adresse = " 10 Rue des Peupliers, 75014 Paris",
                      Mail = "ben34@gmail.com",
                      Telephone = "0654983476",
+                     SoldeBisous = 400,
                      Qarma = 8,
                      Password = Dal.EncodeMD5("ccccc"),
                      TypeUtilisateur = TypeUtilisateur.Consommateur,
                      CentreInteret = "J'aime le jazz et les ballades en foret.",
                      Propose = "Bricolage - Petits travaux"
                  }
-            ) ;
+            );
             this.InfosPersos.AddRange(
                 new InfosPersos
                 {
@@ -81,10 +83,14 @@ namespace ProjetQarma.Models
             this.Services.AddRange(
                 new Service
                 {
+ 
                     InfosPersosId = 1,
+
                     Id = 1,
                     Titre = "Parking",
                     TypeService = TypeService.Parking,
+                    MontantBisous = 100,
+                    MontantQarma = 20,
                     Description = "Je recherche à louer une place de parking pour une durée d'une semaine",
                     ImagePath = "/images/Parking.jpg",
 
@@ -96,7 +102,7 @@ namespace ProjetQarma.Models
                 {
                     InfosPersosId = 1,
                     Id = 2,
-                    Titre ="Promener mon chien",
+                    Titre = "Promener mon chien",
                     TypeService = TypeService.Prestation,
                     Description = "Je recherche quelqu'un pour promener mon chien tous les dimanches matins",
                     ImagePath = "/images/Prestation.jpg",
@@ -218,5 +224,5 @@ namespace ProjetQarma.Models
         }
     }
 
-    
+
 }
