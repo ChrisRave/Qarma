@@ -82,7 +82,7 @@
                                         <div class="row">
                                             <div class="col-md-4 bordureAucune">
                                                 <a href="#">
-                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Index", "Login")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                                                         <span class="navbar-toggler-icon"></span>
                                                     </button>
@@ -120,17 +120,15 @@
     <header class=" header containerHeader">
 
         <div class="row">
-            <div class="col-md-3 bordureAucune">
-                Home --> Actualités
+            <div class="col-md-4 bordureAucune">
             </div>
-            <div class="col-md-2 bordureBleue1">
-                Je propose
+            <div class="col-md-2 bordureAucune">
+                <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("Proposer","Service")';"><div style="font-size:16px"> Je propose</div></button>
             </div>
-            <div class="col-md-2 bordureBleue2">
-                Je demande
+            <div class="col-md-2 bordureAucune">
+                <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("Creer","Service")';"><div style="font-size:16px"> Je demande </div></button>
             </div>
-            <div class="col-md-5 bordureAucune">
-                Vide
+            <div class="col-md-4 bordureAucune">
             </div>
 
         </div>
@@ -146,6 +144,7 @@
                 <div class="col-md-10 offset-md-1 bordureAucune">
                     <div class="col-md-10 offset-md-1 bordureAucune">
        
+                    </div>
                 </div>
             </div>
             <!--La prtie du WEB fonctionalité-->
@@ -155,13 +154,7 @@
                     Partie Gauche
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureAucune">
-                            <div class="col-md-10 offset-md-1 bordureAucune">
-
-                            @Html.ActionLink("Créer un service", "Creer", "Service")
-                        </div>
-                         <div class="col-md-10 offset-md-1 bordureAucune">
-                            @Html.ActionLink("Proposer un service", "Proposer", "Service")
-                        </div>
+                           
                         </div>
                     </div>
                     <div class="row">
@@ -193,7 +186,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Deconnexion","Login")'>Se déconnecter</button>
+                            <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("Deconnexion","Login")';"><div style="font-size:16px"> Se déconnecter</div></button>
 
                         </div>
                     </div>
@@ -257,7 +250,7 @@
                 <!-- Copyright -->
                 <!-- -->
                 <div class="col-md-6 bordureAucune">
-                   <div class="text-center couleur_bleueSoliDev p-40" style="font-family: 'Chalkduster, fantasy' ">
+                   <div class="text-center couleur_bleueSoliDev p-40"  ">
                        <strong> SoliDev © 2022  </strong><br>
                        <strong> Adresse email de contact </strong>
                     </div>
