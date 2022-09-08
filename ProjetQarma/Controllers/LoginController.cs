@@ -71,7 +71,7 @@ namespace ChoixSejour.Controllers
         {
             if (ModelState.IsValid)
             {
-                int id = dal.CreerUtilisateur(utilisateur.InfosPersos, utilisateur.Adresse, utilisateur.Mail, utilisateur.Telephone, utilisateur.SoldeBisous,utilisateur.Qarma, utilisateur.Password, utilisateur.TypeUtilisateur, utilisateur.CentreInteret, utilisateur.Propose);
+                int id = dal.CreerUtilisateur(utilisateur.InfosPersos, utilisateur.Adresse, utilisateur.Mail, utilisateur.Telephone, utilisateur.SoldeBisous,utilisateur.Qarma, utilisateur.Password, utilisateur.TypeUtilisateur, utilisateur.CentreInteret, utilisateur.Propose, utilisateur.ImagePath);
 
                 var userClaims = new List<Claim>()
                 {
