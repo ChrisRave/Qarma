@@ -96,9 +96,9 @@
     <div>
         <div class="containerBody">
 
+
             <!--La prtie du WEB fonctionalité-->
             <div class="row">
-
 
                 <!--Partie body-->
                 <div class="col-md-9  bordureAucune">
@@ -115,6 +115,7 @@
                             <div class="row justify-content-start">
                                 @foreach (var proposition in Model)
                                 {
+
 
                                     string modifierLien = "/Service/ModifierProposition/" + proposition.Id;
                                     string supprimerLien = "/Service/SupprimerProposition/" + proposition.Id;
@@ -179,6 +180,7 @@
             </div>
         </div>
     </div>
+
     <!-- FOOTER de la page-->
     <footer class="text-center ">
         <!-- Grid container -->
@@ -204,8 +206,11 @@
                         </div>
                         <div class="col-md-3">
                             <img src="~/photos/instagram.png" width="40%" id="logo">
+
                         </div>
                     </div>
+
+
                 </div>
                 <!-- Copyright -->
                 <!-- -->
