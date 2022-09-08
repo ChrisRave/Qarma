@@ -59,6 +59,9 @@ namespace ProjetQarma.Models
                      CentreInteret = "J'aime le jazz et les ballades en foret.",
                      Propose = "Bricolage - Petits travaux",
                      ImagePath = "/photos/profil/photoBenoit.jpg",
+                     Appartement = "Dans l'appartement 37B, nous sommes 4. Lisa, moi et nos 2 enfants Oscar et Faustine. Lisa est institutrice et je suis cascadeur."
+
+
                  }
             );
             this.InfosPersos.AddRange(
