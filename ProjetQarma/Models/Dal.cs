@@ -107,6 +107,7 @@ namespace ProjetQarma.Models
             return listeServices;
         }
 
+
         public void CreerService(int id, TypeService typeservice, int montantBisous, int montantQarma, string description, string Imagepath, string titre, int infosPersosId)
         {
 
@@ -120,12 +121,14 @@ namespace ProjetQarma.Models
                 ImagePath = Imagepath,
                 Titre = titre,
                 InfosPersosId = infosPersosId,
+
             };
             if (id != 0)
             {
                 serviceToAdd.Id = id;
             }
-
+            
+           
             this._bddContext.Services.Add(serviceToAdd);
             this._bddContext.SaveChanges();
         }

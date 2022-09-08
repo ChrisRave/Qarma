@@ -77,13 +77,16 @@ namespace ProjetQarma.Controllers
 
                     dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.Titre, "/images/" + service.Image.FileName, service.InfosPersosId);
 
+
                 }
             }
 
 
             else
             {
+
                 dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.Titre, service.ImagePath, service.InfosPersosId);
+
 
             }
 

@@ -1,51 +1,67 @@
 ﻿@model List<ProjetQarma.Models.Service>
-    
 
 @{
-     Layout = "_layoutLanding";
-    ViewBag.Title = "ListeService";
+    Layout = "_layoutLanding";
+    ViewBag.Title = "Demande";
 }
 
-<h5 class="page-section-heading text-center text-uppercase text-secondary mb-0">Catalogue des demandes de services</h5>
-		<!-- Icon Divider-->
-		<div class="divider-custom">
-			<div class="divider-custom-line"></div>
-			<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-			<div class="divider-custom-line"></div>
-			@using (Html.BeginForm("Index", "Service", FormMethod.Get )) //Index est la méthode, Service est le controleur, searchstring est le paramètre
+
+<h3 class="titre">Page demande</h3>
+<p class="contenu">Ici c'est la page demande</p>
+
+<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">demande de services</h2>
+<!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+                @using (Html.BeginForm("Index", "Service", FormMethod.Get )) //Index est la méthode, Service est le controleur, searchstring est le paramètre
+                            {
+                                <div class="form-floating mb-3">
+                                    @Html.TextBox( "searchString")
+                                    @Html.Label("")
+                                 <input type="submit" value="rechercher ">  
+                                </div>
+				            }
+            </div>
+        <p class="proposition">
+            <div class="row justify-content-start">
+                @foreach (var service in Model)
                 {
-                    <div class="form-floating mb-3">
-                        @Html.TextBox( "searchString") 
-                        @Html.Label("")
-                     <input type="submit" value="rechercher ">  
-                    </div>
-				}
-		</div>
-		
-		<div class="row justify-content-start">
 
-			@foreach (var service in Model)
-			{
-				
-				<div class="card col-6 m-5" style="width: 18rem;">
+
+                    string modifierLien = "/Service/Modifier/" + service.Id;
+                    string supprimerLien = "/Service/Supprimer/" + service.Id;
+
+                    <div class="card col-6 m-5" style="width: 18rem;" >
                     <div class="card-body d-flex flex-column justify-content-between">
-                        <a href=@("/service/PropositionDetail/"+service.Id) class="btn btn-primary stretched-link"> @service.Titre</a>
                         <div>
-                           
-                            <div class="my-3">
-                                <img src="@service.ImagePath" width="225" height="200" />
-                            </div>
-                            <h6 class="card-subtitle mb-2 text-muted">Coût du service : @service.MontantBisous</h6>
-                            <h6 class="card-subtitle mb-2 text-muted">@service.TypeService</h6>
-                            <p class="card-text">@service.Description</p>
+                        <h5 class="card-title">@service.Titre</h5>
+                      
+                            
+                                 <div class="my-3">
+                                        <img src="@service.ImagePath" width="225" height="200" />
+                                 </div>
+                                <h6 class="card-subtitle mb-2 text-muted">Coût du service : @service.MontantBisous</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">@service.TypeService</h6>
+                                <p class="card-text">@service.Description</p>
+                                <a href=@modifierLien class=" btn btn-primary stretched link">Modifier</a>
+                                <a href=@supprimerLien class="btn btn-primary stretched link" onclick="return confirm('Confirmer la suppression')">Supprimer</a> 
 
+
+                            </div>
+                   
                         </div>
-                       
 
                     </div>
-				</div>
-			}
+                    }
 
 
-			@Html.ActionLink("Demander un service", "Creer" , "Service")
-		</div>
+                <a href="/Service/Creer">
+					<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="black" class="align-middle bi bi-plus" viewBox="0 0 16 16">
+						<path class="plus" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+					</svg>
+				</a>
+                @*@Html.ActionLink("Créer un nouveau service", "Créer", "Service")*@
+            </div>
+
