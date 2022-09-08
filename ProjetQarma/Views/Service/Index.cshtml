@@ -1,17 +1,15 @@
 ﻿@model List<ProjetQarma.Models.Service>
 
 @{
-
-     Layout = "_layoutAcceuil";
-    ViewBag.Title = "ListeService";
-
+    Layout = "_layoutAccueil";
+    ViewBag.Title = "Proposition";
 }
 
 
 <h3 class="titre">Page demande</h3>
 <p class="contenu">Ici c'est la page demande</p>
 
-<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">demande de services</h2>
+<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Demande de services</h2>
 <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -29,41 +27,41 @@
         <p class="proposition">
             <div class="row justify-content-start">
                 @foreach (var service in Model)
-                {
 
-
+                {               
+                    
                     string modifierLien = "/Service/Modifier/" + service.Id;
                     string supprimerLien = "/Service/Supprimer/" + service.Id;
-
                     <div class="card col-6 m-5" style="width: 18rem;" >
-                    <div class="card-body d-flex flex-column justify-content-between">
-                        <div>
-                        <h5 class="card-title">@service.Titre</h5>
-                      
-                            
+               
+                       
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 href=@("/service/PropositionDetail/"+service.Id) class="btn"> @service.Titre</h5>
+
+                            <div>
+                        
                                  <div class="my-3">
                                         <img src="@service.ImagePath" width="225" height="200" />
-                                 </div>
+                                    </div>
                                 <h6 class="card-subtitle mb-2 text-muted">Coût du service : @service.MontantBisous</h6>
                                 <h6 class="card-subtitle mb-2 text-muted">@service.TypeService</h6>
-                                <p class="card-text">@service.Description</p>
+                                <p class="card-text">@service.Description</p> 
+                                
                                 <a href=@modifierLien class=" btn btn-primary stretched link">Modifier</a>
-                                <a href=@supprimerLien class="btn btn-primary stretched link" onclick="return confirm('Confirmer la suppression')">Supprimer</a> 
-
+                                <a href=@supprimerLien class="btn btn-primary stretched link" onclick="return confirm('Confirmer la suppression')">Supprimer</a>
 
                             </div>
                    
                         </div>
-
                     </div>
                     }
-
-
-                <a href="/Service/Creer">
+                <a href="/Service/Proposer">
 					<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="black" class="align-middle bi bi-plus" viewBox="0 0 16 16">
 						<path class="plus" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
 					</svg>
 				</a>
-                @*@Html.ActionLink("Créer un nouveau service", "Créer", "Service")*@
-            </div>
 
+
+                @*@Html.ActionLink("Proposer un nouveau service", "Proposer", "Service")*@
+
+            </div>
