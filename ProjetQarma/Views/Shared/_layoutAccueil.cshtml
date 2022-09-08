@@ -140,79 +140,65 @@
     </header>
     <div>
         <div class="containerBody">
-            <div class="row">
-                <div class="col-md-10 offset-md-1 bordureAucune">
-                    <div class="col-md-10 offset-md-1 bordureAucune">
-       
-                    </div>
-                </div>
-            </div>
+            
             <!--La prtie du WEB fonctionalité-->
             <div class="row">
                 <!-- La partie Gauche-->
-                <div class="col-md-2 bordureBleue1">
-                    Partie Gauche
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                           
+                <div class="col-md-2 bordureAucune">
+                    <div class="row" align="center">
+                        <div class="col-md-12 offset-md-0 bordureBleue3" style="border-radius: 8px;">
+                            <div class="row bordureAucune">
+                                <div class="couleur_bleueQarma" style="font-size:20px"><strong>@User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value </strong></div>
+                            </div>
+                            <div class="row bordureAucune">
+                                <div class="couleur_verte" style="font-size:20px"><strong>Solde de bisous</strong> : </div>
+                            </div>
+                            <div class="row bordureAucune">
+                                <div class="couleur_verte" style="font-size:20px"><strong> Badges </strong>: </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Demande", "Demande")'>Max</button>
+                        <div class="col-md-10 offset-md-1 bordureAucune">
 
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Demande", "Demande")'>Solde de bisous</button>
+                        <div class="col-md-6">
+                            <button class="btn btn-primary btn-lg" style=" width: 100%;" onclick="location.href='@Url.Action("Charte", "Accueil")';">Charte </button>
+                        </div>
 
+                        <div class="col-md-6">
+                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" onclick="location.href='@Url.Action("FAQ", "Accueil")';">FAQ</button>
                         </div>
                     </div>
+
                     <div class="row">
-                        <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Demande", "Demande")'>Badges</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                            Espace vide
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                            Espace vide
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 ">
+                        <div class="col-md-12 offset-md-0 ">
                             <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("Deconnexion","Login")';"><div style="font-size:16px"> Se déconnecter</div></button>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-md-1 bordureAucune">
-                    Colonne Vide
-                </div>
+
                 <!--**********Partie body**************-->
-                <div class="col-md-3  bordureBleue2">
-                    <div id="contenu">
-                        @RenderBody()
+                <div class="col-md-7  bordureAucune">
+                    <div class="row" align="center">
+                        
+                                @RenderBody()
+                       
                     </div>
                 </div>
-                <div class="col-md-3  bordureBleue2">
-                    Les denieres Offres
-                </div>
-                <div class="col-md-1 bordureAucune">
-                    Colonne Vide
-                </div>
-                <div class="col-md-2  bordureBleue2">
-                    Les Actus
+                <div class="col-md-3  bordureAucune">
+                    <div class="row" align="center">
+                        <div class="col-md-11 offset-md-1 bordureBleue2" style="border-radius: 8px;">
+                            Actualités
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-10 offset-md-1 bordureAucune">
-                    Espace vide
                 </div>
             </div>
         </div>
@@ -250,9 +236,9 @@
                 <!-- Copyright -->
                 <!-- -->
                 <div class="col-md-6 bordureAucune">
-                   <div class="text-center couleur_bleueSoliDev p-40"  ">
-                       <strong> SoliDev © 2022  </strong><br>
-                       <strong> Adresse email de contact </strong>
+                    <div class="text-center couleur_bleueSoliDev p-40">
+                        <strong> SoliDev © 2022  </strong><br>
+                        <strong> solidev@contact.com </strong>
                     </div>
                 </div>
                         <!-- Logo SoliDev-->
