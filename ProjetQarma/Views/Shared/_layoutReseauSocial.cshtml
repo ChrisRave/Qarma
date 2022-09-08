@@ -118,7 +118,7 @@
 
         <div class="row">
             <div class="col-md-4 bordureAucune">
-                Home --> Profil
+              
             </div>
 
 
@@ -133,97 +133,105 @@
         <div class="containerBody">
             <div class="row">
                 <div class="col-md-10 offset-md-1 bordureAucune">
-                    Espace vide
+                   
                 </div>
             </div>
             <!--La prtie du WEB fonctionalité-->
             <div class="row">
                 <!-- La partie Gauche-->
-                <div class="col-md-4 bordureBleue1">
-                    Partie Gauche
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                            Espace vide
+                <div class="col-md-3 bordureBleue1" style="border-radius: 8px;">
+                    <div style="color : ghostwhite">
+
+                        <div class="row" align="center">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                <img src="@Model.Utilisateur.ImagePath" width="50%" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureBleue2">
-                            @Model.Utilisateur.InfosPersos.Prenom
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                <h3> @Model.Utilisateur.InfosPersos.Prenom</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureBleue2">
-                            Solde bisous
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                Solde bisous = @Model.Utilisateur.SoldeBisous
+                                <br>
+                                Qarma = @Model.Utilisateur.Qarma
+                                <br>
+                                3 Badges
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureBleue2">
-                           Qarma = @Model.Utilisateur.Qarma 
-                            <br>
-                            Badges<br>
-                            Nombres de badges<br>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+
+
+                                <br>
+
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                            Messagerie
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                           Vide
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("MesDemandes","Login")';"><div style="font-size:16px"> Gérer mes propositions</div></button>
+                            </div>
                         </div>
+
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 ">
                             <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("Deconnexion","Login")';"><div style="font-size:16px"> Se déconnecter</div></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-1 bordureAucune">
-                    Colonne Vide
-                </div>
-                <!--**********Partie body**************-->
-                <div class="col-md-2  bordureBleue1">
-                    <div id="offres">
-                        @RenderBody()
-                    </div>
-                </div>
-                <div class="col-md-1  bordureAucune">
-                    Colonne Vide
-                </div>
-                <div class="col-md-4 bordureBleue1 ">
-                    Partie droite
-                    <div class="row">
-                        <div class="col-md-12 offset-md-0 bordureBleue1">
-                            <h2> Centres d'interets </h2>
-                            
-                            @Model.Utilisateur.CentreInteret
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 offset-md-0 bordureAucune">
-                            Vide
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 offset-md-0 bordureBleue1">
-                            <h2> Répond à vos demandes de : </h2>
-                           
-                            @Model.Utilisateur.Propose
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
+                       </div>
+                    </div>
+                </div>
+                    <div class="col-md-1 bordureAucune">
+                        
+                    </div>
+                    <!--**********Partie body**************-->
+                    <div class="col-md-3  bordureBleue1" style="border-radius: 8px;">
+                        <div id="offres">
+                            @RenderBody()
+                        </div>
+                    </div>
+                    <div class="col-md-1  bordureAucune">
+                        
+                    </div>
+                    <div class="col-md-3 bordureAucune ">
+
+                        <div class="row">
+                            <div class="col-md-12 offset-md-0 bordureBleue1" style="border-radius: 8px;">
+                                <h4> Centres d'interets </h4>
+
+                                @Model.Utilisateur.CentreInteret
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 offset-md-0 bordureAucune">
+                              
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 offset-md-0 bordureBleue1" style="border-radius: 8px;">
+                                <h4> Répond à vos demandes de : </h4>
+
+                                @Model.Utilisateur.Propose
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             <div class="row">
                 <div class="col-md-10 offset-md-1 bordureAucune">
-                    Espace vide
+                   
                 </div>
             </div>
         </div>

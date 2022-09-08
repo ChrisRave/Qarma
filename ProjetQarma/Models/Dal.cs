@@ -28,7 +28,8 @@ namespace ProjetQarma.Models
         { //mettre include pour charger clés étrangéres
             return _bddContext.Utilisateur.Include(u => u.InfosPersos).ToList();
         }
-        public int CreerUtilisateur(InfosPersos infosPersos, String adresse, String mail, String telephone, int soldeBisous, int qarma, string password, TypeUtilisateur typeUtilisateur, string centreInteret, string propose)
+        public int CreerUtilisateur(InfosPersos infosPersos, String adresse, String mail, String telephone, int soldeBisous, int qarma, string password,
+            TypeUtilisateur typeUtilisateur, string centreInteret, string propose, string imagePath, string appartement)
         {
             string motDePasse = EncodeMD5(password);
 
@@ -44,12 +45,15 @@ namespace ProjetQarma.Models
                 TypeUtilisateur = typeUtilisateur,
                 CentreInteret = centreInteret,
                 Propose = propose,
+                ImagePath = imagePath,
+                Appartement = appartement,
             };
             _bddContext.Utilisateur.Add(utilisateur);
             _bddContext.SaveChanges();
             return utilisateur.Id;
         }
-        public void ModifierUtilisateur(int id, InfosPersos infosPersos, String adresse, String mail, String telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string centreInteret, string propose)
+        public void ModifierUtilisateur(int id, InfosPersos infosPersos, String adresse, String mail, String telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string centreInteret
+            , string propose, string imagePath, string appartement)
         {
             Utilisateur utilisateur = _bddContext.Utilisateur.Find(id); if (utilisateur != null)
             {
@@ -62,6 +66,8 @@ namespace ProjetQarma.Models
                 utilisateur.TypeUtilisateur = typeUtilisateur;
                 utilisateur.CentreInteret = centreInteret;
                 utilisateur.Propose = propose;
+                utilisateur.ImagePath = imagePath;
+                utilisateur.Appartement = appartement;
                 _bddContext.SaveChanges();
             };
         }
@@ -277,6 +283,11 @@ namespace ProjetQarma.Models
             Service service = _bddContext.Services.Find(serviceID);
 
             utilisateurACrediter.Qarma = utilisateurACrediter.Qarma + service.MontantQarma;
+        }
+
+        public void ModifierUtilisateur(int id, InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose, string Imagepath)
+        {
+            throw new NotImplementedException();
         }
     }
 }
