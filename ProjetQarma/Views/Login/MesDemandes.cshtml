@@ -1,4 +1,4 @@
-@model List<ProjetQarma.Models.Proposition>
+@model ProjetQarma.ViewModels.ServicePropositionViewModel
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -112,9 +112,8 @@
                         </div>
                         <p class="proposition">
                             <div class="row justify-content-start">
-                                @foreach (var proposition in Model)
+                                @foreach (var proposition in Model.Propositions)
                                 {
-
 
                                     string modifierLien = "/Service/ModifierProposition/" + proposition.Id;
                                     string supprimerLien = "/Service/SupprimerProposition/" + proposition.Id;
@@ -145,7 +144,7 @@
                             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Mes demandes</h2>
                             <div class="row justify-content-start">
 
-                                @foreach (var service in Model)
+                                @foreach (var service in Model.Services)
                                 {
                                     string modifierLien = "/Service/Modifier/" + service.Id;
                                     string supprimerLien = "/Service/Supprimer/" + service.Id;

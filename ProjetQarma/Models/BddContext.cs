@@ -13,7 +13,7 @@ namespace ProjetQarma.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;user id=root;password=rrrrr;database=utilisateurQarma");
+            optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
         }
 
         public void InitializeDb()
@@ -221,6 +221,7 @@ namespace ProjetQarma.Models
                     TypeService = TypeService.Parking,
                     Description = "Je laisse ma place dans le local à vélo pendant 2 mois cet été. Avis aux interéssés !",
                     ImagePath = "/images/Parking.jpg",
+                    DateTime = new DateTime(2021,12,12)
 
                 }
             );

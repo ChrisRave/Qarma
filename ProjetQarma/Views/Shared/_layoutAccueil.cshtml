@@ -56,7 +56,7 @@
                                                 <button class="btn btn-secondary  me-md-8" type="submit" style=" width: 100%;">Déjà membre? Se connecter</button>
                                             </div>
                                             <div class="d-grid gap-12 d-md-flex justify-content-md-end navbar-nav" align="center">
-                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532;"> <strong> Nouveau ici? Rejoignez-nous!</strong></button>
+                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532;" onclick="location.href='@Url.Action("AccueilLanding", "Infos")';"> <strong> Nouveau ici? Rejoignez-nous!</strong></button>
                                             </div>
                                         </nav>
                                     </div>
@@ -136,7 +136,6 @@
 
 
         <!-- *******MAIN *******-->
-        <script src="main.js"></script>
     </header>
     <div>
         <div class="containerBody">
@@ -151,7 +150,7 @@
                                 <div class="couleur_bleueQarma" style="font-size:20px"><strong>@User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value </strong></div>
                             </div>
                             <div class="row bordureAucune">
-                                <div class="couleur_verte" style="font-size:20px"><strong>Solde de bisous</strong> : </div>
+                                <div class="couleur_verte" style="font-size:20px"><strong>Solde de bisous</strong> : @(new projetQarma.Controllers.UtilisateurController().getSoldeBisous(User.Identity.Name))</div>
                             </div>
                             <div class="row bordureAucune">
                                 <div class="couleur_verte" style="font-size:20px"><strong> Badges </strong>: </div>
