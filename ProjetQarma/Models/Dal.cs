@@ -185,6 +185,8 @@ namespace ProjetQarma.Models
 
 
 
+
+
         //Méthodes pour les propositions
         public List<Proposition> ObtientTousLesPropositions()
         {

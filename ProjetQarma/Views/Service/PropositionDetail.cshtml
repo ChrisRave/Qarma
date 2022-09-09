@@ -33,16 +33,17 @@
         </div>
         <div class="row">
             <div class="col-md-10 offset-md-1 bordureAucune">
-                <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("UtilisateurNonConnecte2","Service",new { id=Model.Proposition.InfosPersosId})';"><div style="font-size:16px"> @Model.Proposition.InfosPersosId</div></button>
+               <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("UtilisateurNonConnecte2","Service",new { id=Model.Proposition.InfosPersosId})';"><div style="font-size:16px"> @Model.Proposition.InfosPersosId</div></button>
 
             </div>
         </div>
        
+        
         <div class="row">
+            <a href =@("/service/accepterService?"+"utilisateurADebiterID="+Convert.ToInt32(User.Identity.Name)+"&utilisateurACrediterID="+Model.Utilisateur.Id+"&serviceID="+Model.Proposition.Id)>accepter</a>
             <div class="col-md-10 offset-md-1 bordureAucune">
             </div>
         </div>
-
 
       
 
