@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace ProjetQarma.Models
@@ -20,9 +21,15 @@ namespace ProjetQarma.Models
         public string Password { get; set; }
         public string CentreInteret { get; set; }
         public string Propose { get; set; }
+        public Role Role { get; set; }
     }
     public enum TypeUtilisateur
     {
         Fournisseur, Consommateur, 
+    }
+
+    public enum Role
+    {
+        User, Admin, SuperAdmin, Banned
     }
 }

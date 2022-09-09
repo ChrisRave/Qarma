@@ -31,7 +31,8 @@ namespace ProjetQarma.Models
                     Telephone = "000000000",
                     Qarma = 2,
                     Password = Dal.EncodeMD5("aaaaa"),
-                    TypeUtilisateur = TypeUtilisateur.Consommateur
+                    TypeUtilisateur = TypeUtilisateur.Consommateur,
+                    Role = Role.SuperAdmin
                 },
                 new Utilisateur
                 {
@@ -43,7 +44,8 @@ namespace ProjetQarma.Models
                     SoldeBisous = 200,
                     Qarma = 8,
                     Password = Dal.EncodeMD5("bbbbb"),
-                    TypeUtilisateur = TypeUtilisateur.Consommateur
+                    TypeUtilisateur = TypeUtilisateur.Consommateur,
+                    Role = Role.User
                 },
                  new Utilisateur
                  {

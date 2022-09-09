@@ -43,6 +43,7 @@ namespace ChoixSejour.Controllers
                         new Claim(ClaimTypes.Name, utilisateur.Id.ToString()),
                          new Claim("Prenom" ,utilisateur.InfosPersos.Prenom.ToString()),
                       new Claim("Nom", utilisateur.InfosPersos.Nom.ToString()),
+                       new Claim(ClaimTypes.Role, utilisateur.Role.ToString()),
                     };
 
                     var ClaimIdentity = new ClaimsIdentity(userClaims, "User Identity");
@@ -71,7 +72,7 @@ namespace ChoixSejour.Controllers
         {
             if (ModelState.IsValid)
             {
-                int id = dal.CreerUtilisateur(utilisateur.InfosPersos, utilisateur.Adresse, utilisateur.Mail, utilisateur.Telephone, utilisateur.SoldeBisous,utilisateur.Qarma, utilisateur.Password, utilisateur.TypeUtilisateur, utilisateur.CentreInteret, utilisateur.Propose);
+                int id = dal.CreerUtilisateur(utilisateur.InfosPersos, utilisateur.Adresse, utilisateur.Mail, utilisateur.Telephone, utilisateur.SoldeBisous,utilisateur.Qarma, utilisateur.Password, utilisateur.TypeUtilisateur, utilisateur.CentreInteret, utilisateur.Propose, utilisateur.Role);
 
                 var userClaims = new List<Claim>()
                 {
