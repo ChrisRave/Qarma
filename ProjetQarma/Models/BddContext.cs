@@ -15,7 +15,7 @@ namespace ProjetQarma.Models
         {
             optionsBuilder.UseMySql("server=localhost;user id=root;password=rrrrr;database=utilisateurQarma");
         }
-
+        //
         public void InitializeDb()
         {
             this.Database.EnsureDeleted();

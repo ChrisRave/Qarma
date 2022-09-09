@@ -50,7 +50,7 @@ namespace ProjetQarma.Models
                 Role = Role.User,
                 ImagePath = imagePath,
                 Appartement = appartement,
-
+                // 
             };
             _bddContext.Utilisateur.Add(utilisateur);
             _bddContext.SaveChanges();
