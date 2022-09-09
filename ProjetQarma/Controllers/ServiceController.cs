@@ -310,6 +310,14 @@ namespace ProjetQarma.Controllers
             dal.SupprimerProposition(serviceID);
             return Redirect("Index");
         }
+
+        public IActionResult accepterService (int utilisateurADebiterID, int utilisateurACrediterID, int serviceID)
+        {
+            dal.TransfererBisous(utilisateurADebiterID, utilisateurACrediterID, serviceID);
+            dal.AjouterQarma(utilisateurACrediterID, serviceID);
+            dal.SupprimerProposition(serviceID);
+            return Redirect("Index");
+        }
     }
 
 }
