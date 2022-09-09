@@ -194,7 +194,8 @@ namespace ProjetQarma.Models
                 Description = description,
                 Titre = titre,
                 InfosPersosId = infosPersosId,
-                ImagePath = imagePath
+                ImagePath = imagePath,
+                DateTime = DateTime.Now
             };
             if (id != 0)
             {
