@@ -23,6 +23,7 @@ namespace ProjetQarma
           .AddCookie(options =>
           {
               options.LoginPath = "/Login/Index";
+              
 
           });
             }
@@ -48,6 +49,8 @@ namespace ProjetQarma
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseCookiePolicy();
 
             app.UseStaticFiles();
 
