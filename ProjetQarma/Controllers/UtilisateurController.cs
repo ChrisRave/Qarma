@@ -46,8 +46,10 @@ namespace projetQarma.Controllers
                         utilisateur.TypeUtilisateur,
                         utilisateur.CentreInteret,
                         utilisateur.Propose,
+                        utilisateur.Role,
                         utilisateur.ImagePath,
                         utilisateur.Appartement);
+ 
                     return RedirectToAction("ModifierUtilisateur", new { @id = utilisateur.Id });
                 }
             }
@@ -57,11 +59,19 @@ namespace projetQarma.Controllers
             }
         }
         public int getSoldeBisous(string id)
+
         {
             Dal dal = new Dal();
             Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(id));
             return utilisateur.SoldeBisous;
 
+        }
+        public int getSoldeQarma(string id)
+
+        {
+            Dal dal = new Dal();
+            Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(id));
+            return utilisateur.Qarma;
         }
     }
 }

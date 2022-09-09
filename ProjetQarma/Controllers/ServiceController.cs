@@ -41,7 +41,7 @@ namespace ProjetQarma.Controllers
             {
                 services = services.Where(s => s.Description!.Contains(searchString) || s.Titre!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
             }
-
+            services = services.OrderByDescending(s => s.DateTime);
             return View(await services.ToListAsync());
         }
 
@@ -61,6 +61,8 @@ namespace ProjetQarma.Controllers
 
         public ActionResult Creer(Service service)
         {
+            Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.Name).Value));
+
             if (!ModelState.IsValid)
                 return View(service);
 
@@ -75,7 +77,7 @@ namespace ProjetQarma.Controllers
                         service.Image.CopyTo(fileStream);
                     }
 
-                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, "/images/" + service.Image.FileName, service.Titre, service.InfosPersosId );
+                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, "/images/" + service.Image.FileName, service.Titre, utilisateur.InfosPersosId.Value );
 
 
                 }
@@ -85,7 +87,7 @@ namespace ProjetQarma.Controllers
             else
             {
 
-                dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.Titre, service.ImagePath, service.InfosPersosId);
+                dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.Titre, service.ImagePath, utilisateur.InfosPersosId.Value);
 
 
             }
@@ -278,7 +280,28 @@ namespace ProjetQarma.Controllers
             return View(pvm);
         }
 
-        
+        public IActionResult ServiceDetail(int id)
+
+        {
+            Service service = dal.ObtientTousLesServices().FirstOrDefault(r => r.Id == id);
+            Utilisateur utilisateur = dal.ObtientTousLesUtilisateurs().FirstOrDefault(r => r.InfosPersosId == service.InfosPersosId);
+            ServiceViewModels svm = new ServiceViewModels { Service = service, Utilisateur = utilisateur };
+            return View(svm);
+        }
+        public IActionResult UtilisateurNonConnecte(int id)
+        {
+            Utilisateur utilisateur = dal.ObtientTousLesUtilisateurs().FirstOrDefault(r => r.InfosPersosId == id);
+            Service service = dal.ObtientTousLesServices()[0];
+            ServiceViewModels svm = new ServiceViewModels { Service = service, Utilisateur = utilisateur };
+            return View(svm);
+        }
+        public IActionResult UtilisateurNonConnecte2(int id)
+        {
+            Utilisateur utilisateur = dal.ObtientTousLesUtilisateurs().FirstOrDefault(r => r.InfosPersosId == id);
+            Proposition service = dal.ObtientTousLesPropositions()[0];
+            PropositionViewModel pvm = new PropositionViewModel { Proposition = service, Utilisateur = utilisateur };
+            return View(pvm);
+        }
     }
 
 }
