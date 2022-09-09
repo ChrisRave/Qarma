@@ -153,7 +153,7 @@
                                 <div class="couleur_verte" style="font-size:20px"><strong>Solde de bisous</strong> : @(new projetQarma.Controllers.UtilisateurController().getSoldeBisous(User.Identity.Name))</div>
                             </div>
                             <div class="row bordureAucune">
-                                <div class="couleur_verte" style="font-size:20px"><strong> Badges </strong>: </div>
+                                <div class="couleur_verte" style="font-size:20px"><strong> Badges </strong>: @(new projetQarma.Controllers.UtilisateurController().getSoldeQarma(User.Identity.Name))</div>
                             </div>
                         </div>
                     </div>

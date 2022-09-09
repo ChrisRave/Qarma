@@ -57,11 +57,19 @@ namespace projetQarma.Controllers
             }
         }
         public int getSoldeBisous(string id)
+
         {
             Dal dal = new Dal();
             Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(id));
             return utilisateur.SoldeBisous;
 
+        }
+        public int getSoldeQarma(string id)
+
+        {
+            Dal dal = new Dal();
+            Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(id));
+            return utilisateur.Qarma;
         }
     }
 }
