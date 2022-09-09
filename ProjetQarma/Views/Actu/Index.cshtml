@@ -1,0 +1,59 @@
+﻿@model List<ProjetQarma.Models.Actu>
+
+@{
+
+     Layout = "_layoutAdmin";
+    ViewBag.Title = "ListeActus";
+}
+
+
+<h5 class="titre">Liste des actus</h5>
+
+
+<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Actus</h2>
+
+<!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+                
+           </div>
+
+        <p class="actu">
+            <div class="row justify-content-start">
+                @foreach (var actu in Model)
+
+                {               
+                    
+                   string supprimerLien = "/Actu/SupprimerProposition/" + actu.Id;
+                    <div class="card col-6 m-5" style="width: 18rem;" >
+                     <a href=@("/service/PropositionDetail/"+actu.Id) class="btn btn-primary stretched-link"> @actu.Titre</a>
+                       
+                        <div class="card-body d-flex flex-column justify-content-between">
+
+                            <div>
+                        
+                                <div class="my-3">
+                                        <img src="@actu.ImagePath" width="225" height="200" />
+                                </div>
+                                <h6 class="card-subtitle mb-2 text-muted">Catégorie : @actu.Categorie</h6>
+                                <p class="card-text">@actu.Description</p> 
+                                 <a href=@supprimerLien  class="card-link" onclick="return confirm('Confirmer la suppression')">Supprimer</a>
+                                
+
+                            </div>
+                   
+                        </div>
+                    </div>
+                    }
+                <a href="/Actu/CreerActu">
+					<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="black" class="align-middle bi bi-plus" viewBox="0 0 16 16">
+						<path class="plus" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" style=" color : #9AE17B" />
+					</svg>
+				</a>
+
+
+                @*@Html.ActionLink("Proposer un nouveau service", "Proposer", "Service")*@
+
+            </div>

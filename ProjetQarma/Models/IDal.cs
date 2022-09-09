@@ -61,6 +61,19 @@ namespace ProjetQarma.Models
         public void TransfererBisous(int utilisateurADebiterID, int utilisateurACrediterID, int serviceID);
 
         public void AjouterQarma(int utilisateurACrediterID, int serviceID);
+
+        //*****Actu*****//
+
+        public List<Actu> ObtientTousLesActus();
+
+        void CreerActu(int id, string titre, string categorie, string description, string imagePath);
+
+        public void SupprimerActu(int id);
+
+        public void SupprimerActu(string nom);
+
+
+        //***** FIN Actu *****//
     }
 
 }
