@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Http;
 
 namespace ProjetQarma.Models
 {
@@ -22,6 +24,11 @@ namespace ProjetQarma.Models
         public string CentreInteret { get; set; }
         public string Propose { get; set; }
         public Role Role { get; set; }
+        public string ImagePath { get; set; }
+        [NotMapped]
+        public IFormFile Image { get; set; }
+        public string Appartement { get; set; }
+
     }
     public enum TypeUtilisateur
     {

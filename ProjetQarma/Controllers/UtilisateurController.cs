@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProjetQarma.Models;
+using System;
 using System.Linq;
+using System.Security.Claims;
+
 namespace projetQarma.Controllers
 {
     public class UtilisateurController : Controller
@@ -43,7 +46,10 @@ namespace projetQarma.Controllers
                         utilisateur.TypeUtilisateur,
                         utilisateur.CentreInteret,
                         utilisateur.Propose,
-                        utilisateur.Role);
+                        utilisateur.Role,
+                        utilisateur.ImagePath,
+                        utilisateur.Appartement);
+ 
                     return RedirectToAction("ModifierUtilisateur", new { @id = utilisateur.Id });
                 }
             }
@@ -51,6 +57,13 @@ namespace projetQarma.Controllers
             {
                 return View("Error");
             }
+        }
+        public int getSoldeBisous(string id)
+        {
+            Dal dal = new Dal();
+            Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(id));
+            return utilisateur.SoldeBisous;
+
         }
     }
 }

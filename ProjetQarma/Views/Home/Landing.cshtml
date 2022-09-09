@@ -1,106 +1,81 @@
 ﻿@model ProjetQarma.ViewModels.AccueilViewModel
-
 @{
     Layout = "_layoutLanding";
     ViewBag.Title = "Landing";
 }
-
-    <title>Accueil</title>
-    <p class="contenu">
-
-        
-        <div class="row">
-            <div class="col-md-6 offset-md-3  bordureAucune ">
-                <h2 class="titre" style="color: #1f5c587c; text-align:center;"> Catalogue de services</h2>
-            </div>
+<title>Accueil</title>
+<p class="contenu">
+    <div class="row">
+        <div class="col-md-4 offset-md-4  bordureAucune " style="text-align: center;">
+            <h2 class="titre" style="color: #1f5c587c; ">Catalogue de services</h2>
         </div>
-        <div class="row">
-            <div class="col-md-10 offset-md-1 bordureAucune">
-            </div>
-        </div>
-        
-        <div class="row" align="center">
-
-            <div class="col-md-4  bordureAucune">
-                <div class="row">
-                    <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
-                        <img src="/photos/emoji1.png" width="40%" id="logo">
-                        <div style="color : ghostwhite">
-                            <div>
-                                <div>
-                                    Service proposé par :@Model.Utilisateur.InfosPersos.Nom
-                                    @Model.Utilisateur.InfosPersos.Prenom
-                                </div>
-                                <div> Coordonnées : </div>
-                                <div>
-                                    <div>@Model.Utilisateur.Adresse</div>
-                                    <div>Mail : @Model.Utilisateur.Mail</div>
-                                    <div>Téléphone : @Model.Utilisateur.Telephone</div>
-                                    <div>Niveau Qarma : @Model.Utilisateur.Qarma</div>
-                                </div>
+    </div>
+    <div class="row" align="center">
+        <div class="col-md-4  bordureAucune">
+            <div class="row">
+                <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
+                    <div class=" row bordureAucune">
+                        <div class="col-md-12 offset-md-0 bordureAucune" style="border-radius: 8px;">
+                            <img src="/photos/emoji1.png" width="40%" id="logo">
+                        </div>
+                    </div>
+                    <div class=" row bordureAucune">
+                        <div class="col-md-12 offset-md-0 bordureAucune" style="border-radius: 8px;">
+                            <div style="color : ghostwhite">
+                                <div><strong style="color: #327672;">Service proposé par :</strong> Michelle PINOT</div>
+                                <div><strong style="color: #327672;"> Coordonnées :</strong> Résidence les Jardins <br /> de la Mer </div>
+                                <div><strong style="color: #327672;">Niveau Qarma :</strong> Gold</div>
+                                <div><strong style="color: #327672;">Type de service :</strong> Hébergement "Colocation (une chambre dans un T3) "</div>
+                                <div><strong style="color: #327672;">Cout en bisous :</strong>  50</div>
                             </div>
-                            <div>Type de service : @Model.Service.TypeService</div>
-                            <div>Cout en bisous :  @Model.Service.MontantBisous</div>
-
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4  bordureAucune">
-                <div class="row">
-                    <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
-                        <div id="contenu">
+        </div>
+        <div class="col-md-4  bordureAucune">
+            <div class="row">
+                <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
+                    <div class=" row bordureAucune">
+                        <div class="col-md-12 offset-md-0 bordureAucune" style="border-radius: 8px;">
                             <img src="/photos/emoji2.png" width="40%" id="logo">
-                            <div style="color : ghostwhite">
-                                <div>
-                                    <div>
-                                        Service proposé par :@Model.Utilisateur.InfosPersos.Nom
-                                        @Model.Utilisateur.InfosPersos.Prenom
-                                    </div>
-                                    <div> Coordonnées : </div>
-                                    <div>
-                                        <div>@Model.Utilisateur.Adresse</div>
-                                        <div>Mail : @Model.Utilisateur.Mail</div>
-                                        <div>Téléphone : @Model.Utilisateur.Telephone</div>
-                                        <div>Niveau Qarma : @Model.Utilisateur.Qarma</div>
-                                    </div>
-                                </div>
-                                <div>Type de service : @Model.Service.TypeService</div>
-                                <div>Cout en bisous :  @Model.Service.MontantBisous</div>
-
-                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4  bordureAucune">
-                <div class="row">
-                    <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
-                        <div id="contenu">
-                            <img src="/photos/emoji3.png" width="40%" id="logo">
+                    <div class=" row bordureAucune">
+                        <div class="col-md-12 offset-md-0 bordureAucune" style="border-radius: 8px;">
                             <div style="color : ghostwhite">
-                                <div>
-                                    <div>
-                                        Service proposé par :@Model.Utilisateur.InfosPersos.Nom
-                                        @Model.Utilisateur.InfosPersos.Prenom
-                                    </div>
-                                    <div> Coordonnées : </div>
-                                    <div>
-                                        <div>@Model.Utilisateur.Adresse</div>
-                                        <div>Mail : @Model.Utilisateur.Mail</div>
-                                        <div>Téléphone : @Model.Utilisateur.Telephone</div>
-                                        <div>Niveau Qarma : @Model.Utilisateur.Qarma</div>
-                                    </div>
-                                </div>
-                                <div>Type de service : @Model.Service.TypeService</div>
-                                <div>Cout en bisous :  @Model.Service.MontantBisous</div>
+                                <div><strong style="color: #327672;">Service proposé par :</strong> Dominique PERRET</div>
+                                <div> <strong style="color: #327672;"> Coordonnées :</strong> Résidence les Jardins <br /> de la Mer</div>
+                                <div><strong style="color: #327672;"> Niveau Qarma :</strong> Silver</div>
+                                <div><strong style="color: #327672;"> Type de service :</strong> Equipement "Dépannage en informatique"</div>
+                                <div><strong style="color: #327672;"> Cout en bisous :</strong>  80</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
+        <div class="col-md-4  bordureAucune">
+            <div class="row">
+                <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
+                    <div class=" row bordureAucune">
+                        <div class="col-md-12 offset-md-0 bordureAucune" style="border-radius: 8px;">
+                            <img src="/photos/emoji3.png" width="40%" id="logo">
+                        </div>
+                    </div>
+                    <div class=" row bordureAucune">
+                        <div class="col-md-12 offset-md-0 bordureAucune" style="border-radius: 8px;">
+                            <div style="color : ghostwhite">
+                                <div><strong style="color: #327672;">Service proposé par : </strong> Aurélie PASQUIER</div>
+                                <div><strong style="color: #327672;">Coordonnées : </strong> Residence les Jardins <br /> de la Mer</div>
+                                <div><strong style="color: #327672;">Niveau Qarma : </strong>Silver</div>
+                                <div><strong style="color: #327672;">Type de service : </strong> Parking "Place parking en sous-sol"</div>
+                                <div></div><strong style="color: #327672;">Cout en bisous : </strong>  40
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </p>

@@ -15,22 +15,30 @@
         <div class="containerHeader">
             <div class="row">
                 <!-- La partie Gauche LOGO-->
-                <div class="col-md-3 bordureAucune">
-                    <img src="/photos/QarmaLogo.png" width="40%" id="logo">
-                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+
+                <div class="col-md-2 bordureAucune">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-4 bordureAucune">
+                            <a href="#">
+                                <img src="/photos/QarmaLogo.png" width="100%" id="logo" onclick="location.href='@Url.Action("Demande", "Home")';">
+                                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <!-- Description plateforme Qarma-->
-
-                <div class="col-md-5 caractereDescription text-center bordureAucune">
-                    <h2 class="couleur_verte"> <strong> Qarma</strong></h2><br>
-                    <h4 class="couleur_bleueQarma"> <strong>La plateforme d'échange de biens et de services entre voisins</strong> </h4>
+                <div class="col-md-7 caractereDescription text-center bordureAucune">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+                            <h2 class="couleur_verte"> <strong> Qarma</strong></h2><br>
+                            <h4 class="couleur_bleueQarma"> <strong>La plateforme d'échange de biens et de services entre voisins</strong> </h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-1 bordureAucune">
-                </div>
-                
                 <div class="col-md-3 caractereDescription bordureAucune">
+
                     <!-- Se connecter-->
                     @if (!User.Identity.IsAuthenticated)
                     {
@@ -72,7 +80,7 @@
                                         <div class="row">
                                             <div class="col-md-4 bordureAucune">
                                                 <a href="#">
-                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Index", "Login")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                                                         <span class="navbar-toggler-icon"></span>
                                                     </button>
@@ -123,7 +131,6 @@
 
 
         <!-- *******MAIN *******-->
-        <script src="main.js"></script>
     </header>
     <div>
         <div class="containerBody">
@@ -135,79 +142,89 @@
             <!--La prtie du WEB fonctionalité-->
             <div class="row">
                 <!-- La partie Gauche-->
-                <div class="col-md-2 bordureBleue1">
-                    Partie Gauche
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                            Espace vide
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Demande", "Demande")'>Max</button>
+                <div class="col-md-2 bordureBleue1" style="border-radius: 8px;">
+                    <div style="color : ghostwhite">
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Demande", "Demande")'>Solde de bisous</button>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 ">
+                            <strong>    @User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</strong>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Demande", "Demande")'>Badges</button>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 ">
+                                <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Demande", "Demande")'>Solde de bisous</button>
+                                Solde bisous = @Model.Utilisateur.SoldeBisous
+                                User.FindFirst("SoldeBisous").Value
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                            Espace vide
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 ">
+                                <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Demande", "Demande")'>Badges</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                            Espace vide
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                Espace vide
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" formaction='@Url.Action("Demande", "Demande")'>Se déconnecter</button>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                Espace vide
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 ">
+                                <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("Deconnexion","Login")';"><div style="font-size:16px"> Se déconnecter</div></button>
 
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-1 bordureAucune">
-                    Colonne Vide
-                </div>
-                <!--**********Partie body**************-->
-
-                <div class="col-md-3  bordureBleue2">
-                    <div id="contenu">
-                        @RenderBody()
+                    <div class="col-md-1 bordureAucune">
+                        Colonne Vide
                     </div>
-                </div>
+                    <!--**********Partie body**************-->
 
-
-
-                <div class="col-md-1 bordureAucune">
-                    Colonne Vide
-                </div>
-                <div class="col-md-2  bordureBleue2">
-                    Posté par:
-
-                    @Model.Utilisateur.InfosPersos.Prenom
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
+                    <div class="col-md-5  bordureBleue1" style="border-radius: 8px;">
+                        <div id="contenu">
+                            @RenderBody()
                         </div>
                     </div>
 
 
 
-                    <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button">Contacter</button>
+                    <div class="col-md-1 bordureAucune">
+                        Colonne Vide
+                    </div>
+                    <div class="col-md-2  bordureBleue1" style="border-radius: 8px;">
+                        Posté par:
+
+                        @Model.Utilisateur.InfosPersos.Prenom
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button">Contacter</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button">Accepter</button>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 
                        
@@ -220,7 +237,7 @@
                     </div>
                 </div>
             </div>
-    </div>
+ 
 
     <!-- **********FOOTER*************-->
     <footer class="text-center ">
@@ -253,9 +270,9 @@
                 <!-- Copyright -->
                 <!-- -->
                 <div class="col-md-6 bordureAucune">
-                    <div class="text-center couleur_bleueSoliDev p-40" style="font-family: 'Chalkduster, fantasy' ">
+                    <div class="text-center couleur_bleueSoliDev p-40">
                         <strong> SoliDev © 2022  </strong><br>
-                        <strong> Adresse email de contact </strong>
+                        <strong> solidev@contact.com </strong>
                     </div>
                 </div>
                 <!-- Logo SoliDev-->

@@ -13,7 +13,7 @@ namespace ProjetQarma.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;user id=root;password=rrrrr;database=utilisateurQarma");
+            optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
         }
 
         public void InitializeDb()
@@ -59,7 +59,11 @@ namespace ProjetQarma.Models
                      Password = Dal.EncodeMD5("ccccc"),
                      TypeUtilisateur = TypeUtilisateur.Consommateur,
                      CentreInteret = "J'aime le jazz et les ballades en foret.",
-                     Propose = "Bricolage - Petits travaux"
+                     Propose = "Bricolage - Petits travaux",
+                     ImagePath = "/photos/profil/photoBenoit.jpg",
+                     Appartement = "Dans l'appartement 37B, nous sommes 4. Lisa, moi et nos 2 enfants Oscar et Faustine. Lisa est institutrice et je suis cascadeur."
+
+
                  }
             );
             this.InfosPersos.AddRange(
@@ -86,9 +90,8 @@ namespace ProjetQarma.Models
                 new Service
                 {
  
-
-
                     InfosPersosId = 1,
+
                     Id = 1,
                     Titre = "Parking",
                     TypeService = TypeService.Parking,
@@ -189,9 +192,9 @@ namespace ProjetQarma.Models
             this.Propositions.AddRange(
                 new Proposition
                 {
+
                     InfosPersosId = 1,
                     Id = 2,
-
                     Titre = "Barbecue",
                     TypeService = TypeService.Evenement,
                     Description = "Bonjour, j'ai un nouveau barbecue et on doit fêter ça !!",
@@ -220,6 +223,7 @@ namespace ProjetQarma.Models
                     TypeService = TypeService.Parking,
                     Description = "Je laisse ma place dans le local à vélo pendant 2 mois cet été. Avis aux interéssés !",
                     ImagePath = "/images/Parking.jpg",
+                    DateTime = new DateTime(2021,12,12)
 
                 }
             );

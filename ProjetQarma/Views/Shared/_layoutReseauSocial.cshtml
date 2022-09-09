@@ -14,21 +14,30 @@
         <div class="containerHeader">
             <div class="row">
                 <!-- La partie Gauche LOGO-->
-                <div class="col-md-3 bordureAucune">
-                    <img src="/photos/QarmaLogo.png" width="40%" id="logo">
-                    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+
+                <div class="col-md-2 bordureAucune">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-4 bordureAucune">
+                            <a href="#">
+                                <img src="/photos/QarmaLogo.png" width="100%" id="logo" onclick="location.href='@Url.Action("Demande", "Home")';">
+                                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <!-- Description plateforme Qarma-->
-
-                <div class="col-md-5 caractereDescription text-center bordureAucune">
-                    <h2 class="couleur_verte"> <strong> Qarma</strong></h2><br>
-                    <h4 class="couleur_bleueQarma"> <strong>La plateforme d'échange de biens et de services entre voisins</strong> </h4>
-                </div>
-                <div class="col-md-1 bordureAucune">
+                <div class="col-md-7 caractereDescription text-center bordureAucune">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 bordureAucune">
+                            <h2 class="couleur_verte"> <strong> Qarma</strong></h2><br>
+                            <h4 class="couleur_bleueQarma"> <strong>La plateforme d'échange de biens et de services entre voisins</strong> </h4>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3 caractereDescription bordureAucune">
+
                     <!-- Se connecter-->
                     @if (!User.Identity.IsAuthenticated)
                     {
@@ -70,7 +79,7 @@
                                         <div class="row">
                                             <div class="col-md-4 bordureAucune">
                                                 <a href="#">
-                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Index", "Login")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                                                         <span class="navbar-toggler-icon"></span>
                                                     </button>
@@ -100,6 +109,7 @@
                     }
                 </div>
             </div>
+        </div>
     </nav>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -108,7 +118,7 @@
 
         <div class="row">
             <div class="col-md-4 bordureAucune">
-                Home --> Profil
+              
             </div>
 
 
@@ -117,103 +127,111 @@
 
 
         <!-- *******MAIN *******-->
-        <script src="main.js"></script>
+        <script src="/css/main.js"></script>
     </header>
     <div>
         <div class="containerBody">
             <div class="row">
                 <div class="col-md-10 offset-md-1 bordureAucune">
-                    Espace vide
+                   
                 </div>
             </div>
             <!--La prtie du WEB fonctionalité-->
             <div class="row">
                 <!-- La partie Gauche-->
-                <div class="col-md-4 bordureBleue1">
-                    Partie Gauche
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                            Espace vide
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureBleue2">
-                            @Model.Utilisateur.InfosPersos.Prenom
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureBleue2">
-                            Solde bisous
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureBleue2">
-                           Qarma = @Model.Utilisateur.Qarma 
-                            <br>
-                            Badges<br>
-                            Nombres de badges<br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                            Messagerie
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureAucune">
-                           Vide
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 bordureBleue2">
-                            @Html.ActionLink("Se déconnecter", "Deconnexion")
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-1 bordureAucune">
-                    Colonne Vide
-                </div>
-                <!--**********Partie body**************-->
-                <div class="col-md-2  bordureBleue1">
-                    <div id="offres">
-                        @RenderBody()
-                    </div>
-                </div>
-                <div class="col-md-1  bordureAucune">
-                    Colonne Vide
-                </div>
-                <div class="col-md-4 bordureBleue1 ">
-                    Partie droite
-                    <div class="row">
-                        <div class="col-md-12 offset-md-0 bordureBleue1">
-                            <h2> Centres d'interets </h2>
-                            
-                            @Model.Utilisateur.CentreInteret
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 offset-md-0 bordureAucune">
-                            Vide
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 offset-md-0 bordureBleue1">
-                            <h2> Répond à vos demandes de : </h2>
-                           
-                            @Model.Utilisateur.Propose
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                </div>
+                <div class="col-md-3 bordureBleue1" style="border-radius: 8px;">
+                    <div style="color : ghostwhite">
 
-            </div>
+                        <div class="row" align="center">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                <img src="@Model.Utilisateur.ImagePath" width="50%" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                <h3> @Model.Utilisateur.InfosPersos.Prenom</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                Solde bisous = @Model.Utilisateur.SoldeBisous
+                                <br>
+                                Qarma = @Model.Utilisateur.Qarma
+                                <br>
+                                3 Badges
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+
+
+                                <br>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1 bordureAucune">
+                                <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("MesDemandes","Login")';"><div style="font-size:16px"> Gérer mes propositions</div></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 ">
+                            <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("Deconnexion","Login")';"><div style="font-size:16px"> Se déconnecter</div></button>
+
+                       </div>
+                    </div>
+                </div>
+                    <div class="col-md-1 bordureAucune">
+                        
+                    </div>
+                    <!--**********Partie body**************-->
+                    <div class="col-md-3  bordureBleue1" style="border-radius: 8px;">
+                        <div id="offres">
+                            @RenderBody()
+                        </div>
+                    </div>
+                    <div class="col-md-1  bordureAucune">
+                        
+                    </div>
+                    <div class="col-md-3 bordureAucune ">
+
+                        <div class="row">
+                            <div class="col-md-12 offset-md-0 bordureBleue1" style="border-radius: 8px;">
+                                <h4> Centres d'interets </h4>
+
+                                @Model.Utilisateur.CentreInteret
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 offset-md-0 bordureAucune">
+                              
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 offset-md-0 bordureBleue1" style="border-radius: 8px;">
+                                <h4> Répond à vos demandes de : </h4>
+
+                                @Model.Utilisateur.Propose
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             <div class="row">
                 <div class="col-md-10 offset-md-1 bordureAucune">
-                    Espace vide
+                   
                 </div>
             </div>
         </div>
@@ -250,9 +268,9 @@
                 <!-- Copyright -->
                 <!-- -->
                 <div class="col-md-6 bordureAucune">
-                    <div class="text-center couleur_bleueSoliDev p-40" style="font-family: 'Chalkduster, fantasy' ">
+                    <div class="text-center couleur_bleueSoliDev p-40" >
                         <strong> SoliDev © 2022  </strong><br>
-                        <strong> Adresse email de contact </strong>
+                        <strong> solidev@contact.com </strong>
                     </div>
                 </div>
                 <!-- Logo SoliDev-->

@@ -52,10 +52,10 @@
                                                 <div><input type="password" name="Utilisateur.Password" class="form-control" id="floatingPassword" placeholder="Mot de passe"></div>
                                             </div>
                                             <div class="d-grid gap-12 d-md-flex justify-content-md-end navbar-nav" align="center">
-                                                <button class="btn btn-secondary  me-md-8" type="submit" style=" width: 100%;">Déjà membre? Se connecter</button>
+                                                <button class="btn btn-secondary  me-md-8" type="submit" style=" width: 100%;"><div style="font-size:16px"> Déjà membre? Se connecter </div> </button>
                                             </div>
                                             <div class="d-grid gap-12 d-md-flex justify-content-md-end navbar-nav" align="center">
-                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532;"> <strong> Nouveau ici? Rejoignez-nous!</strong></button>
+                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532;" onclick="location.href='@Url.Action("AccueilLanding", "Infos")';"> <div style="font-size:16px"> Nouveau ici? Rejoignez-nous!</div></button>
                                             </div>
                                         </nav>
                                     </div>
@@ -79,7 +79,7 @@
                                         <div class="row">
                                             <div class="col-md-4 bordureAucune">
                                                 <a href="#">
-                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                                    <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Index", "Login")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                                                         <span class="navbar-toggler-icon"></span>
                                                     </button>
@@ -115,7 +115,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="~/css/style1.css">
     <header class="page-header header container-fluid">
-        <script src="main.js"></script>
     </header>
     <div>
        <div class="containerBody">
@@ -197,7 +196,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 ">
-                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" onclick="location.href='@Url.Action("Contact", "Infos")';">Nous contacter</button>
+                            <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" onclick="location.href='@Url.Action("Contact", "Infos")';"><div style="font-size:16px"> Nous contacter</div></button>
                         </div>
                     </div>
                 </div>
@@ -239,7 +238,7 @@
                             <img src="~/photos/linkedin.png" width="40%" id="logo">
                         </div>
                         <div class="col-md-3">
-                            <br/><br /> <img src="~/photos/twitter.png" width="40%" id="logo">
+                            <img src="~/photos/twitter.png" width="40%" id="logo">
                         </div>
                         <div class="col-md-3">
                             <img src="~/photos/instagram.png" width="40%" id="logo">

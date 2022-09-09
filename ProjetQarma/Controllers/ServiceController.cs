@@ -75,7 +75,8 @@ namespace ProjetQarma.Controllers
                         service.Image.CopyTo(fileStream);
                     }
 
-                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.Titre, "/images/" + service.Image.FileName, service.InfosPersosId);
+                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, "/images/" + service.Image.FileName, service.Titre, service.InfosPersosId );
+
 
                 }
             }
@@ -83,7 +84,9 @@ namespace ProjetQarma.Controllers
 
             else
             {
+
                 dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.Titre, service.ImagePath, service.InfosPersosId);
+
 
             }
 
@@ -148,6 +151,9 @@ namespace ProjetQarma.Controllers
 
 
         //Méthodes Proposition de services 
+
+
+
         /*  public ActionResult Proposition()
           {
               Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.Name).Value));
@@ -164,7 +170,7 @@ namespace ProjetQarma.Controllers
             {
                 services = services.Where(s => s.Description!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
             }
-
+            services = services.OrderByDescending(s => s.DateTime);
             return View(await services.ToListAsync());
         }
 
@@ -178,6 +184,7 @@ namespace ProjetQarma.Controllers
 
         public ActionResult Proposer(Proposition proposition)
         {
+            Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.Name).Value));
             if (!ModelState.IsValid)
                 return View(proposition);
 
@@ -192,7 +199,7 @@ namespace ProjetQarma.Controllers
                         proposition.Image.CopyTo(fileStream);
                     }
 
-                    dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.MontantQarma, proposition.Description, proposition.Titre, proposition.InfosPersosId, "/images/" + proposition.Image.FileName);
+                    dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.MontantQarma, proposition.Description, proposition.Titre, utilisateur.InfosPersosId.Value, "/images/" + proposition.Image.FileName);
 
                 }
             }
@@ -200,7 +207,7 @@ namespace ProjetQarma.Controllers
 
             else
             {
-                dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.MontantQarma, proposition.Description, proposition.Titre, proposition.InfosPersosId, proposition.ImagePath);
+                dal.ProposerService(proposition.Id, proposition.TypeService, proposition.MontantBisous, proposition.MontantQarma, proposition.Description, proposition.Titre, utilisateur.InfosPersosId.Value, proposition.ImagePath);
 
             }
 
@@ -251,22 +258,27 @@ namespace ProjetQarma.Controllers
                 dal.ModifierProposition(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, service.ImagePath); ;
             }
 
-            return RedirectToAction("Proposition");
+            return RedirectToAction("Index");
         }
-        public IActionResult PropositionDetail(int id)
 
-        {
-            Utilisateur utilisateur = dal.ObtientTousLesUtilisateurs().FirstOrDefault(r => r.Id == id);
-            Proposition service = dal.ObtientTousLesPropositions().FirstOrDefault(r => r.Id == id);
-            PropositionViewModel pvm = new PropositionViewModel { Proposition = service, Utilisateur = utilisateur };
-            return View(pvm);
-        }
 
         public ActionResult SupprimerProposition(int id)
         {
             dal.SupprimerProposition(id);
-            return RedirectToAction("Proposition");
+            return RedirectToAction("Index");
         }
+
+
+        public IActionResult PropositionDetail(int id)
+
+        {
+            Proposition service = dal.ObtientTousLesPropositions().FirstOrDefault(r => r.Id == id);
+            Utilisateur utilisateur = dal.ObtientTousLesUtilisateurs().FirstOrDefault(r => r.InfosPersosId == service.InfosPersosId);
+            PropositionViewModel pvm = new PropositionViewModel { Proposition = service, Utilisateur = utilisateur };
+            return View(pvm);
+        }
+
+        
     }
 
 }

@@ -33,11 +33,13 @@
     <Folder Include="wwwroot\photos\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\photos\Service\" />
+    <Folder Include="wwwroot\photos\profil\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
     <Content Remove="wwwroot\photos\" />
     <Content Remove="wwwroot\css\" />
     <Content Remove="wwwroot\photos\Service\" />
+    <Content Remove="wwwroot\photos\profil\" />
   </ItemGroup>
 </Project>
