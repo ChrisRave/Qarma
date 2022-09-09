@@ -1,0 +1,30 @@
+﻿@model ProjetQarma.ViewModels.PropositionViewModel
+@{ Layout = "_layoutAccueil";
+    ViewBag.Title = "UtilisateurNonConnecte"; }
+
+
+<div class="row">
+    <div class="col-md-10 offset-md-1 bordureAucune">
+        <h3> @Model.Utilisateur.InfosPersos.Prenom.</h3>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10 offset-md-1 bordureAucune">
+
+        <br>
+        Qarma = @Model.Utilisateur.Qarma
+        <br>
+        3 Badges
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 offset-md-0 bordureBleue1" style="border-radius: 8px;">
+        <h4> Répond à vos demandes de : </h4>
+
+        @Model.Utilisateur.Propose
+        <br>
+        <br>
+        <br>
+    </div>
+</div>

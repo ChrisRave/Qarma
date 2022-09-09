@@ -33,7 +33,7 @@
         </div>
         <div class="row">
             <div class="col-md-10 offset-md-1 bordureAucune">
-                proposé par :@Model.Proposition.InfosPersosId
+                <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("UtilisateurNonConnecte2","Service",new { id=Model.Proposition.InfosPersosId})';"><div style="font-size:16px"> @Model.Proposition.InfosPersosId</div></button>
             </div>
         </div>
        

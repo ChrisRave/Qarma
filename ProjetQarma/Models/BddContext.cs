@@ -97,6 +97,7 @@ namespace ProjetQarma.Models
                     MontantQarma = 20,
                     Description = "Je recherche à louer une place de parking pour une durée d'une semaine",
                     ImagePath = "/images/Parking.jpg",
+                    DateTime = new DateTime(2021, 06, 13),
 
                 }
             );
@@ -110,6 +111,7 @@ namespace ProjetQarma.Models
                     TypeService = TypeService.Prestation,
                     Description = "Je recherche quelqu'un pour promener mon chien tous les dimanches matins",
                     ImagePath = "/images/Prestation.jpg",
+                    DateTime = new DateTime(2021, 10, 13),
 
                 }
             );
@@ -123,6 +125,7 @@ namespace ProjetQarma.Models
                     TypeService = TypeService.Evenement,
                     Description = "Quelqu'un pour organiser une soirée raclette ce vendredi entre voisins ?!!",
                     ImagePath = "/images/Evenement.jpg",
+                    DateTime = new DateTime(2021, 05, 09),
 
                 }
             );
@@ -135,6 +138,7 @@ namespace ProjetQarma.Models
                    TypeService = TypeService.Hebergement,
                    Description = "Yo ! Je peux emprunter un canapé pour 1 semaine? On manque de place avec les 7 nains à la maison^^",
                    ImagePath = "/images/Hebergement.jpg",
+                   DateTime = new DateTime(2021, 08, 08),
 
                }
            );
@@ -147,7 +151,7 @@ namespace ProjetQarma.Models
                    TypeService = TypeService.Hebergement,
                    Description = "Salut les loulous !! Est-ce que quelqu'un a une pièce en plus à  squatter pendant les vacances d'été?",
                    ImagePath = "/images/Hebergement.jpg",
-
+                   DateTime = new DateTime(2021, 12, 03),
                }
            );
 
@@ -160,6 +164,7 @@ namespace ProjetQarma.Models
                    TypeService = TypeService.Equipement,
                    Description = "José tu as  un tout nouveau karcher,  tu me le prêtes pour nettoyer ma titine? ",
                    ImagePath = "/images/Equipement.jpg",
+                   DateTime = new DateTime(2021, 11, 09),
 
                }
            );
@@ -172,6 +177,7 @@ namespace ProjetQarma.Models
                    TypeService = TypeService.Equipement,
                    Description = "Je prête ma tronçonneuse si vous avez besoin de couper quoi ce soit !",
                    ImagePath = "/images/Equipement.jpg",
+                   DateTime = new DateTime(2021, 12, 05),
 
                }
            );
@@ -184,6 +190,7 @@ namespace ProjetQarma.Models
                     TypeService = TypeService.Prestation,
                     Description = "Bonjour, je propose des massages...",
                     ImagePath = "/images/Prestation.jpg",
+                    DateTime = new DateTime(2021, 12, 03),
 
                 }
             );
@@ -197,6 +204,7 @@ namespace ProjetQarma.Models
                     TypeService = TypeService.Evenement,
                     Description = "Bonjour, j'ai un nouveau barbecue et on doit fêter ça !!",
                     ImagePath = "/images/Evenement.jpg",
+                    DateTime = new DateTime(2021, 10, 13),
 
                 }
             );
@@ -209,6 +217,7 @@ namespace ProjetQarma.Models
                     TypeService = TypeService.Prestation,
                     Description = "Je peux prêter mon nouveau marteau !! Veuillez juste ne pas taper trop fort avec ! ",
                     ImagePath = "/images/Equipement.jpg",
+                    DateTime = new DateTime(2021, 12, 13),
 
                 }
             );
@@ -221,7 +230,7 @@ namespace ProjetQarma.Models
                     TypeService = TypeService.Parking,
                     Description = "Je laisse ma place dans le local à vélo pendant 2 mois cet été. Avis aux interéssés !",
                     ImagePath = "/images/Parking.jpg",
-                    DateTime = new DateTime(2021,12,12)
+                    DateTime = new DateTime(2021,12,12),
 
                 }
             );

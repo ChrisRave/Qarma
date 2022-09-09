@@ -127,7 +127,7 @@ namespace ProjetQarma.Models
                 ImagePath = Imagepath,
                 Titre = titre,
                 InfosPersosId = infosPersosId,
-
+                DateTime = DateTime.Now
             };
             if (id != 0)
             {
