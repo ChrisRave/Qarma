@@ -304,5 +304,52 @@ namespace ProjetQarma.Models
             throw new NotImplementedException();
         }
 
+
+        //Méthodes pour les actus
+
+        public List<Actu> ObtientTousLesActus()
+        {
+            List<Actu> listeActus = this._bddContext.Actus.ToList();
+            return listeActus; ;
+        }
+
+        public void CreerActu(int id, string titre, string categorie, string description, string imagePath)
+        { 
+            Actu actuToAdd = new Actu
+            {
+               Id = id,
+               Categorie = categorie,
+               Description = description,
+               ImagePath = imagePath,
+               Titre = titre,
+               DateTime = DateTime.Now,
+               
+            };
+            if (id != 0)
+            {
+               actuToAdd.Id = id;
+            }
+
+            this._bddContext.Actus.Add(actuToAdd);
+            this._bddContext.SaveChanges();
+        }
+
+
+        public void SupprimerActu(int id)
+        {
+            Actu actuToDelete = this._bddContext.Actus.Find(id);
+            this._bddContext.Actus.Remove(actuToDelete);
+            this._bddContext.SaveChanges();
+        }
+        public void SupprimerActu(string nom)
+        {
+            Actu actuToDelete = this._bddContext.Actus.Where(t => t.Titre == nom).FirstOrDefault();
+            if (actuToDelete != null)
+            {
+                this._bddContext.Actus.Remove(actuToDelete);
+                this._bddContext.SaveChanges();
+            }
+        }
+
     }
 }

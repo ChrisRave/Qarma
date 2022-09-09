@@ -29,9 +29,7 @@
   <ItemGroup>
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Utilisateur\" />
-    <Folder Include="Views\Shared\" />
     <Folder Include="wwwroot\photos\" />
-    <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\photos\Service\" />
     <Folder Include="wwwroot\photos\profil\" />
   </ItemGroup>

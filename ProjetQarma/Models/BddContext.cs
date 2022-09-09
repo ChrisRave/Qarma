@@ -10,6 +10,7 @@ namespace ProjetQarma.Models
         public DbSet<InfosPersos> InfosPersos { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Proposition> Propositions { get; set; }
+        public DbSet<Actu> Actus { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

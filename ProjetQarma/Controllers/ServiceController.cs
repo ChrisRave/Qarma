@@ -170,7 +170,7 @@ namespace ProjetQarma.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                services = services.Where(s => s.Description!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
+                services = services.Where(s => s.Description!.Contains(searchString) || s.Titre!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
             }
             services = services.OrderByDescending(s => s.DateTime);
             return View(await services.ToListAsync());
