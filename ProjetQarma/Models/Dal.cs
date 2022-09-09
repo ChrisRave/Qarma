@@ -49,7 +49,7 @@ namespace ProjetQarma.Models
                 Propose = propose,
                 Role = Role.User,
                 ImagePath = imagePath,
-                Appartement = appartement);
+                Appartement = appartement,
 
             };
             _bddContext.Utilisateur.Add(utilisateur);
