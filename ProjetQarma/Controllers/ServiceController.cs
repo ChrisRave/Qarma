@@ -302,6 +302,14 @@ namespace ProjetQarma.Controllers
             PropositionViewModel pvm = new PropositionViewModel { Proposition = service, Utilisateur = utilisateur };
             return View(pvm);
         }
+
+        public IActionResult accepterService(int utilisateurADebiterID, int utilisateurACrediterID, int serviceID)
+        {
+            dal.TransfererBisous(utilisateurADebiterID, utilisateurACrediterID, serviceID);
+            dal.AjouterQarma(utilisateurACrediterID, serviceID);
+            dal.SupprimerProposition(serviceID);
+            return Redirect("Index");
+        }
     }
 
 }
