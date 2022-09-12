@@ -170,7 +170,7 @@ namespace ProjetQarma.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                services = services.Where(s => s.Description!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
+                services = services.Where(s => s.Description!.Contains(searchString) || s.Titre!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
             }
             services = services.OrderByDescending(s => s.DateTime);
             return View(await services.ToListAsync());
@@ -301,6 +301,22 @@ namespace ProjetQarma.Controllers
             Proposition service = dal.ObtientTousLesPropositions()[0];
             PropositionViewModel pvm = new PropositionViewModel { Proposition = service, Utilisateur = utilisateur };
             return View(pvm);
+        }
+
+        public IActionResult accepterService(int utilisateurADebiterID, int utilisateurACrediterID, int serviceID)
+        {
+            dal.TransfererBisous(utilisateurADebiterID, utilisateurACrediterID, serviceID);
+            dal.AjouterQarma(utilisateurACrediterID, serviceID);
+            dal.SupprimerProposition(serviceID);
+            return Redirect("Index");
+        }
+
+        public IActionResult accepterService (int utilisateurADebiterID, int utilisateurACrediterID, int serviceID)
+        {
+            dal.TransfererBisous(utilisateurADebiterID, utilisateurACrediterID, serviceID);
+            dal.AjouterQarma(utilisateurACrediterID, serviceID);
+            dal.SupprimerProposition(serviceID);
+            return Redirect("Index");
         }
 
         public IActionResult accepterService(int utilisateurADebiterID, int utilisateurACrediterID, int serviceID)
