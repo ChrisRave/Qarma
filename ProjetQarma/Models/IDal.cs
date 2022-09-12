@@ -72,16 +72,7 @@ namespace ProjetQarma.Models
         public void SupprimerActu(string nom);
 
 
-        //*****Actu*****//
-
-        public List<Actu> ObtientTousLesActus();
-
-        void CreerActu(int id, string titre, string categorie, string description, string imagePath);
-
-        public void SupprimerActu(int id);
-
-        public void SupprimerActu(string nom);
-
+        
 
 
         //***** FIN Actu *****//
