@@ -23,17 +23,17 @@ namespace ProjetQarma.Controllers
         // GET: /<controller>/
         public IActionResult Landing()
         {
-           // faire référence à viewModels(Home == > nom de la view)
+            // faire référence à viewModels(Home == > nom de la view)
             InfosPersos infosPersos = new InfosPersos { Nom = "Dupont", Prenom = "Jean" };
             Utilisateur utilisateur = new Utilisateur { InfosPersos = infosPersos, Adresse = " 3 Rue des Peupliers, 75014 Paris", Mail = "Jean.dupont@gmail.com", Telephone = "01341564", Qarma = 2, TypeUtilisateur = TypeUtilisateur.Consommateur };
-           
-                 
-            Service service = new Service { Id = 1, TypeService = TypeService.Equipement, MontantBisous=10 };
-             AccueilViewModel avm = new AccueilViewModel
+
+
+            Service service = new Service { Id = 1, TypeService = TypeService.Equipement, MontantBisous = 10 };
+            AccueilViewModel avm = new AccueilViewModel
             {
                 Utilisateur = utilisateur,
                 Service = service,
-            }; 
+            };
             return View(avm); //retourner la view crée (HomeViewModel)
         }
 
@@ -57,7 +57,7 @@ namespace ProjetQarma.Controllers
             return View();
         }
 
-       
+
 
 
     }

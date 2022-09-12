@@ -77,7 +77,7 @@ namespace ProjetQarma.Controllers
                         service.Image.CopyTo(fileStream);
                     }
 
-                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, "/images/" + service.Image.FileName, service.Titre, utilisateur.InfosPersosId.Value );
+                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, "/images/" + service.Image.FileName, service.Titre, utilisateur.InfosPersosId.Value);
 
 
                 }
@@ -301,6 +301,14 @@ namespace ProjetQarma.Controllers
             Proposition service = dal.ObtientTousLesPropositions()[0];
             PropositionViewModel pvm = new PropositionViewModel { Proposition = service, Utilisateur = utilisateur };
             return View(pvm);
+        }
+
+        public IActionResult accepterService(int utilisateurADebiterID, int utilisateurACrediterID, int serviceID)
+        {
+            dal.TransfererBisous(utilisateurADebiterID, utilisateurACrediterID, serviceID);
+            dal.AjouterQarma(utilisateurACrediterID, serviceID);
+            dal.SupprimerProposition(serviceID);
+            return Redirect("Index");
         }
     }
 

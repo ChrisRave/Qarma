@@ -10,10 +10,11 @@ namespace ProjetQarma.Models
         public DbSet<InfosPersos> InfosPersos { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Proposition> Propositions { get; set; }
+        public DbSet<Actu> Actus { get; set; } 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;user id=root;password=rrrrr;database=utilisateurQarma");
+            optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
         }
         //
         public void InitializeDb()
@@ -33,7 +34,6 @@ namespace ProjetQarma.Models
                     Password = Dal.EncodeMD5("aaaaa"),
 
                     Propose = "Service d'admin",
-                    TypeUtilisateur = TypeUtilisateur.Consommateur
 
                     TypeUtilisateur = TypeUtilisateur.Consommateur,
                     Role = Role.SuperAdmin
