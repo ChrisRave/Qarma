@@ -30,7 +30,7 @@ namespace ProjetQarma.Models
         }
 
         public int CreerUtilisateur(InfosPersos infosPersos, String adresse, String mail, String telephone, int soldeBisous, int qarma, string password,
-            TypeUtilisateur typeUtilisateur, string centreInteret, string propose,Role role, string imagePath, string appartement)
+            TypeUtilisateur typeUtilisateur, string centreInteret, string propose, Role role, string imagePath, string appartement)
 
         {
             string motDePasse = EncodeMD5(password);
@@ -60,7 +60,7 @@ namespace ProjetQarma.Models
 
 
         public void ModifierUtilisateur(int id, InfosPersos infosPersos, String adresse, String mail, String telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string centreInteret
-            , string propose,Role role, string imagePath, string appartement)
+            , string propose, Role role, string imagePath, string appartement)
 
         {
             Utilisateur utilisateur = _bddContext.Utilisateur.Find(id); if (utilisateur != null)
@@ -143,8 +143,8 @@ namespace ProjetQarma.Models
             {
                 serviceToAdd.Id = id;
             }
-            
-           
+
+
             this._bddContext.Services.Add(serviceToAdd);
             this._bddContext.SaveChanges();
         }
@@ -297,12 +297,57 @@ namespace ProjetQarma.Models
         }
 
 
-        
 
-        public void ModifierUtilisateur(int id, InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose,Role role, string Imagepath) // appartement? 
+
+        public void ModifierUtilisateur(int id, InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose, Role role, string Imagepath) // appartement? 
         {
             throw new NotImplementedException();
         }
+
+        //Méthodes pour les actus
+        public List<Actu> ObtientTousLesActus()
+        {
+            List<Actu> listeActus = this._bddContext.Actus.ToList();
+            return listeActus; ;
+        }
+        public void CreerActu(int id, string titre, string categorie, string description, string imagePath)
+        {
+            Actu actuToAdd = new Actu
+            {
+                Id = id,
+                Categorie = categorie,
+                Description = description,
+                ImagePath = imagePath,
+                Titre = titre,
+                DateTime = DateTime.Now,
+            };
+            if (id != 0)
+            {
+                actuToAdd.Id = id;
+            }
+            this._bddContext.Actus.Add(actuToAdd);
+            this._bddContext.SaveChanges();
+        }
+        public void SupprimerActu(int id)
+        {
+            Actu actuToDelete = this._bddContext.Actus.Find(id);
+            this._bddContext.Actus.Remove(actuToDelete);
+            this._bddContext.SaveChanges();
+        }
+        public void SupprimerActu(string nom)
+        {
+            Actu actuToDelete = this._bddContext.Actus.Where(t => t.Titre == nom).FirstOrDefault();
+            if (actuToDelete != null)
+            {
+                this._bddContext.Actus.Remove(actuToDelete);
+                this._bddContext.SaveChanges();
+            }
+        }
+
+
+
+
+
 
     }
 }

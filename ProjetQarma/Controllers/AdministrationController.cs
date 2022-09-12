@@ -74,9 +74,9 @@ namespace ProjetQarma.Controllers
         }
 
         [Authorize(Roles = "SuperAdmin,Admin")]
-        public IActionResult SupprimerPropositionAdmin (int propositionASupprimerID)
+        public IActionResult SupprimerPropositionAdmin(int propositionASupprimerID)
         {
-            dal.SupprimerProposition(propositionASupprimerID);   
+            dal.SupprimerProposition(propositionASupprimerID);
             return View();
 
         }

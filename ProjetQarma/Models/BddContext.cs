@@ -10,6 +10,7 @@ namespace ProjetQarma.Models
         public DbSet<InfosPersos> InfosPersos { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Proposition> Propositions { get; set; }
+        public DbSet<Actu> Actus { get; set; } 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -33,9 +34,8 @@ namespace ProjetQarma.Models
                     Password = Dal.EncodeMD5("aaaaa"),
 
                     Propose = "Service d'admin",
-                    TypeUtilisateur = TypeUtilisateur.Consommateur,
 
-                   
+                    TypeUtilisateur = TypeUtilisateur.Consommateur,
                     Role = Role.SuperAdmin
 
                 },
@@ -114,7 +114,6 @@ namespace ProjetQarma.Models
                     InfosPersosId = 1,
                     Id = 2,
                     Titre = "Promener mon chien",
-                    MontantBisous = 3,
                     TypeService = TypeService.Prestation,
                     Description = "Je recherche quelqu'un pour promener mon chien tous les dimanches matins",
                     ImagePath = "/images/Prestation.jpg",
@@ -128,7 +127,6 @@ namespace ProjetQarma.Models
                     InfosPersosId = 2,
                     Id = 3,
                     Titre = "Raclette !!!",
-                    MontantBisous = 3,
                     TypeService = TypeService.Evenement,
                     Description = "Quelqu'un pour organiser une soirée raclette ce vendredi entre voisins ?!!",
                     ImagePath = "/images/Evenement.jpg",
@@ -141,7 +139,6 @@ namespace ProjetQarma.Models
                    InfosPersosId = 2,
                    Id = 4,
                    Titre = "Place canapé",
-                   MontantBisous = 3,
                    TypeService = TypeService.Hebergement,
                    Description = "Yo ! Je peux emprunter un canapé pour 1 semaine? On manque de place avec les 7 nains à la maison^^",
                    ImagePath = "/images/Hebergement.jpg",
@@ -154,7 +151,6 @@ namespace ProjetQarma.Models
                    InfosPersosId = 3,
                    Id = 5,
                    Titre = "Besoin de toit ...",
-                   MontantBisous = 3,
                    TypeService = TypeService.Hebergement,
                    Description = "Salut les loulous !! Est-ce que quelqu'un a une pièce en plus à  squatter pendant les vacances d'été?",
                    ImagePath = "/images/Hebergement.jpg",
@@ -168,7 +164,6 @@ namespace ProjetQarma.Models
                    InfosPersosId = 3,
                    Id = 6,
                    Titre = "Hé José!!",
-                   MontantBisous = 3,
                    TypeService = TypeService.Equipement,
                    Description = "José tu as  un tout nouveau karcher,  tu me le prêtes pour nettoyer ma titine? ",
                    ImagePath = "/images/Equipement.jpg",
@@ -181,7 +176,6 @@ namespace ProjetQarma.Models
                    InfosPersosId = 3,
                    Id = 7,
                    Titre = "Outil",
-                   MontantBisous = 3,
                    TypeService = TypeService.Equipement,
                    Description = "Je prête ma tronçonneuse si vous avez besoin de couper quoi ce soit !",
                    ImagePath = "/images/Equipement.jpg",
@@ -194,7 +188,6 @@ namespace ProjetQarma.Models
                     InfosPersosId = 3,
                     Id = 1,
                     Titre = "Massage",
-                    MontantBisous = 3,
                     TypeService = TypeService.Prestation,
                     Description = "Bonjour, je propose des massages...",
                     ImagePath = "/images/Prestation.jpg",
@@ -209,7 +202,6 @@ namespace ProjetQarma.Models
                     InfosPersosId = 1,
                     Id = 2,
                     Titre = "Barbecue",
-                    MontantBisous = 3,
                     TypeService = TypeService.Evenement,
                     Description = "Bonjour, j'ai un nouveau barbecue et on doit fêter ça !!",
                     ImagePath = "/images/Evenement.jpg",
@@ -224,7 +216,6 @@ namespace ProjetQarma.Models
                     Titre = "Marteau neuf",
                     TypeService = TypeService.Prestation,
                     Description = "Je peux prêter mon nouveau marteau !! Veuillez juste ne pas taper trop fort avec ! ",
-                    MontantBisous = 3,
                     ImagePath = "/images/Equipement.jpg",
 
                 }
@@ -238,7 +229,6 @@ namespace ProjetQarma.Models
                     TypeService = TypeService.Parking,
                     Description = "Je laisse ma place dans le local à vélo pendant 2 mois cet été. Avis aux interéssés !",
                     ImagePath = "/images/Parking.jpg",
-                    MontantBisous = 3,
                     DateTime = new DateTime(2021,12,12)
 
                 }
