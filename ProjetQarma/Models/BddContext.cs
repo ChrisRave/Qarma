@@ -10,7 +10,10 @@ namespace ProjetQarma.Models
         public DbSet<InfosPersos> InfosPersos { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Proposition> Propositions { get; set; }
-        public DbSet<Actu> Actus { get; set; }
+
+        public DbSet<Actu> Actus { get; set; } 
+
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -27,37 +30,42 @@ namespace ProjetQarma.Models
                 {
                     InfosPersosId = 1,
                     Id = 1,
-                    Adresse = " 3 Rue des Peupliers, 75014 Paris",
+                    Adresse = " 56 Rue des Voiliers, 34280 La Grande-Motte.",
                     Mail = "Jean.dupont@gmail.com",
                     Telephone = "000000000",
-                    Qarma = 2,
+                    SoldeBisous = 600,
+                    Qarma = 15,
                     Password = Dal.EncodeMD5("aaaaa"),
-
-                    Propose = "Service d'admin",
+                    ImagePath = "/photos/profil/photoalbert.jpg",
+                    Propose = "Service d'admin - montage meubles en kit - Installation electrique - garde animaux - Aide à domicile",    
+                   CentreInteret ="Avec Marie Pierre nous sommes passionnés par les animaux. Je suis aussi passioné par l'informatique",
                     TypeUtilisateur = TypeUtilisateur.Consommateur,
-
-                   
-                    Role = Role.SuperAdmin
+                    Role = Role.SuperAdmin,
+                    Appartement = "Ayant été dessinateur bâtiment génie civil et conducteur de travaux je réalise tous travaux de bricolage. Marie Pierre aime les animaux et peut s'en occuper pendant vos vacances. ",
 
                 },
                 new Utilisateur
                 {
                     InfosPersosId = 2,
                     Id = 2,
-                    Adresse = " 8 Rue des Peupliers, 75014 Paris",
-                    Mail = "albert37@gmail.com",
+                    Adresse = " 56 Rue des Voiliers, 34280 La Grande-Motte.",
+                    Mail = "lisa88@gmail.com",
                     Telephone = "1464357890",
                     SoldeBisous = 200,
                     Qarma = 8,
                     Password = Dal.EncodeMD5("bbbbb"),
                     TypeUtilisateur = TypeUtilisateur.Consommateur,
-                    Role = Role.User
+                    Role = Role.User,
+                    ImagePath = "/photos/profil/photoutil2.jpg",
+                    Propose = "Cours d'anglais - cours de français",
+                    CentreInteret = "J'aime voyager dans le monde et rencontrer de nouvelles personnes, j'ai vécu 5 ans au Royaume-Uni et je parle couramment l'anglais.",
+                    Appartement = "Dans l'appartement 02A, nous sommes 2. Richard, moi et nos 2 enfants Oscar et Faustine."
                 },
                  new Utilisateur
                  {
                      InfosPersosId = 3,
                      Id = 3,
-                     Adresse = " 10 Rue des Peupliers, 75014 Paris",
+                     Adresse = " 56 Rue des Voiliers, 34280 La Grande-Motte.",
                      Mail = "ben34@gmail.com",
                      Telephone = "0654983476",
                      SoldeBisous = 400,
@@ -65,9 +73,9 @@ namespace ProjetQarma.Models
                      Password = Dal.EncodeMD5("ccccc"),
                      TypeUtilisateur = TypeUtilisateur.Consommateur,
                      CentreInteret = "J'aime le jazz et les ballades en foret.",
-                     Propose = "Bricolage - Petits travaux",
+                     Propose = "Bricolage - Petits travaux - photos",
                      ImagePath = "/photos/profil/photoBenoit.jpg",
-                     Appartement = "Dans l'appartement 37B, nous sommes 4. Lisa, moi et nos 2 enfants Oscar et Faustine. Lisa est institutrice et je suis cascadeur."
+                     Appartement = "Je suis un professionnel expérimenté de la photographie de mode et de beauté. Je travaille régulièrement pour des magazines français et internationaux (Madame Figaro, Cosmopolitan, Biba, etc.). J'ai remporté de nombreux prix et mes photographies font partie des collections de la Bibliothèque nationale de France."
 
 
                  }
@@ -82,8 +90,8 @@ namespace ProjetQarma.Models
                 new InfosPersos
                 {
                     Id = 2,
-                    Nom = "Nachor",
-                    Prenom = "guilhemjoual"
+                    Nom = "Lisa",
+                    Prenom = "beate"
                 },
                 new InfosPersos
                 {
@@ -102,7 +110,7 @@ namespace ProjetQarma.Models
                     Titre = "Parking",
                     TypeService = TypeService.Parking,
                     MontantBisous = 100,
-                    MontantQarma = 20,
+                    MontantQarma = 1,
                     Description = "Je recherche à louer une place de parking pour une durée d'une semaine",
                     ImagePath = "/images/Parking.jpg",
 
@@ -116,9 +124,11 @@ namespace ProjetQarma.Models
                     Id = 2,
                     Titre = "Promener mon chien",
                     MontantBisous = 3,
+                    MontantQarma = 1,
                     TypeService = TypeService.Prestation,
                     Description = "Je recherche quelqu'un pour promener mon chien tous les dimanches matins",
-                    ImagePath = "/images/Prestation.jpg",
+                    ImagePath = "/photos/Service/chien1.jpg",
+                    DateTime = new DateTime(2021, 12, 12)
 
                 }
             );
@@ -130,9 +140,10 @@ namespace ProjetQarma.Models
                     Id = 3,
                     Titre = "Raclette !!!",
                     MontantBisous = 3,
+                    MontantQarma = 1,
                     TypeService = TypeService.Evenement,
                     Description = "Quelqu'un pour organiser une soirée raclette ce vendredi entre voisins ?!!",
-                    ImagePath = "/images/Evenement.jpg",
+                    ImagePath = "/photos/Service/raclette.jpg",
 
                 }
             );
@@ -143,6 +154,7 @@ namespace ProjetQarma.Models
                    Id = 4,
                    Titre = "Place canapé",
                    MontantBisous = 3,
+                   MontantQarma = 1,
                    TypeService = TypeService.Hebergement,
                    Description = "Yo ! Je peux emprunter un canapé pour 1 semaine? On manque de place avec les 7 nains à la maison^^",
                    ImagePath = "/images/Hebergement.jpg",
@@ -154,11 +166,12 @@ namespace ProjetQarma.Models
                {
                    InfosPersosId = 3,
                    Id = 5,
-                   Titre = "Besoin de toit ...",
+                   Titre = "Repassage",
                    MontantBisous = 3,
-                   TypeService = TypeService.Hebergement,
-                   Description = "Salut les loulous !! Est-ce que quelqu'un a une pièce en plus à  squatter pendant les vacances d'été?",
-                   ImagePath = "/images/Hebergement.jpg",
+                   MontantQarma = 1,
+                   TypeService = TypeService.Prestation,
+                   Description = "Bonjour, Cherche une personne pour du repassage. Merci de me contacter et indiquer votre tarif pour deux panières par exemple",
+                   ImagePath = "/photos/Service/ferARepasser.jpg",
 
                }
            );
@@ -168,11 +181,13 @@ namespace ProjetQarma.Models
                {
                    InfosPersosId = 3,
                    Id = 6,
-                   Titre = "Hé José!!",
+                   Titre = "cherche plombier",
                    MontantBisous = 3,
-                   TypeService = TypeService.Equipement,
-                   Description = "José tu as  un tout nouveau karcher,  tu me le prêtes pour nettoyer ma titine? ",
-                   ImagePath = "/images/Equipement.jpg",
+                   MontantQarma = 1,
+                   TypeService = TypeService.Prestation,
+                   Description = "Bonjour, je recherche un plombier pour mettre un raccord et un tuyau souple afin de remplacer un bout de tuyau tordu en cuivre. ",
+                   ImagePath = "/photos/Service/plomberie.jpg",
+                   DateTime = new DateTime(2021, 12, 12)
 
                }
            );
@@ -183,6 +198,7 @@ namespace ProjetQarma.Models
                    Id = 7,
                    Titre = "Outil",
                    MontantBisous = 3,
+                   MontantQarma = 1,
                    TypeService = TypeService.Equipement,
                    Description = "Je prête ma tronçonneuse si vous avez besoin de couper quoi ce soit !",
                    ImagePath = "/images/Equipement.jpg",
@@ -192,13 +208,14 @@ namespace ProjetQarma.Models
             this.Propositions.AddRange(
                 new Proposition
                 {
-                    InfosPersosId = 3,
+                    InfosPersosId = 2,
                     Id = 1,
-                    Titre = "Massage",
-                    MontantBisous = 3,
+                    Titre = "Repas",
+                    MontantBisous = 10,
+                    MontantQarma = 1,
                     TypeService = TypeService.Prestation,
-                    Description = "Bonjour, je propose des massages...",
-                    ImagePath = "/images/Prestation.jpg",
+                    Description = "Cours a domicile repas pour occasion soirees.anniversaire. ",
+                    ImagePath = "/photos/Service/repas.jpg",
                     DateTime = new DateTime(2021, 12, 12)
 
                 }
@@ -207,13 +224,14 @@ namespace ProjetQarma.Models
                 new Proposition
                 {
 
-                    InfosPersosId = 1,
+                    InfosPersosId = 3,
                     Id = 2,
                     Titre = "Barbecue",
-                    MontantBisous = 3,
+                    MontantBisous = 0,
+                    MontantQarma = 1,
                     TypeService = TypeService.Evenement,
                     Description = "Bonjour, j'ai un nouveau barbecue et on doit fêter ça !!",
-                    ImagePath = "/images/Evenement.jpg",
+                    ImagePath = "/photos/Service/barbecue.jpg",
 
                 }
             );
@@ -222,11 +240,12 @@ namespace ProjetQarma.Models
                 {
                     InfosPersosId = 1,
                     Id = 3,
-                    Titre = "Marteau neuf",
+                    Titre = "Couture",
                     TypeService = TypeService.Prestation,
-                    Description = "Je peux prêter mon nouveau marteau !! Veuillez juste ne pas taper trop fort avec ! ",
-                    MontantBisous = 3,
-                    ImagePath = "/images/Equipement.jpg",
+                    Description = "Je propose mes services pour des retouches ainsi que des cours de couture ",
+                    MontantBisous = 8,
+                    MontantQarma = 1,
+                    ImagePath = "/photos/Service/couture.jpg",
 
                 }
             );
@@ -238,8 +257,9 @@ namespace ProjetQarma.Models
                     Titre = "Parking libre",
                     TypeService = TypeService.Parking,
                     Description = "Je laisse ma place dans le local à vélo pendant 2 mois cet été. Avis aux interéssés !",
-                    ImagePath = "/images/Parking.jpg",
-                    MontantBisous = 3,
+                    MontantBisous = 5,
+                    MontantQarma = 1,
+                    ImagePath = "/photos/Service/veloParking.jpg",
                     DateTime = new DateTime(2021,12,12)
 
                 }

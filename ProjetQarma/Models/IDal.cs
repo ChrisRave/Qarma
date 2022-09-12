@@ -8,7 +8,7 @@ namespace ProjetQarma.Models
 
         List<Utilisateur> ObtientTousLesUtilisateurs();
 
-        int CreerUtilisateur(InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, string password, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose, Role role, string Imagepath, string Appartement);        
+        int CreerUtilisateur(InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, string password, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose, Role role, string Imagepath, string Appartement);
         void ModifierUtilisateur(int id, InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose, Role role, string Imagepath, string Appartement);
 
 
@@ -23,13 +23,13 @@ namespace ProjetQarma.Models
         List<Service> ObtientTousLesServices();
 
 
-        void CreerService(int id, TypeService typeservice, int montantBisous,int montantQarma, string description, string Imagepath, string titre, int infosPersosId);
+        void CreerService(int id, TypeService typeservice, int montantBisous, int montantQarma, string description, string Imagepath, string titre, int infosPersosId);
 
         void SupprimerService(string nom);
 
         void SupprimerService(int id);
 
-        void ModifierService(int id, TypeService typeservice, int montantBisous,int montantQarma, string description, string titre, string imagePath);
+        void ModifierService(int id, TypeService typeservice, int montantBisous, int montantQarma, string description, string titre, string imagePath);
 
         //*****FIN  Service*****//
 
@@ -63,21 +63,22 @@ namespace ProjetQarma.Models
 
         public void AjouterQarma(int utilisateurACrediterID, int serviceID);
 
-        //*****Actu*****//
+    
+    //*****Classe Actus*****
 
         public List<Actu> ObtientTousLesActus();
-
         void CreerActu(int id, string titre, string categorie, string description, string imagePath);
-
         public void SupprimerActu(int id);
-
         public void SupprimerActu(string nom);
+
+
+        
 
 
         //***** FIN Actu *****//
     }
 
 }
-        
-    
+
+
 
