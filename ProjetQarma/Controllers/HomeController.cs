@@ -39,13 +39,10 @@ namespace ProjetQarma.Controllers
 
         public IActionResult Demande()
         {
-            UtilisateurViewModel viewModel = new UtilisateurViewModel { Authentifie = HttpContext.User.Identity.IsAuthenticated };
-            if (viewModel.Authentifie)
-            {
-                viewModel.Utilisateur = dal.ObtenirUtilisateur(HttpContext.User.Identity.Name);
-                return View(viewModel);
-            }
-            return View(viewModel);
+            List<Proposition> listePropositions = dal.ObtientTousLesPropositions().Take(2).ToList();
+            List<Service> listeservices = dal.ObtientTousLesServices().Take(2).ToList();
+            ServicePropositionViewModel spvm = new ServicePropositionViewModel { Propositions = listePropositions, Services = listeservices };
+            return View(spvm);
 
         }
         public IActionResult Accueil()
