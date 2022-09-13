@@ -17,7 +17,20 @@ namespace ProjetQarma.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
+            
+			
+			if (System.Diagnostics.Debugger.IsAttached)
+            {
+                optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
+            }
+            else
+            {
+                IConfiguration configuration = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json")
+                .Build();
+                optionsBuilder.UseMySql(configuration.GetConnectionString("DefaultConnection"));
+            }
         }
         //
         public void InitializeDb()
