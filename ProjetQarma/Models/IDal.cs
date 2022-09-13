@@ -11,7 +11,7 @@ namespace ProjetQarma.Models
         int CreerUtilisateur(InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, string password, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose, Role role, string Imagepath, string Appartement);
         void ModifierUtilisateur(int id, InfosPersos infosPersos, string adresse, string mail, string telephone, int soldeBisous, int qarma, TypeUtilisateur typeUtilisateur, string CentreInteret, string Propose, Role role, string Imagepath, string Appartement);
 
-
+        void SupprimerUtilisateur(int id);
         //***** Login *****//
         Utilisateur Authentifier(string mail, string password);
         Utilisateur ObtenirUtilisateur(int id);

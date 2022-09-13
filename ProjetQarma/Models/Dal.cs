@@ -83,6 +83,13 @@ namespace ProjetQarma.Models
             };
         }
 
+        public void SupprimerUtilisateur(int id)
+        {
+            Utilisateur userToDelete = this._bddContext.Utilisateur.Find(id);
+            this._bddContext.Utilisateur.Remove(userToDelete);
+            this._bddContext.SaveChanges();
+        }
+
         /* public int CreerUtilisateur(InfosPersos infosPersos, string adresse, string mail, string telephone, int qarma, TypeUtilisateur typeUtilisateur)
          {
              throw new NotImplementedException();
