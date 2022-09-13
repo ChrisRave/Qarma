@@ -70,8 +70,23 @@ namespace ProjetQarma.Models
                      Appartement = "Dans l'appartement 37B, nous sommes 4. Lisa, moi et nos 2 enfants Oscar et Faustine. Lisa est institutrice et je suis cascadeur."
 
 
-                 }
-            );
+                 },
+                 new Utilisateur
+                 {
+                     InfosPersosId = 4,
+                     Id = 4,
+                     Adresse = " 3 Rue des Peupliers, 75014 Paris",
+                     Mail = "maxime.daubermann@gmail.com",
+                     Telephone = "000000000",
+                     Qarma = 2,
+                     Password = Dal.EncodeMD5("00000"),
+
+                     Propose = "Service d'admin",
+                     TypeUtilisateur = TypeUtilisateur.Consommateur,
+
+
+                     Role = Role.SuperAdmin
+                 });
             this.InfosPersos.AddRange(
                 new InfosPersos
                 {
@@ -90,6 +105,12 @@ namespace ProjetQarma.Models
                     Id = 3,
                     Nom = "Dubost",
                     Prenom = "Benoit"
+                },
+                new InfosPersos
+                {
+                    Id= 4,
+                    Nom = "Daubermann",
+                    Prenom = "Maxime"
                 }
             );
             this.Services.AddRange(
