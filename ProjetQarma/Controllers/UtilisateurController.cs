@@ -59,7 +59,10 @@ namespace projetQarma.Controllers
             }
         }
         public int getSoldeBisous(string id)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 45b8d8cb5651ba6d1891c9105779454184115788
         {
             Dal dal = new Dal();
             Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(id));
@@ -67,11 +70,18 @@ namespace projetQarma.Controllers
 
         }
         public int getSoldeQarma(string id)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 45b8d8cb5651ba6d1891c9105779454184115788
         {
             Dal dal = new Dal();
             Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(id));
             return utilisateur.Qarma;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 45b8d8cb5651ba6d1891c9105779454184115788
         }
     }
 }
