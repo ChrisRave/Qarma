@@ -134,53 +134,50 @@
             <!--La prtie du WEB fonctionalité-->
             <div class="row">
                 <!-- La partie Gauche-->
-                <div class="col-md-3 bordureBleue1" style="border-radius: 8px;">
+                <div class="col-md-2 bordureAucune" style="border-radius: 8px;">
                     <div style="color : ghostwhite">
-
-                        <div class="row" align="center">
-                            <div class="col-md-10 offset-md-1 bordureAucune">
-                                <img src="@Model.Utilisateur.ImagePath" width="50%" />
+                        <div class="row bordureBleue1" align="center" style="border-radius: 8px;">
+                            <div class="row" align="center">
+                                <div class="col-md-12 offset-md-0 bordureAucune" >
+                                    <img src="@Model.Utilisateur.ImagePath" width="50%" style="border-radius: 8px;" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 offset-md-0 bordureAucune">
+                                    <div class="row bordureAucune">
+                                        <div class="couleur_bleueQarma" style="font-size:20px"><strong>@User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value </strong></div>
+                                    </div>
+                                    <div class="row bordureAucune">
+                                        <div style="font-size:20px; color:ghostwhite"><strong>Solde de bisous</strong> : @(new projetQarma.Controllers.UtilisateurController().getSoldeBisous(User.Identity.Name))</div>
+                                    </div>
+                                    <div class="row bordureAucune">
+                                        <div style="font-size: 20px; color: ghostwhite"><strong> Badges </strong>: @(new projetQarma.Controllers.UtilisateurController().getSoldeQarma(User.Identity.Name))</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1 bordureAucune">
-                                <h3> @Model.Utilisateur.InfosPersos.Prenom</h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1 bordureAucune">
-                                Solde bisous = @Model.Utilisateur.SoldeBisous
-                                <br>
-                                Qarma = @Model.Utilisateur.Qarma
-                                <br>
-                                3 Badges
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1 bordureAucune">
 
-
-                                <br>
-
-                            </div>
-                        </div>
                         <div class="row">
-                            <div class="col-md-10 offset-md-1 bordureAucune">
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1 bordureAucune">
+                            <div class="col-md-12 offset-md-0 bordureAucune">
                                 <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("MesDemandes","Login")';"><div style="font-size:16px"> Gérer mes propositions</div></button>
                             </div>
                         </div>
 
                     </div>
                     <div class="row">
-                        <div class="col-md-10 offset-md-1 ">
+                        <div class="col-md-12 offset-md-0 ">
                             <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("Deconnexion","Login")';"><div style="font-size:16px"> Se déconnecter</div></button>
 
                         </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12 offset-md-0 bordureAucune">
+                            <button class="btn btn-primary btn-lg" style=" width: 100%;" onclick="location.href='@Url.Action("Charte", "Accueil")';">Charte </button>
+
+                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" onclick="location.href='@Url.Action("FAQ", "Accueil")';">FAQ</button>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-md-1 bordureAucune">
@@ -189,7 +186,8 @@
                 <!--**********Partie body**************-->
                 <div class="col-md-3  bordureBleue1" style="border-radius: 8px;">
                     <div id="offres">
-                        @RenderBody()
+                        <h4> Présentation de l'appartement</h4>
+                        @Model.Utilisateur.Appartement
                     </div>
                 </div>
                 <div class="col-md-1  bordureAucune">

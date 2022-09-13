@@ -143,17 +143,17 @@
                 <!--La prtie du WEB fonctionalité-->
                 <div class="row">
                     <!-- La partie Gauche-->
-                    <div class="col-md-2 bordureBleue1" style="border-radius: 8px;">
-                        <div class="row" align="center">
+                    <div class="col-md-2 bordureAucune" >
+                        <div class="row bordureBleue1" align="center" style="border-radius: 8px;">
                             <div class="col-md-12 offset-md-0 bordureAucune">
                                 <div class="row bordureAucune">
                                     <div class="couleur_bleueQarma" style="font-size:20px"><strong>@User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value </strong></div>
                                 </div>
                                 <div class="row bordureAucune">
-                                    <div style="font-size:20px; color:ghostwhite"><strong>Solde de bisous</strong> : @(new projetQarma.Controllers.UtilisateurController().getSoldeBisous(User.Identity.Name))</div>
+                                    <div style="font-size:15px; color:ghostwhite"><strong>Solde de bisous</strong> : @(new projetQarma.Controllers.UtilisateurController().getSoldeBisous(User.Identity.Name))</div>
                                 </div>
                                 <div class="row bordureAucune">
-                                    <div style="font-size: 20px; color: ghostwhite"><strong> Badges </strong>: @(new projetQarma.Controllers.UtilisateurController().getSoldeQarma(User.Identity.Name))</div>
+                                    <div style="font-size: 15px; color: ghostwhite"><strong> Badges </strong>: @(new projetQarma.Controllers.UtilisateurController().getSoldeQarma(User.Identity.Name))</div>
                                 </div>
                             </div>
                         </div>
@@ -188,35 +188,23 @@
                     </div>
                     <div class="col-md-3  bordureAucune">
                         <div class="row" align="center">
-                            <div class="col-md-11 offset-md-1 bordureBleue2" style="border-radius: 8px;">
-                                <div class="col md px-5">
-                                    <div>
-                                        <div class="card bg-light text-dark">
-                                            <div class="card-body text-center">
-                                                <div class="h4 mb-1">
-                                                    <i class="bi bi-info-circle text-info"></i>
-                                                </div>
-                                                <div class="card-title text-info h3 mb-1">
-                                                    Actualités
-                                                </div>
-                                                <h6>Ravalement de façade</h6>
-                                                <p class="card-text ms-auto">
-                                                    La société Renov'Tout va intervenir sur la façade du bâtiment A à partir du Lundi 13.09 jusqu'au Vendredi 18.09.
-                                                </p>
-                                                <h6>Maintenance ascenseur</h6>
-                                                <p class="card-text ms-auto">
-                                                    La maintenance annuelle des ascenseurs est prévue le Mardi 31 Octobre.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
+                                <h2 class="titre" style="color: #1f5c587c; ">  Actualités</h2>
+
+                                <h6 style="color: #05443ffb; ">Ravalement de façade</h6>
+                                <p class="card-text ms-auto" style="color: ghostwhite;" >
+                                    La société Renov'Tout va intervenir sur la façade du bâtiment A à partir du Lundi 13.09 jusqu'au Vendredi 18.09.
+                                </p>
+                                <h6 style="color: #05443ffb; ">Maintenance ascenseur</h6>
+                                <p class="card-text ms-auto" style="color: ghostwhite;" >
+                                    La maintenance annuelle des ascenseurs est prévue le Mardi 31 Octobre.
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
-        </div>
+         </div>
 
         <!-- **********FOOTER*************-->
         <footer class="text-center ">
