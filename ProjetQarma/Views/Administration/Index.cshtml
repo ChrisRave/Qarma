@@ -1,6 +1,4 @@
-﻿@model List<ProjetQarma.Models.Service>
-
-@{
+﻿@{
     ViewData["Title"] = "ServicePage";
 }
 <!DOCTYPE html>
@@ -19,16 +17,16 @@
 <body>
     
  <!-- Navbar -->
- <nav class="navbar navbar-expand-lg bg-info text-light navbar-dark py-3">
+ <nav class="navbar navbar-expand-lg text-light navbar-dark py-3" style="background-color :#3498DB">
     <div class="container">
-        <a href="#" class="navbar-brand">Bienvenue, @User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</a> 
+        <a href="#" class="navbar-brand"> <span class="h4 bi bi-house  mx-3"></span>Bienvenue, <span class="lead">@User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</span></a> 
         <button class="navbar-toggler" type = "button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
               <li class="navbar-item text-light">
-                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#compte">Créer un compte uilisateur</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#compte">Créer un compte utilisateur</a>
               </li>
                <li class="navbar-item text-light">
                 <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#actu">Ecrire une actu</a>
@@ -44,8 +42,11 @@
                         <li><a class="dropdown-item" href="/Administration/offrePage">Offres</a></li>
                         <li><a class="dropdown-item" href="/Administration/userPage">Utilisateurs</a></li>
                       </ul>
-                      </li>
-                 </ul>
+                    </li>
+               <li class="navbar-item text-light">
+                <a class="nav-link h1 bi bi-arrow-left-circle mx-3" href="~/Administration/userPage"></a>
+              </li>
+                </ul>
               </li>
             </ul>
         </div>
@@ -53,59 +54,29 @@
  </nav>   
 
 
- <!-- Listes -->
-<section class="py-5">
+ <!--Body-->
+ <section id="corps"  class="p-5">
     <div class="container">
-        <div class="row align-items-top">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+                <h4>
+                    Votre interface administrateur
+                </h4>
+                <p class="lead">
+                    Vous avez la possibilité de gérer les activités de la plateforme.
+                </p>
+                <p>
+                    Modifiez les rôles des utilisateurs, écrivez  de nouvelles actualités ou créez un compte pour les nouveaux membres. 
+                </p>
+                <a href="#" class="btn" style="background-color :#3498DB"><i class="bi bi-chevron-right"></i>En savoir plus</a>   
             </div>
-            <div class="col md py-5"><u><i class="h1 bi bi-people text-success mx-3"></i><span class="h4 text-center">Liste des services</span></u>
-                <!--services -->
-                @foreach (var service in Model)
-
-                { 
-<section class="p-5">
-    <div class="container">
-        <div class="row g-3">
-            <div class="col-md">
-                <h6 class="text-left mb-3">
-                    <i class="h4 bi bi-arrow-right-circle-fill text-primary mx-3"></i>Service id #@service.Id
-                </h6>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                            <span class="fw-bold">Titre :</span> @service.Titre
-                        </li>
-                    </ul>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                            <span class="fw-bold"> Description :</span> @service.Description
-                        </li>
-                    </ul>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                            <span class="fw-bold"> Catégorie :</span> @service.TypeService
-                        </li>
-                    </ul>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                            <span class="fw-bold"> Coût  :</span>  @service.MontantBisous
-                        </li>
-                    </ul>
-                    <div>
-                        <a class="btn bg-warning btn-sm text-light" onclick="alert('Confirmer')"  href=@("/administration/SupprimerServiceAdmin?"+"serviceASupprimerID="+service.Id)  type="button">Supprimer</a>
-                    </div>
-                    <div class="text-center">__________________</div>
-                 
+            <div class="col-md p-5">
+                <img src="/images/people.png"" class="img-fluid" alt="">
             </div>
         </div>
     </div>
-</section>
-
-                    }
-                </div>
-        </div>
     
 </section>
-
 
       
 
@@ -123,7 +94,7 @@
         <div class="col-md-6 bordureAucune">
             <div class="text-center text-info pt-20" >
                 <strong> SoliDev &copy; 2022  </strong><br>
-                <strong> Adresse email de contact </strong>
+                <strong>projetQarma@gmail.com</strong>
             </div>                                                   
         </div>
             <!-- Logo SoliDev-->
@@ -225,3 +196,4 @@
     
 </body>
 </html>
+

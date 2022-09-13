@@ -18,37 +18,40 @@ namespace ProjetQarma.Controllers
         private IDal dal;
         BddContext _bddContext = new BddContext();
         //Méthode affichage des pages
-        public async Task<IActionResult> servicePage(string searchString)
+
+        private IWebHostEnvironment _webEnv;
+        public AdministrationController(IWebHostEnvironment environment)
         {
-            var services = from m in _bddContext.Services select m;
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                services = services.Where(s => s.Description!.Contains(searchString) || s.Titre!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
-            }
-            services = services.OrderByDescending(s => s.DateTime);
-            return View(await services.ToListAsync());
+            _webEnv = environment;
+
+            this.dal = new Dal();
         }
+
+        public ActionResult Index()
+        {
+          
+            return View();
+        }
+        public IActionResult servicePage()
+        {
+            List<Service> listeServices = dal.ObtientTousLesServices();
+            return View(listeServices);
+        }
+
+
         [Authorize(Roles = "SuperAdmin,Admin")]
-        public async Task<IActionResult> offrePage(string searchString)
+        public IActionResult offrePage()
         {
-            var services = from m in _bddContext.Propositions select m;
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                services = services.Where(s => s.Description!.Contains(searchString) || s.Titre!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
-            }
-            services = services.OrderByDescending(s => s.DateTime);
-            return View(await services.ToListAsync());
+            List<Proposition> listePropositions = dal.ObtientTousLesPropositions();
+            return View(listePropositions);
         }
-        public async Task<IActionResult> userPage(string searchString)
+        public IActionResult userPage()
         {
-            var utilisateurs = from m in _bddContext.Utilisateur select m;
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                utilisateurs = utilisateurs.Where(s => s.InfosPersos.Nom!.Contains(searchString) || s.InfosPersos.Prenom!.Contains(searchString)).Include(a => a.InfosPersos); //|| s.TypeService.ToString().Contains(searchString));
-            }
-            utilisateurs = utilisateurs.OrderByDescending(s => s.InfosPersos.Nom);
-            return View(await utilisateurs.ToListAsync());
+            List<Utilisateur> listeUtilisateur = dal.ObtientTousLesUtilisateurs();
+            return View(listeUtilisateur);
         }
+
+
         // ***** Methodes d'administration ***** //
         [Authorize(Roles = "SuperAdmin,Admin")]
         public IActionResult BannirUser(int utilisateurABannirID)
@@ -62,7 +65,7 @@ namespace ProjetQarma.Controllers
         
             this._bddContext.SaveChanges();
 
-            return View("ConfirmationChangementRole");
+            return View("Index");
         }
         [Authorize(Roles = "SuperAdmin")]
         public IActionResult PromoteAdmin(int utilisateurToPromoteAdminID)
@@ -77,7 +80,7 @@ namespace ProjetQarma.Controllers
             {
                 return View("Error");
             }
-            return View("ConfirmationChangementRole");
+            return View("Index");
         }
         [Authorize(Roles = "SuperAdmin")]
         public IActionResult DemoteAdmin(int utilisateurToDemoteAdminID)
@@ -93,19 +96,26 @@ namespace ProjetQarma.Controllers
             {
                 return View("Error");
             }
-            return View("ConfirmationChangementRole");
+            return View("Index");
         }
         [Authorize(Roles = "SuperAdmin,Admin")]
         public IActionResult SupprimerServiceAdmin(int serviceASupprimerID)
         {
             dal.SupprimerService(serviceASupprimerID);
-            return View();
+            return View("Index");
         }
         [Authorize(Roles = "SuperAdmin,Admin")]
         public IActionResult SupprimerPropositionAdmin(int propositionASupprimerID)
         {
             dal.SupprimerProposition(propositionASupprimerID);
-            return View();
+            return View("Index");
+        }
+
+        [Authorize(Roles = "SuperAdmin,Admin")]
+        public IActionResult SupprimerUserAdmin(int userASupprimerID)
+        {
+            dal.SupprimerService(userASupprimerID);
+            return View("Index");
         }
     }
 
