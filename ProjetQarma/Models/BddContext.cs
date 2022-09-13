@@ -10,14 +10,14 @@ namespace ProjetQarma.Models
         public DbSet<InfosPersos> InfosPersos { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Proposition> Propositions { get; set; }
-
         public DbSet<Actu> Actus { get; set; } 
+
 
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;user id=root;password=rrrrr;database=utilisateurQarma");
+            optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
         }
         //
         public void InitializeDb()
@@ -36,6 +36,7 @@ namespace ProjetQarma.Models
                     SoldeBisous = 600,
                     Qarma = 15,
                     Password = Dal.EncodeMD5("aaaaa"),
+
                     ImagePath = "/photos/profil/photoalbert.jpg",
                     Propose = "Service d'admin - montage meubles en kit - Installation electrique - garde animaux - Aide à domicile",    
                    CentreInteret ="Avec Marie Pierre nous sommes passionnés par les animaux. Je suis aussi passioné par l'informatique",
@@ -113,6 +114,7 @@ namespace ProjetQarma.Models
                     MontantQarma = 1,
                     Description = "Je recherche à louer une place de parking pour une durée d'une semaine",
                     ImagePath = "/images/Parking.jpg",
+                    DateTime = new DateTime(2021, 06, 13),
 
                 }
             );
@@ -127,6 +129,7 @@ namespace ProjetQarma.Models
                     MontantQarma = 1,
                     TypeService = TypeService.Prestation,
                     Description = "Je recherche quelqu'un pour promener mon chien tous les dimanches matins",
+
                     ImagePath = "/photos/Service/chien1.jpg",
                     DateTime = new DateTime(2021, 12, 12)
 
@@ -143,6 +146,7 @@ namespace ProjetQarma.Models
                     MontantQarma = 1,
                     TypeService = TypeService.Evenement,
                     Description = "Quelqu'un pour organiser une soirée raclette ce vendredi entre voisins ?!!",
+                    DateTime = new DateTime(2021, 05, 09),
                     ImagePath = "/photos/Service/raclette.jpg",
 
                 }
@@ -158,6 +162,7 @@ namespace ProjetQarma.Models
                    TypeService = TypeService.Hebergement,
                    Description = "Yo ! Je peux emprunter un canapé pour 1 semaine? On manque de place avec les 7 nains à la maison^^",
                    ImagePath = "/images/Hebergement.jpg",
+                   DateTime = new DateTime(2021, 08, 08),
 
                }
            );
@@ -166,12 +171,14 @@ namespace ProjetQarma.Models
                {
                    InfosPersosId = 3,
                    Id = 5,
+
                    Titre = "Repassage",
                    MontantBisous = 3,
                    MontantQarma = 1,
                    TypeService = TypeService.Prestation,
                    Description = "Bonjour, Cherche une personne pour du repassage. Merci de me contacter et indiquer votre tarif pour deux panières par exemple",
                    ImagePath = "/photos/Service/ferARepasser.jpg",
+                   DateTime = new DateTime(2021, 12, 03),
 
                }
            );
@@ -181,7 +188,8 @@ namespace ProjetQarma.Models
                {
                    InfosPersosId = 3,
                    Id = 6,
-                   Titre = "cherche plombier",
+
+                   Titre = "Cherche plombier",
                    MontantBisous = 3,
                    MontantQarma = 1,
                    TypeService = TypeService.Prestation,
@@ -202,6 +210,7 @@ namespace ProjetQarma.Models
                    TypeService = TypeService.Equipement,
                    Description = "Je prête ma tronçonneuse si vous avez besoin de couper quoi ce soit !",
                    ImagePath = "/images/Equipement.jpg",
+                   DateTime = new DateTime(2021, 12, 05),
 
                }
            );
@@ -214,9 +223,10 @@ namespace ProjetQarma.Models
                     MontantBisous = 10,
                     MontantQarma = 1,
                     TypeService = TypeService.Prestation,
+
                     Description = "Cours a domicile repas pour occasion soirees.anniversaire. ",
                     ImagePath = "/photos/Service/repas.jpg",
-                    DateTime = new DateTime(2021, 12, 12)
+                    DateTime = new DateTime(2021, 12, 03),
 
                 }
             );
@@ -231,7 +241,9 @@ namespace ProjetQarma.Models
                     MontantQarma = 1,
                     TypeService = TypeService.Evenement,
                     Description = "Bonjour, j'ai un nouveau barbecue et on doit fêter ça !!",
+
                     ImagePath = "/photos/Service/barbecue.jpg",
+                    DateTime = new DateTime(2021, 10, 13),
 
                 }
             );
@@ -242,6 +254,7 @@ namespace ProjetQarma.Models
                     Id = 3,
                     Titre = "Couture",
                     TypeService = TypeService.Prestation,
+
                     Description = "Je propose mes services pour des retouches ainsi que des cours de couture ",
                     MontantBisous = 8,
                     MontantQarma = 1,
@@ -257,10 +270,12 @@ namespace ProjetQarma.Models
                     Titre = "Parking libre",
                     TypeService = TypeService.Parking,
                     Description = "Je laisse ma place dans le local à vélo pendant 2 mois cet été. Avis aux interéssés !",
+
+
                     MontantBisous = 5,
                     MontantQarma = 1,
                     ImagePath = "/photos/Service/veloParking.jpg",
-                    DateTime = new DateTime(2021,12,12)
+                    DateTime = new DateTime(2021,12,12),
 
                 }
             );

@@ -1,29 +1,52 @@
-﻿@@model ProjetQarma.ViewModels.ServicePropositionViewModel
+@@model ProjetQarma.ViewModels.ServicePropositionViewModel
+
 
 @{
     Layout = "_layoutAccueil";
     ViewBag.Title = "Demande";
 }
 
+<<<<<<< HEAD
+<div class="row" align="center">
+    <div class="col-md-6" style="border-radius: 8px;">
 
+        @using (Html.BeginForm("Proposition", "Service", FormMethod.Get)) //Index est la méthode, Service est le controleur, searchstring est le paramètre
+        {
+            <div class="row" align="center">
+                <div class="col-md-11 offset-md-1" style="border-radius: 8px;">
+                    <div class="row bordureAucune">
+                        <div class="col-md-8 bordureAucune">
+                            <div><input class="form-control" id="floatingInput" placeholder="Rechercher Proposition" style=" height: 35px; width: 100%;"></div>
+                        </div>
 
-
-@using (Html.BeginForm("Index", "Service", FormMethod.Get)) //Index est la méthode, Service est le controleur, searchstring est le paramètre
-{
-    <div class="row" align="center">
-        <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
-            <div class="row bordureAucune">
-                <div class="col-md-9 bordureAucune">
-                    <div><input class="form-control" id="floatingInput" placeholder="Rechercher Demande/Proposition" style=" height: 35px; width: 100%;"></div>
-                </div>
-
-                <div class="col-md-3 bordureAucune">
-                    <button class="btn btn-primary btn-lg me-md-5" style="width: 100%; height: 35px; margin-top: 0px; font-size: 12px ">Rechercher</button>
+                        <div class="col-md-4 bordureAucune">
+                            <button class="btn btn-primary btn-lg me-md-5" style="width: 100%; height: 35px; margin-top: 0px; font-size: 10px ">Rechercher</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     </div>
-}
+    <div class="col-md-6" style="border-radius: 8px;">
+        @using (Html.BeginForm("Index", "Service", FormMethod.Get)) //Index est la méthode, Service est le controleur, searchstring est le paramètre
+        {
+            <div class="row" align="center">
+                <div class="col-md-11 offset-md-1" style="border-radius: 8px;">
+                    <div class="row bordureAucune">
+                        <div class="col-md-8 bordureAucune">
+                            <div><input class="form-control" id="floatingInput" placeholder="Rechercher Demande" style=" height: 35px; width: 100%;"></div>
+                        </div>
+
+                        <div class="col-md-4 bordureAucune">
+                            <button class="btn btn-primary btn-lg me-md-5" style="width: 100%; height: 35px; margin-top: 0px; font-size: 10px ">Rechercher</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
 <!--*****Les demandes et les propositions*****-->
 @*<p class="proposition">
     <div class="row" align="center">
@@ -82,4 +105,6 @@
 
             }
         </div>
+
     </div>*@
+

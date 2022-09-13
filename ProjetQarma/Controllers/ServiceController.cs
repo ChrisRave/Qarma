@@ -61,6 +61,8 @@ namespace ProjetQarma.Controllers
 
         public ActionResult Creer(Service service)
         {
+
+
             Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.Name).Value));
 
             if (!ModelState.IsValid)
@@ -310,18 +312,7 @@ namespace ProjetQarma.Controllers
             dal.SupprimerProposition(serviceID);
             return Redirect("Index");
         }
-
-
-        public IActionResult accepterService(int utilisateurADebiterID, int utilisateurACrediterID, int serviceID)
-        {
-            dal.TransfererBisous(utilisateurADebiterID, utilisateurACrediterID, serviceID);
-            dal.AjouterQarma(utilisateurACrediterID, serviceID);
-            dal.SupprimerProposition(serviceID);
-            return Redirect("Index");
-        }
-
-       
-
+        
        
 
     }

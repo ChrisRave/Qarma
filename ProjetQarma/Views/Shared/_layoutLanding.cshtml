@@ -48,14 +48,14 @@
                                     <div class="collapse navbar-collapse" id="main-navigation">
                                         <nav class="nav flex-column navbar-nav">
                                             <div class="form-floating mb-10 navbar-nav">
-                                                <div><input type="email" name="Utilisateur.Mail" class="form-control" id="floatingInput" placeholder="nom@exemple.com"style=" height: 40px;"></div>
+                                                <div><input type="email" name="Utilisateur.Mail" class="form-control" id="floatingInput" placeholder="nom@exemple.com" style=" height: 40px;"></div>
                                                 <div><input type="password" name="Utilisateur.Password" class="form-control" id="floatingPassword" placeholder="Mot de passe" style=" height: 40px;"></div>
                                             </div>
                                             <div class="d-grid gap-12 d-md-flex justify-content-md-end navbar-nav" align="center">
                                                 <button class="btn btn-secondary  me-md-8" type="submit" style=" width: 100%; height: 30px;">Déjà membre? Se connecter</button>
                                             </div>
                                             <div class="d-grid gap-12 d-md-flex justify-content-md-end navbar-nav" align="center">
-                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532; height: 30px;"> <strong> Nouveau ici? Rejoignez-nous!</strong></button>
+                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532; height: 30px;" onclick="location.href='@Url.Action("AccueilLanding", "Infos")';"> <strong> Nouveau ici? Rejoignez-nous!</strong></button>
                                             </div>
                                         </nav>
                                     </div>
@@ -123,7 +123,7 @@
     <header class="page-header header container-fluid">
     </header>
     <div>
-       <div class="containerBody">
+        <div class="containerBody">
 
             <!--La prtie du WEB fonctionalité-->
             <div class="row">
@@ -215,7 +215,7 @@
                     </div>
                 </div>
             </div>
-       </div>
+        </div>
     </div>
     <!-- FOOTER de la page-->
     <footer class="text-center ">
