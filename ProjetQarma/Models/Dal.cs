@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -138,6 +139,7 @@ namespace ProjetQarma.Models
                 Titre = titre,
                 InfosPersosId = infosPersosId,
                 DateTime = DateTime.Now
+
             };
             if (id != 0)
             {

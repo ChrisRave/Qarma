@@ -62,6 +62,7 @@ namespace ProjetQarma.Controllers
         public ActionResult Creer(Service service)
         {
 
+
             Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.Name).Value));
 
             if (!ModelState.IsValid)
@@ -79,7 +80,6 @@ namespace ProjetQarma.Controllers
                     }
 
                     dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, "/images/" + service.Image.FileName, service.Titre, utilisateur.InfosPersosId.Value);
-
 
 
                 }
@@ -172,7 +172,7 @@ namespace ProjetQarma.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                services = services.Where(s => s.Description!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
+                services = services.Where(s => s.Description!.Contains(searchString) || s.Titre!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
             }
             services = services.OrderByDescending(s => s.DateTime);
             return View(await services.ToListAsync());
@@ -314,6 +314,7 @@ namespace ProjetQarma.Controllers
         }
         
        
+
     }
 
 }

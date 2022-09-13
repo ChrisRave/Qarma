@@ -1,3 +1,5 @@
+
+
 ﻿using Microsoft.AspNetCore.Http;
 using System;
 using System.ComponentModel.DataAnnotations;
@@ -17,3 +19,4 @@ namespace ProjetQarma.Models
         public IFormFile Image { get; set; }
     }
 }
+
