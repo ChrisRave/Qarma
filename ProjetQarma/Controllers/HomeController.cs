@@ -23,29 +23,26 @@ namespace ProjetQarma.Controllers
         // GET: /<controller>/
         public IActionResult Landing()
         {
-           // faire référence à viewModels(Home == > nom de la view)
+            // faire référence à viewModels(Home == > nom de la view)
             InfosPersos infosPersos = new InfosPersos { Nom = "Dupont", Prenom = "Jean" };
             Utilisateur utilisateur = new Utilisateur { InfosPersos = infosPersos, Adresse = " 3 Rue des Peupliers, 75014 Paris", Mail = "Jean.dupont@gmail.com", Telephone = "01341564", Qarma = 2, TypeUtilisateur = TypeUtilisateur.Consommateur };
-           
-                 
-            Service service = new Service { Id = 1, TypeService = TypeService.Equipement, MontantBisous=10 };
-             AccueilViewModel avm = new AccueilViewModel
+
+
+            Service service = new Service { Id = 1, TypeService = TypeService.Equipement, MontantBisous = 10 };
+            AccueilViewModel avm = new AccueilViewModel
             {
                 Utilisateur = utilisateur,
                 Service = service,
-            }; 
+            };
             return View(avm); //retourner la view crée (HomeViewModel)
         }
 
         public IActionResult Demande()
         {
-            UtilisateurViewModel viewModel = new UtilisateurViewModel { Authentifie = HttpContext.User.Identity.IsAuthenticated };
-            if (viewModel.Authentifie)
-            {
-                viewModel.Utilisateur = dal.ObtenirUtilisateur(HttpContext.User.Identity.Name);
-                return View(viewModel);
-            }
-            return View(viewModel);
+            List<Proposition> listePropositions = dal.ObtientTousLesPropositions().Take(2).ToList();
+            List<Service> listeservices = dal.ObtientTousLesServices().Take(2).ToList();
+            ServicePropositionViewModel spvm = new ServicePropositionViewModel { Propositions = listePropositions, Services = listeservices };
+            return View(spvm);
 
         }
         public IActionResult Accueil()
@@ -57,8 +54,9 @@ namespace ProjetQarma.Controllers
             return View();
         }
 
-       
+
 
 
     }
 }
+

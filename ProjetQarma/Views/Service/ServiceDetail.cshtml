@@ -1,48 +1,75 @@
-﻿@model ProjetQarma.ViewModels.ServiceViewModels
+@model ProjetQarma.ViewModels.ServiceViewModels
 
 
 @{ Layout = "_layoutDetail";
     ViewBag.Title = "ServiceDetail"; }
-<div class="row" align="center">
-    <div class="col-md-10 offset-md-1 bordureAucune">
-        <h3 class="titre">@Model.Service.Titre</h3>
-    </div>
-</div>
+<!--**********Partie body**************-->
+<div class="row" align="left">
+    <div class="col-md-7  bordureBleue1" style="border-radius: 8px;">
+        <div class="row" align="center">
+            <div class="col-md-10 offset-md-1 ">
+                <h2 class="titre">@Model.Service.Titre</h2>
+            </div>
+        </div>
 
-<div class="row">
-    <div class="col-md-10 offset-md-1 bordureAucune">
-        <div class="my-3">
-            <!--<img src="@Model.Service.ImagePath" width="225" height="200" />-->
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                <div class="my-3">
+                    <img src="@Model.Service.ImagePath" width="225" height="200" style="border-radius: 8px;" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                <h4> @Model.Service.MontantBisous bisous</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                Catégorie :  @Model.Service.TypeService
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                <h3>Description :</h3>
+                @Model.Service.Description
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+
+            </div>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-10 offset-md-1 bordureAucune">
-        Budget : @Model.Service.MontantBisous
+    <div class="col-md-1  bordureaucune">
     </div>
-</div>
-<div class="row">
-    <div class="col-md-10 offset-md-1 bordureAucune">
-        Catégorie :  @Model.Service.TypeService
+    <!--**********Partie droite**************-->
+
+    <div class="col-md-3  bordureBleue1" style="border-radius: 8px;">
+
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                Posté par:
+
+                <h3>  @Model.Utilisateur.InfosPersos.Prenom</h3>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("UtilisateurNonConnecte2","Service",new { id=Model.Service.InfosPersosId})';"><div style="font-size:16px"> Profil</div></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1 bordureAucune">
+                <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@("/service/accepterService?"+"utilisateurACrediterID="+Convert.ToInt32(User.Identity.Name)+"&utilisateurADebiterID="+Model.Utilisateur.Id+"&serviceID="+Model.Service.Id)';"><div style="font-size:16px">accepter</div></button>
+            </div>
+        </div>
     </div>
+
 </div>
-<div class="row">
-    <div class="col-md-10 offset-md-1 bordureAucune">
-        Détail : @Model.Service.Description
-    </div>
 </div>
-<div class="row">
-    <div class="col-md-10 offset-md-1 bordureAucune">
-        <button class="btn btn-secondary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("UtilisateurNonConnecte","Service",new { id=Model.Service.InfosPersosId})';"><div style="font-size:16px"> @Model.Service.InfosPersosId</div></button>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-10 offset-md-1 bordureAucune">
-    </div>
-</div>
-
-
-
-
-

@@ -10,16 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md">
-        <div class="containerHeader">
+    <nav class="navbar navbar-expand-md" style="height:120px;">
+        <div class="containerHeader" style="height:160px;">
             <div class="row">
                 <!-- La partie Gauche LOGO-->
 
                 <div class="col-md-2 bordureAucune">
                     <div class="row">
-                        <div class="col-md-8 offset-md-4 bordureAucune">
+                        <div class="col-md-8 offset-md-3 bordureAucune">
                             <a href="#">
-                                <img src="/photos/QarmaLogo.png" width="100%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
+                                <img src="/photos/QarmaLogo.png" width="60%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
                                 <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -31,8 +31,8 @@
                 <div class="col-md-7 caractereDescription text-center bordureAucune">
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureAucune">
-                            <h2 class="couleur_verte"> <strong> Qarma</strong></h2><br>
-                            <h4 class="couleur_bleueQarma"> <strong>La plateforme d'échange de biens et de services entre voisins</strong> </h4>
+                            <h4 class="couleur_verte"> <strong> Qarma</strong></h4>
+                            <h5 class="couleur_bleueQarma"> <strong>La plateforme d'échange de biens et de services entre voisins</strong> </h5>
                         </div>
                     </div>
                 </div>
@@ -48,14 +48,14 @@
                                     <div class="collapse navbar-collapse" id="main-navigation">
                                         <nav class="nav flex-column navbar-nav">
                                             <div class="form-floating mb-10 navbar-nav">
-                                                <div><input type="email" name="Utilisateur.Mail" class="form-control" id="floatingInput" placeholder="nom@exemple.com"></div>
-                                                <div><input type="password" name="Utilisateur.Password" class="form-control" id="floatingPassword" placeholder="Mot de passe"></div>
+                                                <div><input type="email" name="Utilisateur.Mail" class="form-control" id="floatingInput" placeholder="nom@exemple.com" style=" height: 40px;"></div>
+                                                <div><input type="password" name="Utilisateur.Password" class="form-control" id="floatingPassword" placeholder="Mot de passe" style=" height: 40px;"></div>
                                             </div>
                                             <div class="d-grid gap-12 d-md-flex justify-content-md-end navbar-nav" align="center">
-                                                <button class="btn btn-secondary  me-md-8" type="submit" style=" width: 100%;"><div style="font-size:16px"> Déjà membre? Se connecter </div> </button>
+                                                <button class="btn btn-secondary  me-md-8" type="submit" style=" width: 100%; height: 30px;">Déjà membre? Se connecter</button>
                                             </div>
                                             <div class="d-grid gap-12 d-md-flex justify-content-md-end navbar-nav" align="center">
-                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532;" onclick="location.href='@Url.Action("AccueilLanding", "Infos")';"> <div style="font-size:16px"> Nouveau ici? Rejoignez-nous!</div></button>
+                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532; height: 30px;" onclick="location.href='@Url.Action("AccueilLanding", "Infos")';"> <strong> Nouveau ici? Rejoignez-nous!</strong></button>
                                             </div>
                                         </nav>
                                     </div>
@@ -70,14 +70,17 @@
                                 <div class="collapse navbar-collapse" id="main-navigation" align="center">
                                     <nav class="nav flex-column navbar-nav">
                                         <div class="row">
-                                            <div class="col-md-12 bordureAucune couleur_verte" style="font-size:20px ;">
+                                            <div class="col-md-12 bordureAucune couleur_verte" style="font-size:18px ;">
                                                 <strong>
                                                     Bonjour ! <strong class="couleur_bleueQarma"> @User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</strong>
                                                 </strong>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4 bordureAucune">
+                                            <div class="col-md-2 bordureAucune">
+
+                                            </div>
+                                            <div class="col-md-3 bordureAucune">
                                                 <a href="#">
                                                     <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Index", "Login")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -85,7 +88,7 @@
                                                     </button>
                                                 </a>
                                             </div>
-                                            <div class="col-md-4 bordureAucune">
+                                            <div class="col-md-3 bordureAucune">
                                                 <a href="#">
                                                     <img src="/photos/iconmessage.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -93,13 +96,16 @@
                                                     </button>
                                                 </a>
                                             </div>
-                                            <div class="col-md-4 bordureAucune">
+                                            <div class="col-md-3 bordureAucune">
                                                 <a href="#">
                                                     <img src="/photos/iconnotif.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                                                         <span class="navbar-toggler-icon"></span>
                                                     </button>
                                                 </a>
+                                            </div>
+                                            <div class="col-md-1 bordureAucune">
+
                                             </div>
                                         </div>
                                     </nav>
@@ -117,7 +123,7 @@
     <header class="page-header header container-fluid">
     </header>
     <div>
-       <div class="containerBody">
+        <div class="containerBody">
 
             <!--La prtie du WEB fonctionalité-->
             <div class="row">
@@ -207,12 +213,6 @@
                     <div id="contenu">
                         @RenderBody()
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 offset-md-1 bordureAucune">
-                    <!--Ligne 2 vide-->
-                    <!--Espace vide-->
                 </div>
             </div>
         </div>

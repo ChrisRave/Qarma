@@ -19,7 +19,11 @@
 <body>
     
  <!-- Navbar -->
+<<<<<<< HEAD
  <nav class="navbar navbar-expand-lg bg-success text-light navbar-dark py-3">
+=======
+ <nav class="navbar navbar-expand-lg bg-info text-light navbar-dark py-3">
+>>>>>>> master
     <div class="container">
         <a href="#" class="navbar-brand">Bienvenue,@User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</a> 
         <button class="navbar-toggler" type = "button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -28,10 +32,17 @@
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
               <li class="navbar-item text-light">
+<<<<<<< HEAD
                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#compte">Créer un compte uilisateur</a>
               </li>
               <li class="navbar-item text-light">
                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#actu">Ecrire une actu</a>
+=======
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#compte">Créer un compte uilisateur</a>
+              </li>
+              <li class="navbar-item text-light">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#actu">Ecrire une actu</a>
+>>>>>>> master
               </li>
               <li class="navbar-item text-light">
                 <ul class="navbar-nav">
@@ -90,7 +101,11 @@
                         </li>
                     </ul>
                     <div>
+@*<<<<<<< HEAD
                         <button class="btn bg-warning btn-sm text-light" type="button">Supprimer</button>
+=======*@
+                        <a class="btn bg-warning btn-sm text-light" onclick="alert('Confirmer')" type="button"  href=@("/administration/SupprimerPropositionAdmin?"+"propositionASupprimerID="+service.Id)>Supprimer</a>
+@*>>>>>>> master*@
                     </div>
                     <div class="text-center">__________________</div>
                  

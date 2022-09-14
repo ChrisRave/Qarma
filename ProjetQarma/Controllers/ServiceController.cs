@@ -61,6 +61,7 @@ namespace ProjetQarma.Controllers
 
         public ActionResult Creer(Service service)
         {
+
             Utilisateur utilisateur = dal.ObtenirUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.Name).Value));
 
             if (!ModelState.IsValid)
@@ -77,7 +78,7 @@ namespace ProjetQarma.Controllers
                         service.Image.CopyTo(fileStream);
                     }
 
-                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, "/images/" + service.Image.FileName, service.Titre, utilisateur.InfosPersosId.Value );
+                    dal.CreerService(service.Id, service.TypeService, service.MontantBisous, service.MontantQarma, service.Description, "/images/" + service.Image.FileName, service.Titre, utilisateur.InfosPersosId.Value);
 
 
                 }
@@ -311,7 +312,6 @@ namespace ProjetQarma.Controllers
             return Redirect("Index");
         }
 
-       
     }
 
 }

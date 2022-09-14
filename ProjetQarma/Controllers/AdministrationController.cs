@@ -18,6 +18,7 @@ namespace ProjetQarma.Controllers
         private IDal dal;
         BddContext _bddContext = new BddContext();
         //Méthode affichage des pages
+
         public async Task<IActionResult> servicePage(string searchString)
         {
             var services = from m in _bddContext.Services select m;
@@ -49,6 +50,7 @@ namespace ProjetQarma.Controllers
             utilisateurs = utilisateurs.OrderByDescending(s => s.InfosPersos.Nom);
             return View(await utilisateurs.ToListAsync());
         }
+
         // ***** Methodes d'administration ***** //
         [Authorize(Roles = "SuperAdmin,Admin")]
         public IActionResult BannirUser(int utilisateurABannirID)
@@ -62,7 +64,9 @@ namespace ProjetQarma.Controllers
         
             this._bddContext.SaveChanges();
 
-            return View("ConfirmationChangementRole");
+
+            return View("Index");
+
         }
         [Authorize(Roles = "SuperAdmin")]
         public IActionResult PromoteAdmin(int utilisateurToPromoteAdminID)
@@ -77,7 +81,9 @@ namespace ProjetQarma.Controllers
             {
                 return View("Error");
             }
-            return View("ConfirmationChangementRole");
+
+            return View("Index");
+
         }
         [Authorize(Roles = "SuperAdmin")]
         public IActionResult DemoteAdmin(int utilisateurToDemoteAdminID)
@@ -93,19 +99,29 @@ namespace ProjetQarma.Controllers
             {
                 return View("Error");
             }
-            return View("ConfirmationChangementRole");
+
+            return View("Index");
+
         }
         [Authorize(Roles = "SuperAdmin,Admin")]
         public IActionResult SupprimerServiceAdmin(int serviceASupprimerID)
         {
             dal.SupprimerService(serviceASupprimerID);
-            return View();
+            return View("Index");
         }
         [Authorize(Roles = "SuperAdmin,Admin")]
         public IActionResult SupprimerPropositionAdmin(int propositionASupprimerID)
         {
             dal.SupprimerProposition(propositionASupprimerID);
-            return View();
+            return View("Index");
+        }
+       
+        public IActionResult SupprimerUserAdmin(int userASupprimerID)
+        {
+            dal.SupprimerService(userASupprimerID);
+            return View("Index");
+
         }
     }
+
 }

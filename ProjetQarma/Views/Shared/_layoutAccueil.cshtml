@@ -11,8 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md">
-        <div class="containerHeader">
+    <nav class="navbar navbar-expand-md" style="height:120px;">
+        <div class="containerHeader" style="height:160px;">
             <div class="row">
                 <!-- La partie Gauche LOGO-->
 
@@ -20,7 +20,7 @@
                     <div class="row">
                         <div class="col-md-8 offset-md-3 bordureAucune">
                             <a href="#">
-                                <img src="/photos/QarmaLogo.png" width="100%" id="logo" onclick="location.href='@Url.Action("Demande", "Home")';">
+                                <img src="/photos/QarmaLogo.png" width="60%" id="logo" onclick="location.href='@Url.Action("Demande", "Home")';">
                                 <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -32,8 +32,8 @@
                 <div class="col-md-7 caractereDescription text-center bordureAucune">
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureAucune">
-                            <h2 class="couleur_verte"> <strong> Qarma</strong></h2><br>
-                            <h4 class="couleur_bleueQarma"> <strong>La plateforme d'échange de biens et de services entre voisins</strong> </h4>
+                            <h4 class="couleur_verte"> <strong> Qarma</strong></h4>
+                            <h5 class="couleur_bleueQarma"> <strong>La plateforme d'échange de biens et de services entre voisins</strong> </h5>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                                                 <button class="btn btn-secondary  me-md-8" type="submit" style=" width: 100%;">Déjà membre? Se connecter</button>
                                             </div>
                                             <div class="d-grid gap-12 d-md-flex justify-content-md-end navbar-nav" align="center">
-                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532;" onclick="location.href='@Url.Action("AccueilLanding", "Infos")';"> <strong> Nouveau ici? Rejoignez-nous!</strong></button>
+                                                <button class="btn btn-light me-md-8" type="button" style=" width: 100%; color: #539532;"> <strong> Nouveau ici? Rejoignez-nous!</strong></button>
                                             </div>
                                         </nav>
                                     </div>
@@ -71,16 +71,17 @@
                                 <div class="collapse navbar-collapse" id="main-navigation" align="center">
                                     <nav class="nav flex-column navbar-nav">
                                         <div class="row">
-                                            <div class="col-md-12 bordureAucune couleur_verte" style="font-size:20px ;">
+                                            <div class="col-md-12 bordureAucune couleur_verte" style="font-size:18px ;">
                                                 <strong>
-
                                                     Bonjour ! <strong class="couleur_bleueQarma"> @User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</strong>
-
                                                 </strong>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-4 bordureAucune">
+                                            <div class="col-md-2 bordureAucune">
+
+                                            </div>
+                                            <div class="col-md-3 bordureAucune">
                                                 <a href="#">
                                                     <img src="/photos/iconprofil.png" width="80%" id="logo" onclick="location.href='@Url.Action("Index", "Login")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -88,7 +89,7 @@
                                                     </button>
                                                 </a>
                                             </div>
-                                            <div class="col-md-4 bordureAucune">
+                                            <div class="col-md-3 bordureAucune">
                                                 <a href="#">
                                                     <img src="/photos/iconmessage.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -96,13 +97,16 @@
                                                     </button>
                                                 </a>
                                             </div>
-                                            <div class="col-md-4 bordureAucune">
+                                            <div class="col-md-3 bordureAucune">
                                                 <a href="#">
                                                     <img src="/photos/iconnotif.png" width="80%" id="logo" onclick="location.href='@Url.Action("Landing", "Home")';">
                                                     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                                                         <span class="navbar-toggler-icon"></span>
                                                     </button>
                                                 </a>
+                                            </div>
+                                            <div class="col-md-1 bordureAucune">
+
                                             </div>
                                         </div>
                                     </nav>
@@ -130,30 +134,26 @@
             </div>
             <div class="col-md-4 bordureAucune">
             </div>
-
         </div>
-
-
-
         <!-- *******MAIN *******-->
     </header>
     <div>
         <div class="containerBody">
-            
+
             <!--La prtie du WEB fonctionalité-->
             <div class="row">
                 <!-- La partie Gauche-->
                 <div class="col-md-2 bordureAucune">
-                    <div class="row" align="center">
-                        <div class="col-md-12 offset-md-0 bordureBleue3" style="border-radius: 8px;">
+                    <div class="row bordureBleue1" align="center" style="border-radius: 8px;">
+                        <div class="col-md-12 offset-md-0 bordureAucune">
                             <div class="row bordureAucune">
                                 <div class="couleur_bleueQarma" style="font-size:20px"><strong>@User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value </strong></div>
                             </div>
                             <div class="row bordureAucune">
-                                <div class="couleur_verte" style="font-size:20px"><strong>Solde de bisous</strong> : @(new projetQarma.Controllers.UtilisateurController().getSoldeBisous(User.Identity.Name))</div>
+                                <div style="font-size:15px; color:ghostwhite"><strong>Solde de bisous</strong> : @(new projetQarma.Controllers.UtilisateurController().getSoldeBisous(User.Identity.Name))</div>
                             </div>
                             <div class="row bordureAucune">
-                                <div class="couleur_verte" style="font-size:20px"><strong> Badges </strong>: @(new projetQarma.Controllers.UtilisateurController().getSoldeQarma(User.Identity.Name))</div>
+                                <div style="font-size: 15px; color: ghostwhite"><strong> Badges </strong>: @(new projetQarma.Controllers.UtilisateurController().getSoldeQarma(User.Identity.Name))</div>
                             </div>
                         </div>
                     </div>
@@ -163,13 +163,25 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
-                            <button class="btn btn-primary btn-lg" style=" width: 100%;" onclick="location.href='@Url.Action("Charte", "Accueil")';">Charte </button>
-                        </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-12 offset-md-0 bordureAucune">
+                            <button class="btn btn-primary btn-lg" style=" width: 100%;" onclick="location.href='@Url.Action("Charte", "Accueil")';">Charte </button>
+
                             <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" onclick="location.href='@Url.Action("FAQ", "Accueil")';">FAQ</button>
                         </div>
+
+                    </div>
+                     <div class="row">
+                        
+                        <div class="col-md-12 offset-md-0 bordureAucune">
+                         @if(User.IsInRole("User"))
+                         {
+                           
+                         } else {
+                            <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" onclick="location.href='@Url.Action("Index", "Administration")';">Admin</button>
+                         }
+                        </div>
+                        
                     </div>
 
                     <div class="row">
@@ -182,23 +194,25 @@
 
                 <!--**********Partie body**************-->
                 <div class="col-md-7  bordureAucune">
-                    <div class="row" align="center">
-                        
-                                @RenderBody()
-                       
-                    </div>
+
+                    @RenderBody()
+
                 </div>
                 <div class="col-md-3  bordureAucune">
                     <div class="row" align="center">
-                        <div class="col-md-11 offset-md-1 bordureBleue2" style="border-radius: 8px;">
-                            Actualités
-                        </div>
+                        <div class="col-md-11 offset-md-1 bordureBleue1" style="border-radius: 8px;">
+                            <h2 class="titre" style="color: #1f5c587c; ">  Actualités</h2>
 
+                            <h6 style="color: #05443ffb; ">Ravalement de façade</h6>
+                            <p class="card-text ms-auto" style="color: ghostwhite;">
+                                La société Renov'Tout va intervenir sur la façade du bâtiment A à partir du Lundi 13.09 jusqu'au Vendredi 18.09.
+                            </p>
+                            <h6 style="color: #05443ffb; ">Maintenance ascenseur</h6>
+                            <p class="card-text ms-auto" style="color: ghostwhite;">
+                                La maintenance annuelle des ascenseurs est prévue le Mardi 31 Octobre.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 offset-md-1 bordureAucune">
                 </div>
             </div>
         </div>
@@ -241,12 +255,12 @@
                         <strong> solidev@contact.com </strong>
                     </div>
                 </div>
-                        <!-- Logo SoliDev-->
+                <!-- Logo SoliDev-->
                 <div class="col-md-3 ">
                     <img src="~/photos/SolidevLogo.png" width="20%" id="logo">
                 </div>
 
-             </div>
+            </div>
         </div>
         <!-- Copyright -->
     </footer>
