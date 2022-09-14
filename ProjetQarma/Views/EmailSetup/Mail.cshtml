@@ -1,0 +1,40 @@
+﻿@model ProjetQarma.Models.Gmail;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content=" widht=device-width" />
+        <title> Envoi de mails </title>
+    </head>
+    <body>
+        <div>
+            @using (Html.BeginForm("Mail","EmailSetup", FormMethod.Post, new {enctype = "multipart/form-data"}))
+            {
+            <center>
+                <h1> Test configuration envoi email </h1>
+                     <table>                        
+                        <tr>
+                          <td>@Html.TextBoxFor(model=>model.To) </td>
+                        </tr>
+                        <tr>
+                        <td>@Html.TextBoxFor(model =>model.Subject)</td>
+                        </tr>
+                        <tr>
+                        <td>@Html.TextAreaFor(model=>model.Body, new {rows = "15", cols="25"})</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button imput type="submit" value="Send" />
+                            </td>
+                        </tr>
+                     </table>
+                </center>
+            }
+        </div>
+    </body>
+</html>

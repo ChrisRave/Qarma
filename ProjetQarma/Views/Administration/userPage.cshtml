@@ -17,6 +17,7 @@
 <body>
     
  <!-- Navbar -->
+
  <nav class="navbar navbar-expand-lg bg-info text-light navbar-dark py-3">
     <div class="container">
         <a href="#" class="navbar-brand">Bienvenue, @User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</a> 
@@ -26,10 +27,12 @@
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
               <li class="navbar-item text-light">
-                <a class="nav-link"  href="#" data-bs-toggle="modal" data-bs-target="#compte">Créer un compte uilisateur</a>
+
+                <a class="nav-link"  href="#" data-bs-toggle="modal" data-bs-target="#compte">Créer un compte utilisateur</a>
               </li>
               <li class="navbar-item text-light">
                 <a class="nav-link"  href="#" data-bs-toggle="modal" data-bs-target="#actu">Ecrire une actu</a>
+
               </li>
               <li class="navbar-item text-light">
                 <ul class="navbar-nav">
@@ -87,22 +90,38 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                                 @if (utilisateur.Role.ToString() == "User")
                                                 {
+@*<<<<<<< HEAD
+                                                    <li><a class="dropdown-item" href=@("/administration/promoteAdmin?"+"utilisateurToPromoteAdminID="+utilisateur.Id)>Admin</a></li>
+                                                }
+                                                else if (utilisateur.Role.ToString() == "Admin")
+                                                {
+                                                    <li><a class="dropdown-item" href=@("/administration/demoteAdmin?"+"utilisateurToDemoteAdminID="+utilisateur.Id)>User</a></li> 
+=======*@
                                                     <li><a class="dropdown-item" onclick="alert('Confirmer')" href=@("/administration/promoteAdmin?"+"utilisateurToPromoteAdminID="+utilisateur.Id)>Admin</a></li>
                                                 }
                                                 else if (utilisateur.Role.ToString() == "Admin")
                                                 {
                                                     <li><a class="dropdown-item" onclick="alert('Confirmer')" href=@("/administration/demoteAdmin?"+"utilisateurToDemoteAdminID="+utilisateur.Id)>User</a></li> 
-                                                    <!-- href=/"administration/la methode a ppeller?"+"argument de la méthode a appeler="+objet.ID)-->
+@*>>>>>>> master*@
+                                                  
                                                 }
                                                 else
                                                 {
                                                 }
                            
                             </ul>
+@*<<<<<<< HEAD
+                                            <button> <a class="btn bg-warning btn-sm text-light" href=@("/administration/bannirUser?"+"utilisateurABannirID="+utilisateur.Id) type="button">Bannir</a></button>
+
+
+
+                        <button class="btn bg-warning btn-sm text-light" type="button">Supprimer</button>
+=======*@
                                             
                          <a class="btn bg-warning btn-sm text-light" onclick="alert('Confirmer')" href=@("/administration/bannirUser?"+"utilisateurABannirID="+utilisateur.Id) type="button">Bannir</a>
 
                         <a class="btn bg-warning btn-sm text-light"  href=@("/administration/supprimerUserAdmin?"+"userASupprimerID="+utilisateur.Id) onclick="alert('Confirmer')" type="button">Supprimer</a>
+@*>>>>>>> master*@
                     </div>
             </div>
         </div>

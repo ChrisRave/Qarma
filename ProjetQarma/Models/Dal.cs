@@ -353,10 +353,5 @@ namespace ProjetQarma.Models
             }
         }
 
-
-
-
-
-
     }
 }

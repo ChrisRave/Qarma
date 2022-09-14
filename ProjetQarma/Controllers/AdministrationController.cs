@@ -19,38 +19,37 @@ namespace ProjetQarma.Controllers
         BddContext _bddContext = new BddContext();
         //Méthode affichage des pages
 
-        private IWebHostEnvironment _webEnv;
-        public AdministrationController(IWebHostEnvironment environment)
+        public async Task<IActionResult> servicePage(string searchString)
         {
-            _webEnv = environment;
-
-            this.dal = new Dal();
+            var services = from m in _bddContext.Services select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                services = services.Where(s => s.Description!.Contains(searchString) || s.Titre!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
+            }
+            services = services.OrderByDescending(s => s.DateTime);
+            return View(await services.ToListAsync());
         }
-
-        public ActionResult Index()
-        {
-          
-            return View();
-        }
-        public IActionResult servicePage()
-        {
-            List<Service> listeServices = dal.ObtientTousLesServices();
-            return View(listeServices);
-        }
-
-
         [Authorize(Roles = "SuperAdmin,Admin")]
-        public IActionResult offrePage()
+        public async Task<IActionResult> offrePage(string searchString)
         {
-            List<Proposition> listePropositions = dal.ObtientTousLesPropositions();
-            return View(listePropositions);
+            var services = from m in _bddContext.Propositions select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                services = services.Where(s => s.Description!.Contains(searchString) || s.Titre!.Contains(searchString)); //|| s.TypeService.ToString().Contains(searchString));
+            }
+            services = services.OrderByDescending(s => s.DateTime);
+            return View(await services.ToListAsync());
         }
-        public IActionResult userPage()
+        public async Task<IActionResult> userPage(string searchString)
         {
-            List<Utilisateur> listeUtilisateur = dal.ObtientTousLesUtilisateurs();
-            return View(listeUtilisateur);
+            var utilisateurs = from m in _bddContext.Utilisateur select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                utilisateurs = utilisateurs.Where(s => s.InfosPersos.Nom!.Contains(searchString) || s.InfosPersos.Prenom!.Contains(searchString)).Include(a => a.InfosPersos); //|| s.TypeService.ToString().Contains(searchString));
+            }
+            utilisateurs = utilisateurs.OrderByDescending(s => s.InfosPersos.Nom);
+            return View(await utilisateurs.ToListAsync());
         }
-
 
         // ***** Methodes d'administration ***** //
         [Authorize(Roles = "SuperAdmin,Admin")]
@@ -65,7 +64,9 @@ namespace ProjetQarma.Controllers
         
             this._bddContext.SaveChanges();
 
+
             return View("Index");
+
         }
         [Authorize(Roles = "SuperAdmin")]
         public IActionResult PromoteAdmin(int utilisateurToPromoteAdminID)
@@ -80,7 +81,9 @@ namespace ProjetQarma.Controllers
             {
                 return View("Error");
             }
+
             return View("Index");
+
         }
         [Authorize(Roles = "SuperAdmin")]
         public IActionResult DemoteAdmin(int utilisateurToDemoteAdminID)
@@ -96,7 +99,9 @@ namespace ProjetQarma.Controllers
             {
                 return View("Error");
             }
+
             return View("Index");
+
         }
         [Authorize(Roles = "SuperAdmin,Admin")]
         public IActionResult SupprimerServiceAdmin(int serviceASupprimerID)
@@ -110,12 +115,12 @@ namespace ProjetQarma.Controllers
             dal.SupprimerProposition(propositionASupprimerID);
             return View("Index");
         }
-
-        [Authorize(Roles = "SuperAdmin,Admin")]
+       
         public IActionResult SupprimerUserAdmin(int userASupprimerID)
         {
             dal.SupprimerService(userASupprimerID);
             return View("Index");
+
         }
     }
 
