@@ -190,12 +190,12 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-1 bordureAucune">
-                            <h4>  @Model.Utilisateur.InfosPersos.Prenom</h4>
+                            <h4 class="couleur_bleueQarma">  @Model.Utilisateur.InfosPersos.Prenom @Model.Utilisateur.InfosPersos.Nom </h4>
                         </div>
                     </div>
                     <div id="offres">
-                        <h5>Présentation de l'appartement</h5>
-                        @Model.Utilisateur.Appartement
+                        <h4 style="color: #1f5c587c; ">Présentation de l'appartement</h4>
+                        <h6 style="color:ghostwhite">@Model.Utilisateur.Appartement</h6> 
                     </div>
                 </div>
                 <div class="col-md-1  bordureAucune">
@@ -205,11 +205,8 @@
 
                     <div class="row">
                         <div class="col-md-12 offset-md-0 bordureBleue1" style="border-radius: 8px;">
-                            <h4> Centres d'interets </h4>
-
-                            @Model.Utilisateur.CentreInteret
-                            <br>
-                            <br>
+                            <h4 style="color: #1f5c587c; ">Centres d'interets</h4>
+                            <h6 style="color:ghostwhite"> @Model.Utilisateur.CentreInteret </h6>
                         </div>
                     </div>
                     <div class="row">
@@ -219,12 +216,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 offset-md-0 bordureBleue1" style="border-radius: 8px;">
-                            <h4> Répond à vos demandes de : </h4>
-
-                            @Model.Utilisateur.Propose
-                            <br>
-                            <br>
-                            <br>
+                            <h4 style="color: #1f5c587c; ">Répond à vos demandes de :</h4>
+                            <h6 style="color:ghostwhite"> @Model.Utilisateur.Propose </h6>
                         </div>
                     </div>
                 </div>

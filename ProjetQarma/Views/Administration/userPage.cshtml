@@ -1,236 +1,61 @@
 ﻿@model List<ProjetQarma.Models.Utilisateur>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-    <title>Test</title>
-</head>
-<body>
-    
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg bg-info text-light navbar-dark py-3">
-    <div class="container">
-        <a href="#" class="navbar-brand">Bienvenue, @User.FindFirst("Prenom").Value @User.FindFirst("Nom").Value</a> 
-        <button class="navbar-toggler" type = "button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto">
-              <li class="navbar-item text-light">
-                <a class="nav-link"  href="#" data-bs-toggle="modal" data-bs-target="#compte">Créer un compte uilisateur</a>
-              </li>
-              <li class="navbar-item text-light">
-                <a class="nav-link"  href="#" data-bs-toggle="modal" data-bs-target="#actu">Ecrire une actu</a>
-              </li>
-              <li class="navbar-item text-light">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Gestion de la plateforme
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-success" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="dropdown-item" href="/Administration/servicePage">Services</a></li>
-                        <li><a class="dropdown-item" href="/Administration/offrePage">Offres</a></li>
-                        <li><a class="dropdown-item" href="/Administration/userPage">Utilisateurs</a></li>
-                      </ul>
-                      </li>
-                 </ul>
-              </li>
-            </ul>
-        </div>
-    </div>
- </nav>   
+@{
+    Layout = "_layoutAdmin";
+    ViewBag.Title = "userPage";
+}
 
 
- <!-- Listes -->
-<section class="py-5">
-    <div class="container">
-        <div class="row align-items-top">
-            <div class="col md py-5"><u><i class="h1 bi bi-list-ul text-success mx-3"></i><span class="h4 text-center">Liste des utilisateurs</span></u>
-            <!-- utilisateurs -->
-             @foreach (var utilisateur in Model)
-             {
-<section class="p-5">
-    <div class="container">
-        <div class="row g-3">
-            <div class="col-md">
-                <h6 class="text-left mb-3">
-                    <i class="h4 bi bi-person-fill text-primary mx-3"></i>Infos de l'utilisateur @utilisateur.Id
-                </h6>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                            <span class="fw-bold"> Identité :</span> Nom et prénom 
-                    </ul>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                            <span class="fw-bold"> Contact :</span> @utilisateur.Mail
-                        </li>
-                    </ul>
-                    <ul class="list-group list-group-flush text-left">
-                        <li class="list-group-item">
-                            <span class="fw-bold"> Catégorie :</span> @utilisateur.Role
-                        </li>
-                    </ul>
-                    <div class="mt-2">
-                        <button class="btn bg-warning btn-sm text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+<!-- Listes -->
+<div class="row justify-content-start">
+    @foreach (var utilisateur in Model)
+    {
+        <div class="card col-5 m-4" style="width: 40%; border: 3px solid #3276726a; background-color: #3276726a; " align="center">
+            <h6 style=" color: #327672;"> <i class="h4 bi bi-person-fill text-primary mx-3" style="color: #9AE17B"></i>Infos de l'utilisateur @utilisateur.Id</h6>
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <div style="color:ghostwhite"><span class="fw-bold"> Identité :</span> @utilisateur.InfosPersos.Nom @utilisateur.InfosPersos.Prenom </div>
+                    <div class="card-subtitle mb-1 text-muted " style="font-size: 13px; color: #327672;"><strong><span class="fw-bold"> Contact :</span> @utilisateur.Mail</strong></div>
+                    <div class="card-subtitle mb-1 text-muted " style="font-size: 13px; color: #327672;"><strong>    <span class="fw-bold"> Catégorie :</span> @utilisateur.Role</strong></div>
+                </div>
+                <div>
+                    <button class="btn btn-primary  btn-sm text-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Modifier Rôle
-                        </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                @if (utilisateur.Role.ToString() == "User")
-                                                {
-                                                    <li><a class="dropdown-item" onclick="alert('Confirmer')" href=@("/administration/promoteAdmin?"+"utilisateurToPromoteAdminID="+utilisateur.Id)>Admin</a></li>
-                                                }
-                                                else if (utilisateur.Role.ToString() == "Admin")
-                                                {
-                                                    <li><a class="dropdown-item" onclick="alert('Confirmer')" href=@("/administration/demoteAdmin?"+"utilisateurToDemoteAdminID="+utilisateur.Id)>User</a></li> 
-                                                    <!-- href=/"administration/la methode a ppeller?"+"argument de la méthode a appeler="+objet.ID)-->
-                                                }
-                                                else
-                                                {
-                                                }
-                           
-                            </ul>
-                                            
-                         <a class="btn bg-warning btn-sm text-light" onclick="alert('Confirmer')" href=@("/administration/bannirUser?"+"utilisateurABannirID="+utilisateur.Id) type="button">Bannir</a>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        @if (utilisateur.Role.ToString() == "User")
+                        {
+                            <li><a class="dropdown-item couleur_verte" onclick="alert('Confirmer')" href=@("/administration/promoteAdmin?"+"utilisateurToPromoteAdminID="+utilisateur.Id)>Admin</a></li>
+                        }
+                        else if (utilisateur.Role.ToString() == "Admin")
+                        {
+                            <li><a class="dropdown-item couleur_verte" onclick="alert('Confirmer')" href=@("/administration/demoteAdmin?"+"utilisateurToDemoteAdminID="+utilisateur.Id)>User</a></li>
 
-                        <a class="btn bg-warning btn-sm text-light"  href=@("/administration/supprimerUserAdmin?"+"userASupprimerID="+utilisateur.Id) onclick="alert('Confirmer')" type="button">Supprimer</a>
+                            <!-- href=/"administration/la methode a ppeller?"+"argument de la méthode a appeler="+objet.ID)-->
+                        }
+                        else
+                        {
+                        }
+
+                    </ul>
+                    <div>
+                        <a class="btn btn-secondary  btn-sm text-light" style="width:50%" onclick="alert('Confirmer')" href=@("/administration/bannirUser?"+"utilisateurABannirID="+utilisateur.Id) type="button">Bannir</a>
+
+                        <a class="btn btn-secondary  btn-sm text-light" style="width:50%" href=@("/administration/supprimerUserAdmin?"+"userASupprimerID="+utilisateur.Id) onclick="alert('Confirmer')" type="button">Supprimer</a>
+
                     </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-            }
-            </div>
-        </div>   
-          
-     </div>
-</section>
 
 
-      
+    }
 
+    @*@Html.ActionLink("Proposer un nouveau service", "Proposer", "Service")*@
 
-<!-- footer -->
-<footer class="p-5 bg-light text-dark text-center position-relative">
-<div class="containerFooter pt-40">
-    <div class="row">
-        <div class="col-md-3">
-        <i class="h3 bi bi-twitter text-info mx-2"></i>
-        <i class="h3 bi bi-linkedin text-info mx-2"></i>
-        <i class="h3 bi bi-facebook text-info mx-2"></i>
-        <i class="h3 bi bi-instagram text-info mx-2"></i>
-        </div>
-        <div class="col-md-6 bordureAucune">
-            <div class="text-center text-info pt-20" >
-                <strong> SoliDev &copy; 2022  </strong><br>
-                <strong> Adresse email de contact </strong>
-            </div>                                                   
-        </div>
-            <!-- Logo SoliDev-->
-        <div class="col-md-3 ">
-            <img src="/photos/SolidevLogo.png" width="20%" id="logo">
-        </div>
-        
-    </div>
 </div>
-<!-- Copyright -->
-<a href="#" class="position-absolute bottom-0 end-0 p-5">
-    <i class="bi bi-arrow-up-circle text-light h3"></i>
-</a>
-</footer>
-
- 
-
-<!-- Modal compte-->
-<div class="modal fade" id="compte" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Formulaire nouveau compte</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p class="lead">Saisir les informations de l'utilisateur</p>
-           <form>
-            <div class="mb-3">
-                <label for="first-name" class="col-form-label">
-                    Nom
-                </label>
-                <input type="text" class="form-control" id="first-name">
-            </div>
-            <div class="mb-3">
-                <label for="last-name" class="col-form-label">
-                    Prénom
-                </label>
-                <input type="text" class="form-control" id="last-name">
-            </div>
-            <div class="mb-3">
-                <label for="last-name" class="col-form-label">
-                    Mail
-                </label>
-                <input type="text" class="form-control" id="last-name">
-            </div>
-            <div class="mb-3">
-                <label for="last-name" class="col-form-label">
-                    Appartement
-                </label>
-                <input type="text" class="form-control" id="last-name">
-            </div>
-           </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-              <button type="button" class="btn btn-primary">Valider</button>
-            </div>
-      </div>
-    </div>
-  </div>
 
 
 
-
-<!-- Modal actu-->
-<div class="modal fade" id="actu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Formulaire nouvelle actu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p class="lead">Créer une nouvelle actu</p>
-       <form>
-        <div class="mb-3">
-            <label for="first-name" class="col-form-label">
-                Titre
-            </label>
-            <input type="text" class="form-control" id="first-name">
-        </div>
-        <div class="mb-3">
-            <label for="Message" class="col-form-label">
-                Message
-            </label>
-            <textarea id="Message" class="form-control" id="comment"> </textarea>
-        </div>
-       </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-          <button type="button" class="btn btn-primary">Valider</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    
-</body>
-</html>

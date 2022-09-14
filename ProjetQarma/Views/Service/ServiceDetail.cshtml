@@ -8,68 +8,92 @@
     <div class="col-md-7  bordureBleue1" style="border-radius: 8px;">
         <div class="row" align="center">
             <div class="col-md-10 offset-md-1 ">
-                <h2 class="titre">@Model.Service.Titre</h2>
+                <h2 class="titre" style="color: #1f5c587c; ">@Model.Service.Titre</h2>
             </div>
         </div>
 
+
         <div class="row">
-            <div class="col-md-10 offset-md-1 bordureAucune">
-                <div class="my-3">
-                    <img src="@Model.Service.ImagePath" width="225" height="200" style="border-radius: 8px;" />
+            <div class="col-md-5  bordureAucune">
+                <div class="row">
+                    <div class="col-md-11 offset-md-1  bordureAucune">
+                        <div class="my-3">
+                            <img src="@Model.Service.ImagePath" width="225" height="200" style="border-radius: 8px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 bordureAucune couleur_bleueQarma">
+                        <h3 style="color:ghostwhite">Bisous :</h3><h6>@Model.Service.MontantBisous </h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 bordureAucune couleur_bleueQarma">
+                        <h3 style="color:ghostwhite">Catégorie : </h3> <h6>@Model.Service.TypeService</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 bordureAucune couleur_bleueQarma">
+                        <h3 style="color:ghostwhite">Description :  </h3><h6> @Model.Service.Description</h6>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-10 offset-md-1 bordureAucune">
-                <h4> @Model.Service.MontantBisous bisous</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 offset-md-1 bordureAucune">
-                Catégorie :  @Model.Service.TypeService
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 offset-md-1 bordureAucune">
-                <h3>Description :</h3>
-                @Model.Service.Description
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 offset-md-1 bordureAucune">
 
-            </div>
-        </div>
+
     </div>
     <div class="col-md-1  bordureaucune">
     </div>
     <!--**********Partie droite**************-->
 
-    <div class="col-md-3  bordureBleue1" style="border-radius: 8px;">
+    <div class="col-md-3 bordureAucune  " style="border-radius: 8px;">
 
         <div class="row">
             <div class="col-md-10 offset-md-1 bordureAucune">
             </div>
         </div>
         <div class="row">
-            <div class="col-md-10 offset-md-1 bordureAucune">
-                Posté par:
+            <div class="col-md-10 offset-md-1 bordureBleue1 couleur_bleueQarma" style="border-radius:8px">
 
-                <h3>  @Model.Utilisateur.InfosPersos.Prenom</h3>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 bordureAucune">
+                        <h3>Posté par:</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 bordureAucune">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 bordureAucune">
+                        <h4 style="color:ghostwhite">  @Model.Utilisateur.InfosPersos.Nom  @Model.Utilisateur.InfosPersos.Prenom</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 bordureAucune">
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 bordureAucune">
+                        <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("UtilisateurNonConnecte2","Service",new { id=Model.Service.InfosPersosId})';"><div style="font-size:16px"> Profil</div></button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 bordureAucune">
+
+                        <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@("/service/accepterService?"+"utilisateurACrediterID="+Convert.ToInt32(User.Identity.Name)+"&utilisateurADebiterID="+Model.Utilisateur.Id+"&serviceID="+Model.Service.Id)';"><div style="font-size:16px">accepter</div></button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-10 offset-md-1 bordureAucune">
-                <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@Url.Action("UtilisateurNonConnecte2","Service",new { id=Model.Service.InfosPersosId})';"><div style="font-size:16px"> Profil</div></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 offset-md-1 bordureAucune">
-                <button class="btn btn-primary btn-lg me-md-5" style=" width: 100%;" type="button" onclick="location.href='@("/service/accepterService?"+"utilisateurACrediterID="+Convert.ToInt32(User.Identity.Name)+"&utilisateurADebiterID="+Model.Utilisateur.Id+"&serviceID="+Model.Service.Id)';"><div style="font-size:16px">accepter</div></button>
-            </div>
-        </div>
+
     </div>
 
-</div>
 </div>
