@@ -1,0 +1,22 @@
+﻿@model ProjetQarma.ViewModels.ForgotPasswordViewModel;
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.NewPassword)
+        @Html.PasswordFor(m => m.NewPassword)
+        @Html.ValidationMessageFor(m => m.NewPassword)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.NewPasswordConfirmation)
+        @Html.PasswordFor(m => m.NewPasswordConfirmation)
+        @Html.ValidationMessageFor(m => m.NewPasswordConfirmation)
+    </div>
+    @Html.HiddenFor(m=>m.userID)
+    <button class="btn btn-primary btn-xl" type="submit" href="~/Login/CreerMdp">Proposer</button>
+}

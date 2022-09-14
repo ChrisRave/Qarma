@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
+
 namespace ProjetQarma.Models
 {
     public class BddContext : DbContext
@@ -22,7 +23,7 @@ namespace ProjetQarma.Models
 			
 			if (System.Diagnostics.Debugger.IsAttached)
             {
-                optionsBuilder.UseMySql("server=localhost;user id=root;password=RRRRR;database=utilisateurQarma");
+                optionsBuilder.UseMySql("server=localhost;user id=root;password=rrrrr;database=utilisateurQarma");
             }
             else
             {
@@ -93,8 +94,23 @@ namespace ProjetQarma.Models
                      Appartement = "Je suis un professionnel expérimenté de la photographie de mode et de beauté. Je travaille régulièrement pour des magazines français et internationaux (Madame Figaro, Cosmopolitan, Biba, etc.). J'ai remporté de nombreux prix et mes photographies font partie des collections de la Bibliothèque nationale de France."
 
 
-                 }
-            );
+                 },
+                 new Utilisateur
+                 {
+                     InfosPersosId = 4,
+                     Id = 4,
+                     Adresse = " 3 Rue des Peupliers, 75014 Paris",
+                     Mail = "maxime.daubermann@gmail.com",
+                     Telephone = "000000000",
+                     Qarma = 2,
+                     Password = Dal.EncodeMD5("00000"),
+
+                     Propose = "Service d'admin",
+                     TypeUtilisateur = TypeUtilisateur.Consommateur,
+
+
+                     Role = Role.SuperAdmin
+                 });
             this.InfosPersos.AddRange(
                 new InfosPersos
                 {
@@ -113,6 +129,12 @@ namespace ProjetQarma.Models
                     Id = 3,
                     Nom = "Dubost",
                     Prenom = "Benoit"
+                },
+                new InfosPersos
+                {
+                    Id= 4,
+                    Nom = "Daubermann",
+                    Prenom = "Maxime"
                 }
             );
             this.Services.AddRange(

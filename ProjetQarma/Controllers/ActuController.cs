@@ -30,10 +30,8 @@ namespace ProjetQarma.Controllers
         }
 
 
-       /* [Authorize(Roles = "Admin")]*/
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
-
         public ActionResult CreerActu(Actu actu)
         {
             if (!ModelState.IsValid)
@@ -68,7 +66,7 @@ namespace ProjetQarma.Controllers
 
 
 
-
+        [Authorize(Roles = "Admin")]
         public ActionResult SupprimerActu(int id)
         {
             dal.SupprimerActu(id);
