@@ -43,5 +43,9 @@ namespace ProjetQarma.Controllers
         {
             return View();
         }
+        public IActionResult MdpOublie()
+        {
+            return View();
+        }
     }
 }
